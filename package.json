@@ -4,7 +4,11 @@
   "description": "-Node \r -Express \r -MySQL \r -Handlebars \r -Jquery",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint",
+    "start": "node server.js",
+    "lint": "eslint --quiet .",
+    "fix": "eslint --fix .",
+    "watch": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +20,9 @@
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^1.13.7"
+  }
 }
