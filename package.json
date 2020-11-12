@@ -25,6 +25,7 @@
   "devDependencies": {
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^1.13.7"
+    "prettier": "^1.13.7",
+    "sequelize-cli": "^6.2.0"
   }
 }
