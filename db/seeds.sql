@@ -1,1 +1,1 @@
-INSERT INTO test (comment) VALUES ('🚀 init');
+INSERT INTO test_db (comment) VALUES ('🚀 init');
