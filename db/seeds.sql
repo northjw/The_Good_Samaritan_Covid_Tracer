@@ -1,1 +1,1 @@
-INSERT INTO test (comment) VALUES ('🚀 init');
+INSERT INTO tests (comment) VALUES ('init');
