@@ -3,6 +3,7 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('places', [{
+      
       place_name: "Alpha Chi Omega",
       category: 'building',
       createdAt: new Date(),
@@ -207,9 +208,17 @@ module.exports = {
       updatedAt: new Date()
     }
   ]);
-  },
 
+      place: 1,
+      name: "Mudd",
+      category: "Building",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    }]);
+
+  },
   down: async (queryInterface, Sequelize) => {
+
     /**
      * Add commands to revert seed here.
      *
@@ -217,5 +226,9 @@ module.exports = {
      * await queryInterface.bulkDelete('People', null, {});
      */
     await queryInterface.bulkDelete('Place', null, {});
+
+    
+    return queryInterface.bulkDelete('places', null, {});
+
   }
 };
