@@ -14,8 +14,12 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   places.init({
-    place: DataTypes.INTEGER,
-    name: DataTypes.STRING,
+    place_id: {
+      type: DataTypes.INTEGER,
+      autoIncrement: true,
+      primaryKey: true
+    },
+    place_name: DataTypes.STRING,
     category: DataTypes.STRING
   }, {
     sequelize,
