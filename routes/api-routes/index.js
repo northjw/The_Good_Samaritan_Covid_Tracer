@@ -27,7 +27,13 @@ router.get("/logout", function(req, res) {
   res.redirect("/");
 });
 
+// router.get("/place_data", function(req, res) {
+//   db.Places.findAll({}).then(function (results) {
+//       console.log(results);
+//       res.json(results);
+//   });
+// });
 
-router.use("/place-data", placesRoutes);
+router.use("/place_data", placesRoutes);
 
 module.exports = router;

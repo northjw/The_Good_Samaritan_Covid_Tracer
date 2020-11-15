@@ -44,10 +44,7 @@ app.set("view engine", "handlebars");
 // app.use(errorHandler);
 
 // drops all tables on every restart
-db.sequelize.sync({ force: true }).then(async () => {
-   // seed db
-
-   // await seed(db.test);
+db.sequelize.sync().then(async () => {
 
    app.listen(PORT, () => {
       console.log("🌎 => live on http://localhost:%s", PORT);
