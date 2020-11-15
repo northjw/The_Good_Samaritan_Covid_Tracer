@@ -1,13 +1,13 @@
 const express = require("express");
 const router = express.Router();
-const commentsRoute = require("./comments");
+const tracerRoute = require("./tracer");
 
 // get route -> index
 router.get("/", (req, res) => {
-   res.redirect("/comments");
+   res.redirect("/tracer");
 });
 
 // comments page
-router.use("/comments", commentsRoute);
+router.use("/tracer", tracerRoute);
 
 module.exports = router;

@@ -1,7 +1,7 @@
 const express = require("express");
-const commentsRoute = require("./comments");
+const tracerRoute = require("./tracer");
 const router = express.Router();
 
-router.use("/comments", commentsRoute);
+router.use("/tracer", tracerRoute);
 
 module.exports = router;
