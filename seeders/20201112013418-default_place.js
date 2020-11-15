@@ -209,14 +209,6 @@ module.exports = {
     }
   ]);
 
-      place: 1,
-      name: "Mudd",
-      category: "Building",
-      createdAt: new Date(),
-      updatedAt: new Date()
-    }]);
-
-  },
   down: async (queryInterface, Sequelize) => {
 
     /**
@@ -231,4 +223,4 @@ module.exports = {
     return queryInterface.bulkDelete('places', null, {});
 
   }
-};
+}}

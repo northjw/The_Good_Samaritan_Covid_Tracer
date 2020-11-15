@@ -1,7 +1,9 @@
 const express = require("express");
 const router = express.Router();
+const placesRoutes = require('./placesRoutes')
 const db = require("../../models");
 var passport = require("../../config/passport");
+
 
 router.post("/login", passport.authenticate("local"), function(req, res) {
   res.json(req.user);
@@ -25,5 +27,8 @@ router.get("/logout", function(req, res) {
   req.logout();
   res.redirect("/");
 });
+
+
+router.use("/place-data", placesRoutes);
 
 module.exports = router;
