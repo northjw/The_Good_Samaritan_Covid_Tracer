@@ -1,9 +1,11 @@
 const express = require("express");
+const tracerRoute = require("./tracer");
 const router = express.Router();
 const placesRoutes = require('./placesRoutes')
 const db = require("../../models");
 var passport = require("../../config/passport");
 
+router.use("/tracer", tracerRoute);
 
 router.post("/login", passport.authenticate("local"), function(req, res) {
   res.json(req.user);
