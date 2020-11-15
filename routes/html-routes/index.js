@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const tracerRoute = require("./tracer");
 var isAuthenticated = require("../../config/middleware/isAuthenticated");
 
 // get route -> index
