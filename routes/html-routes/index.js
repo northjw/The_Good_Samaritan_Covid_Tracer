@@ -20,7 +20,7 @@ router.get("/register", (req, res) => {
 
 router.get("/location", isAuthenticated, function(req, res) {
    res.render("location");
- });
+});
 
 
 module.exports = router;
