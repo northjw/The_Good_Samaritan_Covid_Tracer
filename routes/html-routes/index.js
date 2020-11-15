@@ -6,20 +6,20 @@ var isAuthenticated = require("../../config/middleware/isAuthenticated");
 // get route -> index
 router.get("/", (req, res) => {
    if (req.user) {
-      res.redirect("/postCommets");
+      res.redirect("/location");
    } 
    res.render("index");
 });
 
 router.get("/register", (req, res) => {
    if (req.user) {
-      res.redirect("/postComments");
+      res.redirect("/location");
    }
    res.render("register");
 });
 
-router.get("/postComments", isAuthenticated, function(req, res) {
-   res.render("postComments");
+router.get("/location", isAuthenticated, function(req, res) {
+   res.render("location");
  });
 
 
