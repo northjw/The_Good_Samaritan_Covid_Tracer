@@ -1,13 +1,26 @@
 const express = require("express");
 const router = express.Router();
-const commentsRoute = require("./comments");
+var isAuthenticated = require("../../config/middleware/isAuthenticated");
+
 
 // get route -> index
 router.get("/", (req, res) => {
-   res.redirect("/comments");
+   if (req.user) {
+      res.redirect("/postCommets");
+   } 
+   res.render("index");
 });
 
-// comments page
-router.use("/comments", commentsRoute);
+router.get("/register", (req, res) => {
+   if (req.user) {
+      res.redirect("/postComments");
+   }
+   res.render("register");
+});
+
+router.get("/postComments", isAuthenticated, function(req, res) {
+   res.render("postComments");
+ });
+
 
 module.exports = router;
