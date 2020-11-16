@@ -206,17 +206,135 @@ module.exports = {
       category: "building",
       createdAt: new Date(),
       updatedAt: new Date()
-    }
-  ]);
-
-      place: 1,
-      name: "Mudd",
-      category: "Building",
+    },
+    {
+      place_name: "Red Lobster",
+      category: "restaurant",
       createdAt: new Date(),
       updatedAt: new Date()
-    }]);
+    },
+    {
+      place_name: "Chili's Bar and Grill",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Friedman's at Columbia",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "John Jay Dining Hall",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Kikoo Sushi",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Community Food & Juice",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Brownie's Cafe",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Massawa",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Max Soha",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Symposium",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Pisticci",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Elysian Fields",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Tartina",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Shake Shake",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Doaba Deli",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Sweetgreen",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Junzi Kitchen",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Kosher Cafe Nana",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Le Monde",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "Thai Market",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+    {
+      place_name: "314 Pizza Pasta Wine",
+      category: "restaurant",
+      createdAt: new Date(),
+      updatedAt: new Date()
+    },
+  ]);
 
-  },
   down: async (queryInterface, Sequelize) => {
 
     /**
@@ -231,4 +349,4 @@ module.exports = {
     return queryInterface.bulkDelete('places', null, {});
 
   }
-};
+}}

@@ -2,7 +2,9 @@ const express = require("express");
 const apiRoutes = require("./routes/api-routes");
 const htmlRoutes = require("./routes/html-routes");
 const db = require("./models");
-const seed = require("./utils/seed");
+var passport = require("./config/passport");
+var session = require("express-session");
+// const seed = require("./utils/seed");
 const errorHandler = require("./utils/errorHandler");
 
 const PORT = process.env.PORT || 3000;
@@ -14,6 +16,13 @@ app.use(express.static("public"));
 // Parse application body
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
+
+app.use("/api", apiRoutes);
+app.use(htmlRoutes);
 
 const exphbs = require("express-handlebars");
 
@@ -28,8 +37,8 @@ app.set("view engine", "handlebars");
 
 // var routes = require("./controllers/burgersController.js");
 
-app.use("/api", apiRoutes);
-app.use(htmlRoutes);
+
+
 
 // error handling
 // app.use(errorHandler);
