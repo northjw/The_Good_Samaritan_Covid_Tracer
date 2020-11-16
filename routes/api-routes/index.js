@@ -1,11 +1,23 @@
 const express = require("express");
 const router = express.Router();
 const placesRoutes = require('./placesRoutes')
+const userPlaceRoutes = require('./userPlaceRoutes')
 const db = require("../../models");
 var passport = require("../../config/passport");
 
 router.post("/login", passport.authenticate("local"), function(req, res) {
   res.json(req.user);
+});
+
+router.get("/user_data", function(req, res) {
+  if (!req.user) {
+    res.json({});
+  } else {
+    res.json({
+      user_id: req.user.user_id,
+      email: req.user.email
+    });
+  }
 });
 
 router.post("/signup", function(req, res) {
@@ -34,6 +46,8 @@ router.get("/logout", function(req, res) {
 //   });
 // });
 
+
 router.use("/place_data", placesRoutes);
+router.use("/user_place", userPlaceRoutes);
 
 module.exports = router;

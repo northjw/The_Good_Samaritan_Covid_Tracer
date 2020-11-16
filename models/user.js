@@ -34,7 +34,7 @@ module.exports = function(sequelize, DataTypes) {
     user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
   });
   User.associate = function(models) {
-    User.belongsToMany(models.Places, { through: 'UserPlace' });
+    User.belongsToMany(models.Places, { through: 'UserPlaces' });
   };
 
   return User;

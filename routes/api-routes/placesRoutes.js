@@ -8,4 +8,14 @@ router.get("/", function(req, res) {
     });
 });
 
+router.get("/:place_name?", function(req, res){
+    db.Places.findOne({
+        where: {
+            place_name: req.params.place_name
+        }
+    }).then((result) => {
+        return res.json(result);
+    })
+})
+
 module.exports = router;
