@@ -2,6 +2,7 @@ $(document).ready(function () {
     var placedata = [];
     var searchbar = $('#search')
     var addBtn = $("button#add")
+    var covidBtn =$("button#covid")
     $.get("/api/place_data", function (data) {
         data.forEach(arr => {
             placedata.push(arr.place_name)
@@ -49,5 +50,34 @@ $(document).ready(function () {
             console.log(err)
         });
     };
+
+    covidBtn.on('click', function (e) {
+        e.preventDefault();
+        var dateCreated = $('input#depart').val();
+        $.get("/api/user_data").then(function(data){
+            var userId = data.user_id
+            var covidCheck = data.covid
+            if(covidCheck === false){
+                covidCheck = true
+            }
+
+            var covidUpdate = {
+                user_id: userId,
+                covid: covidCheck,
+                date: dateCreated
+            }
+            console.log(covidUpdate)
+            updateCovidStatus(covidUpdate);
+        })
+
+        function updateCovidStatus (updates){
+            $.ajax({
+                method: "PUT",
+                url: "/api/covid_check",
+                data: updates
+            });
+        }
+    })
+
 });
 

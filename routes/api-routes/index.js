@@ -15,10 +15,28 @@ router.get("/user_data", function(req, res) {
   } else {
     res.json({
       user_id: req.user.user_id,
-      email: req.user.email
+      email: req.user.email,
+      covid: req.user.covid,
+      covidDate: req.user.covidDate
     });
   }
 });
+
+router.put("/covid_check", function(req, res) {
+  db.User.update({
+    covid: req.body.covid,
+    covidDate: req.body.date
+  },
+  {
+    where: {
+      user_id: req.body.user_id
+    }
+  })
+    .then(function(updates) {
+      res.json(updates);
+    });
+});
+
 
 router.post("/signup", function(req, res) {
     db.User.create({
