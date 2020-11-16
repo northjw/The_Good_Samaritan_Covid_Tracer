@@ -35,11 +35,6 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
-// var routes = require("./controllers/burgersController.js");
-
-
-
-
 // error handling
 // app.use(errorHandler);
 

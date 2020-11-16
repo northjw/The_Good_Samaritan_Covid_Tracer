@@ -16,7 +16,7 @@ $(document).ready(function () {
         // console.log(data)
             let guessedName = results.place_name;
             let newDiv = $('<div>').addClass('dropdown-item').text(guessedName)
-            console.log(newDiv)
+            // console.log(newDiv)
             searchbar.addClass('dropdown-divider')
             searchbar.append(newDiv);
     }
