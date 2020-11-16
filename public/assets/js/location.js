@@ -34,7 +34,6 @@ $(document).ready(function () {
                 };
                 console.table(user_place)
                 addUserPlace(user_place.date, user_place.place_id, user_place.user_id);
-                createTimeTable(user_place.date, user_place.place_id, user_place.user_id);
             });
         })
         
@@ -50,6 +49,5 @@ $(document).ready(function () {
             console.log(err)
         });
     };
-    
 });
 

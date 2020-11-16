@@ -4,7 +4,6 @@ const htmlRoutes = require("./routes/html-routes");
 const db = require("./models");
 var passport = require("./config/passport");
 var session = require("express-session");
-// const seed = require("./utils/seed");
 const errorHandler = require("./utils/errorHandler");
 
 const PORT = process.env.PORT || 3000;
@@ -39,7 +38,7 @@ app.set("view engine", "handlebars");
 // app.use(errorHandler);
 
 // drops all tables on every restart
-db.sequelize.sync().then(async () => {
+db.sequelize.sync({ alter: true }).then(async () => {
 
    app.listen(PORT, () => {
       console.log("🌎 => live on http://localhost:%s", PORT);
