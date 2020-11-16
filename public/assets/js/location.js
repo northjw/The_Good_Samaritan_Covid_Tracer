@@ -33,7 +33,6 @@ $(document).ready(function () {
                     place_id: place_id,
                     user_id: user_id
                 };
-                console.table(user_place)
                 addUserPlace(user_place.date, user_place.place_id, user_place.user_id);
             });
         })
@@ -53,22 +52,43 @@ $(document).ready(function () {
 
     covidBtn.on('click', function (e) {
         e.preventDefault();
-        var dateCreated = $('input#depart').val();
+        var datebtn = $('input#depart');
         $.get("/api/user_data").then(function(data){
+            var dateCreated = datebtn.val();
             var userId = data.user_id
             var covidCheck = data.covid
             if(covidCheck === false){
                 covidCheck = true
             }
-
             var covidUpdate = {
                 user_id: userId,
                 covid: covidCheck,
                 date: dateCreated
             }
-            console.log(covidUpdate)
             updateCovidStatus(covidUpdate);
+            $.get("/api/user_place/" + userId, function(result){
+                var listsOfPlaceId = [];
+                result.forEach(places => {
+                    listsOfPlaceId.push(places.PlacePlaceId)
+                });
+                
+                // var listsOfUserId = [];
+                listsOfPlaceId.forEach(arr =>{
+                    $.get("/api/user_place/places/" + arr, function(results){
+                        results.forEach(arr => {
+                            $.get("/api/user_data/user_id/" + arr.UserUserId, function(userInfo) {
+                                var userEmail = userInfo.email;
+                                $.post("/api/email", {
+                                    email: email
+                                }).catch(err => console.log(err))
+                            })
+                        })
+                    })
+                });
+            })
         })
+
+        datebtn.css('backgorund', 'red');
 
         function updateCovidStatus (updates){
             $.ajax({

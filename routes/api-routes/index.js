@@ -22,6 +22,16 @@ router.get("/user_data", function(req, res) {
   }
 });
 
+router.get("/user_data/user_id/:user_id?", function(req, res){
+  db.User.findOne({
+      where: {
+          user_id: req.params.user_id
+      }
+  }).then((result) => {
+      return res.json(result);
+  })
+})
+
 router.put("/covid_check", function(req, res) {
   db.User.update({
     covid: req.body.covid,
