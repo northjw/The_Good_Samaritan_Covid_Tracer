@@ -1,10 +1,10 @@
 const express = require("express");
+const nodemailer = require('nodemailer');
 const apiRoutes = require("./routes/api-routes");
 const htmlRoutes = require("./routes/html-routes");
 const db = require("./models");
 var passport = require("./config/passport");
 var session = require("express-session");
-// const seed = require("./utils/seed");
 const errorHandler = require("./utils/errorHandler");
 
 const PORT = process.env.PORT || 3000;
@@ -35,19 +35,9 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
-// var routes = require("./controllers/burgersController.js");
-
-
-
-
-// error handling
-// app.use(errorHandler);
 
 // drops all tables on every restart
-db.sequelize.sync({ force: true }).then(async () => {
-   // seed db
-
-   // await seed(db.test);
+db.sequelize.sync().then(async () => {
 
    app.listen(PORT, () => {
       console.log("🌎 => live on http://localhost:%s", PORT);

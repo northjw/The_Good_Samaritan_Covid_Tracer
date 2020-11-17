@@ -4,6 +4,7 @@ var isAuthenticated = require("../../config/middleware/isAuthenticated");
 
 // get route -> index
 router.get("/", (req, res) => {
+   console.log(req.user)
    if (req.user) {
       res.redirect("/location");
    } 
