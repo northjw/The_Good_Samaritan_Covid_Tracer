@@ -36,7 +36,6 @@ $(document).ready(function () {
                 addUserPlace(user_place.date, user_place.place_id, user_place.user_id);
             });
         })
-        
         searchbar.val("");
     });
     function addUserPlace(date, PlacePlaceId, UserUserId) {
