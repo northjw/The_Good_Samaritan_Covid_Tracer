@@ -46,8 +46,4 @@ passport.deserializeUser(function(obj, cb) {
 });
 
 // Exporting our configured passport
-<<<<<<< HEAD
 module.exports = passport;
-=======
-module.exports = passport;
->>>>>>> main
