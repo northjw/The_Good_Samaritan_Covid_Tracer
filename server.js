@@ -1,4 +1,5 @@
 const express = require("express");
+const nodemailer = require('nodemailer');
 const apiRoutes = require("./routes/api-routes");
 const htmlRoutes = require("./routes/html-routes");
 const db = require("./models");
@@ -34,11 +35,9 @@ app.engine(
 );
 app.set("view engine", "handlebars");
 
-// error handling
-// app.use(errorHandler);
 
 // drops all tables on every restart
-db.sequelize.sync({ alter: true }).then(async () => {
+db.sequelize.sync().then(async () => {
 
    app.listen(PORT, () => {
       console.log("🌎 => live on http://localhost:%s", PORT);

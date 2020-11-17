@@ -2,8 +2,10 @@ const express = require("express");
 const router = express.Router();
 const placesRoutes = require('./placesRoutes')
 const userPlaceRoutes = require('./userPlaceRoutes')
+const emailRoutes = require('./emailRoutes')
 const db = require("../../models");
 var passport = require("../../config/passport");
+
 
 router.post("/login", passport.authenticate("local"), function(req, res) {
   res.json(req.user);
@@ -67,15 +69,8 @@ router.get("/logout", function(req, res) {
   res.redirect("/");
 });
 
-// router.get("/place_data", function(req, res) {
-//   db.Places.findAll({}).then(function (results) {
-//       console.log(results);
-//       res.json(results);
-//   });
-// });
-
-
 router.use("/place_data", placesRoutes);
 router.use("/user_place", userPlaceRoutes);
+router.use("/email", emailRoutes);
 
 module.exports = router;

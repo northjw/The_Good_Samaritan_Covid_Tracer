@@ -79,7 +79,7 @@ $(document).ready(function () {
                             $.get("/api/user_data/user_id/" + arr.UserUserId, function(userInfo) {
                                 var userEmail = userInfo.email;
                                 $.post("/api/email", {
-                                    email: email
+                                    email: userEmail
                                 }).catch(err => console.log(err))
                             })
                         })
@@ -87,6 +87,7 @@ $(document).ready(function () {
                 });
             })
         })
+
 
         datebtn.css('backgorund', 'red');
 
