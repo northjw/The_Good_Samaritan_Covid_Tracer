@@ -88,7 +88,7 @@ $(document).ready(function () {
         })
 
 
-        datebtn.css('backgorund', 'red');
+        datebtn.css('background', 'red');
 
         function updateCovidStatus (updates){
             $.ajax({
