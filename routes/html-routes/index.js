@@ -26,5 +26,8 @@ router.get("/contactUs", isAuthenticated, function(req, res) {
    res.render("contactUs");
 });
 
+router.get("/aboutus", isAuthenticated, function(req, res) {
+   res.render("aboutus");
+});
 
 module.exports = router;
