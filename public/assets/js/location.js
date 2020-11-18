@@ -1,8 +1,11 @@
 $(document).ready(function () {
     var placedata = [];
+    var checkDate = [];
     var searchbar = $('#search')
     var addBtn = $("button#add")
     var covidBtn =$("button#covid")
+    var display = $('div#display')
+
     $.get("/api/place_data", function (data) {
         data.forEach(arr => {
             placedata.push(arr.place_name)
@@ -12,7 +15,8 @@ $(document).ready(function () {
         source: placedata,
         minLength: 1,
         scroll: true
-    }).focus(function(){
+    })
+    .focus(function(){
         $(this).autocomplete("search", "");
     });
 
@@ -36,6 +40,27 @@ $(document).ready(function () {
                 addUserPlace(user_place.date, user_place.place_id, user_place.user_id);
             });
         })
+        if (checkDate.includes(dateCreated)){
+            var existingUlTag = $("ul#" + dateCreated)
+            var liTag = $("<li>");
+            var memberInfoDiv = $("<div>").addClass("member-infos");
+            var h1Tag = $("<h1>").addClass("member-title").text(place_name);
+            memberInfoDiv.append(h1Tag);
+            liTag.append(memberInfoDiv);
+            existingUlTag.append(liTag);
+            display.append(ulTag);
+        }else{
+            var ulTag = $("<ul>").addClass("timeline").attr("id", dateCreated);
+            var dateholder = $("<div>").addClass("dateheader").text(dateCreated);
+            var liTag = $("<li>");
+            var memberInfoDiv = $("<div>").addClass("member-infos");
+            var h1Tag = $("<h1>").addClass("member-title").text(place_name);
+            memberInfoDiv.append(h1Tag);
+            liTag.append(memberInfoDiv);
+            ulTag.append(dateholder);
+            ulTag.append(liTag);
+            display.append(ulTag);
+        }
         searchbar.val("");
     });
     function addUserPlace(date, PlacePlaceId, UserUserId) {
@@ -98,6 +123,61 @@ $(document).ready(function () {
             });
         }
     })
+    
+    function createPlaceListForTheUser () {
+        $.get("/api/user_data").then(function (user){
+            $.get("/api/user_place/date/" + user.user_id, function(data) {
+                // console.log(data)
+                if (checkDate.length === 0){
+                    checkDate.push(data[0].date)
+                    var ulTag = $("<ul>").addClass("timeline").attr("id", data[0].date);
+                    var dateholder = $("<div>").addClass("dateheader").text(data[0].date);
+                    ulTag.append(dateholder);
+                    display.append(ulTag);
+                }
+                data.forEach(arr => {
+                    if(checkDate.includes(arr.date)){
+                        addValueToTable(arr.date, arr.PlacePlaceId)
+                    } else{
+                        createTable(arr.date, arr.PlacePlaceId)
+                        checkDate.push(arr.date)
+                    }
+                    
+                })
+            })
+        })
+    }
+
+    function addValueToTable (date, place_id){
+        var existingUlTag = $("ul#" + date)
+        var liTag = $("<li>");
+        var memberInfoDiv = $("<div>").addClass("member-infos");
+        $.get("/api/place_data/place_id/" + place_id, function (result){
+            // console.log(result)
+            var h1Tag = $("<h1>").addClass("member-title").text(result.place_name);
+            memberInfoDiv.append(h1Tag);
+        })
+        liTag.append(memberInfoDiv);
+        existingUlTag.append(liTag);
+        display.append(existingUlTag);
+    }
+
+    function createTable (date, place_id) {
+        var ulTag = $("<ul>").addClass("timeline").attr("id", date);
+        var dateholder = $("<div>").addClass("dateheader").text(date);
+        var liTag = $("<li>");
+        var memberInfoDiv = $("<div>").addClass("member-infos");
+        $.get("/api/place_data/place_id" + place_id, function (result){
+            var h1Tag = $("<h1>").addClass("member-title").text(result.place_name);
+            memberInfoDiv.append(h1Tag);
+        })
+        liTag.append(memberInfoDiv);
+        ulTag.append(dateholder);
+        ulTag.append(liTag);
+        display.append(ulTag);
+    }  
+
+    createPlaceListForTheUser();
 
 });
 

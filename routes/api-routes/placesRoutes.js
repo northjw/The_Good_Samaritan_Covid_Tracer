@@ -18,5 +18,15 @@ router.get("/:place_name?", function(req, res){
     })
 })
 
+router.get("/place_id/:place_id?", function(req, res){
+    db.Places.findOne({
+        where: {
+            place_id: req.params.place_id
+        }
+    }).then((result) => {
+        return res.json(result);
+    })
+})
+
 
 module.exports = router;
