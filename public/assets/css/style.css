@@ -2325,6 +2325,7 @@ input[type=submit2]:hover {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  text-align: left;
 }
 
 .about-section {
@@ -2346,14 +2347,38 @@ input[type=submit2]:hover {
 
 .titleau {
   color: grey;
+  font-size: 17px;
 }
 
 
 
 .nameau {
-  color: #3FD632; 
-  font-size: 20px;
+  color: black; 
+  font-size: 22px;
   font-style: bold;
+  text-decoration-line: underline;
+  padding-bottom: 4px;
+}
+a:link {
+  color: #3FD632;
+  
+}
+
+a:visited {
+  color: #0d5f05;
+
+
+}
+
+a:hover {
+  color: #3FD632;
+  
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 
@@ -2364,18 +2389,20 @@ input[type=submit2]:hover {
   }
 }
 
-.ui-menu-item {
-    color: #3FD632
-    
-  }
+.ui-menu {
+  background-color: rgb(139, 139, 139)!important;
+  width: 25%!important;
+  z-index: 10000!important;
+  color: #3FD632;
+}
+.ui-helper-hidden-accessible{
+  display: none;
+}
+
+
+
 
   
-.ui-autocomplete {
-    background: #4a4a4a;
-    border-radius: 0px;
-    width: 33.3%;
-}
-.ui-menu .ui-menu-item a {
-    color: #96f226;
-    border-radius: 0px;
-}
+
+
+
