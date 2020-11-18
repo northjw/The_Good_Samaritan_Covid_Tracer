@@ -897,7 +897,10 @@ legend {
   position: relative;
   margin-bottom: 24px;
   font-size: 16px;
+ 
 }
+
+
 
 .choices:focus {
   outline: none;
@@ -2359,4 +2362,20 @@ input[type=submit2]:hover {
     width: 100%;
     display: block;
   }
+}
+
+.ui-menu-item {
+    color: #3FD632
+    
+  }
+
+  
+.ui-autocomplete {
+    background: #4a4a4a;
+    border-radius: 0px;
+    width: 33.3%;
+}
+.ui-menu .ui-menu-item a {
+    color: #96f226;
+    border-radius: 0px;
 }
