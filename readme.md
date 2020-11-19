@@ -9,7 +9,7 @@
 ## Installation
 - To run the development enviornment, clone the project, run the command 
 ```
-> npm instal
+> npm install
 > node server.js
 ```
 - You might need to read the seed file for places. You can do it by the following command
