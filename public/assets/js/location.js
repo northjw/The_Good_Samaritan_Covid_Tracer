@@ -77,6 +77,7 @@ $(document).ready(function () {
     covidBtn.on('click', function (e) {
         e.preventDefault();
         var datebtn = $('input#depart');
+        alert("Thank you for being a good samaritan and reporting your status.")
         $.get("/api/user_data").then(function(data){
             var dateCreated = datebtn.val();
             var userId = data.user_id
@@ -113,7 +114,7 @@ $(document).ready(function () {
         })
 
 
-        datebtn.css('background', 'red');
+        // datebtn.css('background', 'red');
 
         function updateCovidStatus (updates){
             $.ajax({
