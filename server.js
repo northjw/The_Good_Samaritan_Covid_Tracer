@@ -7,7 +7,7 @@ var passport = require("./config/passport");
 var session = require("express-session");
 const errorHandler = require("./utils/errorHandler");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3306;
 const app = express();
 
 // Serve static content for the app from the "public" directory in the application directory.
