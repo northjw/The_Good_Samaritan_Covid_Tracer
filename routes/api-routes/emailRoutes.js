@@ -39,7 +39,7 @@ router.post("/", function(req, res) {
         from: "goodsamaritinmailer@zohomail.com",
         to: req.body.email,
         subject: "ALERT!! PEOPLE WHO WENT TO THE SAME PLACE AS YOU HAVE JUST TESTED POSITIVE!!",
-        text: "Thank You for using The Good Samaritin - Smart Covid 19 Tracer. This is an auto-alert that you might be at risk of injection of covid 19!"
+        text: "Thank You for using The Good Samaritan - Smart Covid 19 Tracer. This is an auto-alert that you might be at risk of injection of covid 19!"
       }
 
       // send mail with defined transport object
