@@ -1,122 +1,122 @@
-
+/*eslint-disable*/
 
 /*! choices.js v3.0.4 | (c) 2018 Josh Johnson | https://github.com/jshjohnson/Choices#readme */ 
 (function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else if(typeof exports === 'object')
-		exports["Choices"] = factory();
-	else
-		root["Choices"] = factory();
-})(this, function() {
-return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
+   if(typeof exports === "object" && typeof module === "object")
+   {module.exports = factory();}
+   else if(typeof define === "function" && define.amd)
+   {define([], factory);}
+   else if(typeof exports === "object")
+   {exports.Choices = factory();}
+   else
+   {root.Choices = factory();}
+})(this, () => {
+   return /******/ (function(modules) { // webpackBootstrap
+      /******/ 	// The module cache
+      /******/ 	const installedModules = {};
 
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
+      /******/ 	// The require function
+      /******/ 	function __webpack_require__(moduleId) {
 
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
-/******/ 			return installedModules[moduleId].exports;
+         /******/ 		// Check if module is in cache
+         /******/ 		if(installedModules[moduleId])
+         /******/ 			{return installedModules[moduleId].exports;}
 
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			exports: {},
-/******/ 			id: moduleId,
-/******/ 			loaded: false
-/******/ 		};
+         /******/ 		// Create a new module (and put it into the cache)
+         /******/ 		const module = installedModules[moduleId] = {
+            /******/ 			exports: {},
+            /******/ 			id: moduleId,
+            /******/ 			loaded: false
+            /******/ 		};
 
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+         /******/ 		// Execute the module function
+         /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
+         /******/ 		// Flag the module as loaded
+         /******/ 		module.loaded = true;
 
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-
-
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/assets/scripts/dist/";
-
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(0);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(1);
+         /******/ 		// Return the exports of the module
+         /******/ 		return module.exports;
+         /******/ 	}
 
 
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
+      /******/ 	// expose the modules object (__webpack_modules__)
+      /******/ 	__webpack_require__.m = modules;
 
-	'use strict';
+      /******/ 	// expose the module cache
+      /******/ 	__webpack_require__.c = installedModules;
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+      /******/ 	// __webpack_public_path__
+      /******/ 	__webpack_require__.p = "/assets/scripts/dist/";
 
-	var _fuse = __webpack_require__(2);
+      /******/ 	// Load entry module and return exports
+      /******/ 	return __webpack_require__(0);
+      /******/ })
+   /************************************************************************/
+   /******/ ([
+      /* 0 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	var _fuse2 = _interopRequireDefault(_fuse);
+         module.exports = __webpack_require__(1);
 
-	var _classnames = __webpack_require__(3);
 
-	var _classnames2 = _interopRequireDefault(_classnames);
+         /***/ }),
+      /* 1 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	var _index = __webpack_require__(4);
+         "use strict";
 
-	var _index2 = _interopRequireDefault(_index);
+         const _createClass = function () { function defineProperties(target, props) { for (let i = 0; i < props.length; i++) { const descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) {descriptor.writable = true;} Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) {defineProperties(Constructor.prototype, protoProps);} if (staticProps) {defineProperties(Constructor, staticProps);} return Constructor; }; }();
 
-	var _index3 = __webpack_require__(31);
+         const _fuse = __webpack_require__(2);
 
-	var _utils = __webpack_require__(32);
+         const _fuse2 = _interopRequireDefault(_fuse);
 
-	__webpack_require__(33);
+         const _classnames = __webpack_require__(3);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+         const _classnames2 = _interopRequireDefault(_classnames);
 
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+         const _index = __webpack_require__(4);
 
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+         const _index2 = _interopRequireDefault(_index);
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+         const _index3 = __webpack_require__(31);
 
-	/**
+         const _utils = __webpack_require__(32);
+
+         __webpack_require__(33);
+
+         function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+         function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+         function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } return Array.from(arr); }
+
+         function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+         /**
 	 * Choices
 	 */
-	var Choices = function () {
+         const Choices = function () {
 	  function Choices() {
-	    var element = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '[data-choice]';
-	    var userConfig = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+	    const element = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "[data-choice]";
+	    const userConfig = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
 	    _classCallCheck(this, Choices);
 
 	    // If there are multiple elements, create a new instance
 	    // for each element besides the first one (as that already has an instance)
-	    if ((0, _utils.isType)('String', element)) {
-	      var elements = document.querySelectorAll(element);
+	    if ((0, _utils.isType)("String", element)) {
+	      const elements = document.querySelectorAll(element);
 	      if (elements.length > 1) {
-	        for (var i = 1; i < elements.length; i++) {
-	          var el = elements[i];
+	        for (let i = 1; i < elements.length; i++) {
+	          const el = elements[i];
 	          new Choices(el, userConfig);
 	        }
 	      }
 	    }
 
-	    var defaultConfig = {
+	    const defaultConfig = {
 	      silent: false,
 	      items: [],
 	      choices: [],
@@ -127,14 +127,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	      removeItemButton: false,
 	      editItems: false,
 	      duplicateItems: true,
-	      delimiter: ',',
+	      delimiter: ",",
 	      paste: true,
 	      searchEnabled: true,
 	      searchChoices: true,
 	      searchFloor: 1,
 	      searchResultLimit: 4,
-	      searchFields: ['label', 'value'],
-	      position: 'auto',
+	      searchFields: ["label", "value"],
+	      position: "auto",
 	      resetScrollPosition: true,
 	      regexFilter: null,
 	      shouldSort: true,
@@ -145,68 +145,68 @@ return /******/ (function(modules) { // webpackBootstrap
 	      searchPlaceholderValue: null,
 	      prependValue: null,
 	      appendValue: null,
-	      renderSelectedChoices: 'auto',
-	      loadingText: 'Loading...',
-	      noResultsText: 'No results found',
-	      noChoicesText: 'No choices to choose from',
-	      itemSelectText: 'Press to select',
+	      renderSelectedChoices: "auto",
+	      loadingText: "Loading...",
+	      noResultsText: "No results found",
+	      noChoicesText: "No choices to choose from",
+	      itemSelectText: "Press to select",
 	      addItemText: function addItemText(value) {
-	        return 'Press Enter to add <b>"' + (0, _utils.stripHTML)(value) + '"</b>';
+	        return "Press Enter to add <b>\"" + (0, _utils.stripHTML)(value) + "\"</b>";
 	      },
 	      maxItemText: function maxItemText(maxItemCount) {
-	        return 'Only ' + maxItemCount + ' values can be added.';
+	        return "Only " + maxItemCount + " values can be added.";
 	      },
 	      itemComparer: function itemComparer(choice, item) {
 	        return choice === item;
 	      },
-	      uniqueItemText: 'Only unique values can be added.',
+	      uniqueItemText: "Only unique values can be added.",
 	      classNames: {
-	        containerOuter: 'choices',
-	        containerInner: 'choices__inner',
-	        input: 'choices__input',
-	        inputCloned: 'choices__input--cloned',
-	        list: 'choices__list',
-	        listItems: 'choices__list--multiple',
-	        listSingle: 'choices__list--single',
-	        listDropdown: 'choices__list--dropdown',
-	        item: 'choices__item',
-	        itemSelectable: 'choices__item--selectable',
-	        itemDisabled: 'choices__item--disabled',
-	        itemChoice: 'choices__item--choice',
-	        placeholder: 'choices__placeholder',
-	        group: 'choices__group',
-	        groupHeading: 'choices__heading',
-	        button: 'choices__button',
-	        activeState: 'is-active',
-	        focusState: 'is-focused',
-	        openState: 'is-open',
-	        disabledState: 'is-disabled',
-	        highlightedState: 'is-highlighted',
-	        hiddenState: 'is-hidden',
-	        flippedState: 'is-flipped',
-	        loadingState: 'is-loading',
-	        noResults: 'has-no-results',
-	        noChoices: 'has-no-choices'
+	        containerOuter: "choices",
+	        containerInner: "choices__inner",
+	        input: "choices__input",
+	        inputCloned: "choices__input--cloned",
+	        list: "choices__list",
+	        listItems: "choices__list--multiple",
+	        listSingle: "choices__list--single",
+	        listDropdown: "choices__list--dropdown",
+	        item: "choices__item",
+	        itemSelectable: "choices__item--selectable",
+	        itemDisabled: "choices__item--disabled",
+	        itemChoice: "choices__item--choice",
+	        placeholder: "choices__placeholder",
+	        group: "choices__group",
+	        groupHeading: "choices__heading",
+	        button: "choices__button",
+	        activeState: "is-active",
+	        focusState: "is-focused",
+	        openState: "is-open",
+	        disabledState: "is-disabled",
+	        highlightedState: "is-highlighted",
+	        hiddenState: "is-hidden",
+	        flippedState: "is-flipped",
+	        loadingState: "is-loading",
+	        noResults: "has-no-results",
+	        noChoices: "has-no-choices"
 	      },
 	      fuseOptions: {
-	        include: 'score'
+	        include: "score"
 	      },
 	      callbackOnInit: null,
 	      callbackOnCreateTemplates: null
 	    };
 
 	    this.idNames = {
-	      itemChoice: 'item-choice'
+	      itemChoice: "item-choice"
 	    };
 
 	    // Merge options with user options
 	    this.config = (0, _utils.extend)(defaultConfig, userConfig);
 
-	    if (this.config.renderSelectedChoices !== 'auto' && this.config.renderSelectedChoices !== 'always') {
+	    if (this.config.renderSelectedChoices !== "auto" && this.config.renderSelectedChoices !== "always") {
 	      if (!this.config.silent) {
-	        console.warn('renderSelectedChoices: Possible values are \'auto\' and \'always\'. Falling back to \'auto\'.');
+	        console.warn("renderSelectedChoices: Possible values are 'auto' and 'always'. Falling back to 'auto'.");
 	      }
-	      this.config.renderSelectedChoices = 'auto';
+	      this.config.renderSelectedChoices = "auto";
 	    }
 
 	    // Create data store
@@ -216,22 +216,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	    this.initialised = false;
 	    this.currentState = {};
 	    this.prevState = {};
-	    this.currentValue = '';
+	    this.currentValue = "";
 
 	    // Retrieve triggering element (i.e. element with 'data-choice' trigger)
 	    this.element = element;
-	    this.passedElement = (0, _utils.isType)('String', element) ? document.querySelector(element) : element;
+	    this.passedElement = (0, _utils.isType)("String", element) ? document.querySelector(element) : element;
 
 	    if (!this.passedElement) {
 	      if (!this.config.silent) {
-	        console.error('Passed element not found');
+	        console.error("Passed element not found");
 	      }
 	      return;
 	    }
 
-	    this.isTextElement = this.passedElement.type === 'text';
-	    this.isSelectOneElement = this.passedElement.type === 'select-one';
-	    this.isSelectMultipleElement = this.passedElement.type === 'select-multiple';
+	    this.isTextElement = this.passedElement.type === "text";
+	    this.isSelectOneElement = this.passedElement.type === "select-one";
+	    this.isSelectMultipleElement = this.passedElement.type === "select-multiple";
 	    this.isSelectElement = this.isSelectOneElement || this.isSelectMultipleElement;
 	    this.isValidElementType = this.isTextElement || this.isSelectElement;
 	    this.isIe11 = !!(navigator.userAgent.match(/Trident/) && navigator.userAgent.match(/rv[ :]11/));
@@ -239,7 +239,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    if (this.config.shouldSortItems === true && this.isSelectOneElement) {
 	      if (!this.config.silent) {
-	        console.warn('shouldSortElements: Type of passed element is \'select-one\', falling back to false.');
+	        console.warn("shouldSortElements: Type of passed element is 'select-one', falling back to false.");
 	      }
 	    }
 
@@ -248,7 +248,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    this.placeholder = false;
 	    if (!this.isSelectOneElement) {
-	      this.placeholder = this.config.placeholder ? this.config.placeholderValue || this.passedElement.getAttribute('placeholder') : false;
+	      this.placeholder = this.config.placeholder ? this.config.placeholderValue || this.passedElement.getAttribute("placeholder") : false;
 	    }
 
 	    // Assign preset choices from passed object
@@ -263,7 +263,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    // Set unique base Id
-	    this.baseId = (0, _utils.generateId)(this.passedElement, 'choices-');
+	    this.baseId = (0, _utils.generateId)(this.passedElement, "choices-");
 
 	    // Bind methods
 	    this.render = this.render.bind(this);
@@ -285,23 +285,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	    this.wasTap = true;
 
 	    // Cutting the mustard
-	    var cuttingTheMustard = 'classList' in document.documentElement;
+	    const cuttingTheMustard = "classList" in document.documentElement;
 	    if (!cuttingTheMustard && !this.config.silent) {
-	      console.error('Choices: Your browser doesn\'t support Choices');
+	      console.error("Choices: Your browser doesn't support Choices");
 	    }
 
-	    var canInit = (0, _utils.isElement)(this.passedElement) && this.isValidElementType;
+	    const canInit = (0, _utils.isElement)(this.passedElement) && this.isValidElementType;
 
 	    if (canInit) {
 	      // If element has already been initialised with Choices
-	      if (this.passedElement.getAttribute('data-choice') === 'active') {
+	      if (this.passedElement.getAttribute("data-choice") === "active") {
 	        return;
 	      }
 
 	      // Let's go
 	      this.init();
 	    } else if (!this.config.silent) {
-	      console.error('Incompatible input passed');
+	      console.error("Incompatible input passed");
 	    }
 	  }
 
@@ -317,13 +317,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	  _createClass(Choices, [{
-	    key: 'init',
+	    key: "init",
 	    value: function init() {
 	      if (this.initialised === true) {
 	        return;
 	      }
 
-	      var callback = this.config.callbackOnInit;
+	      const callback = this.config.callbackOnInit;
 
 	      // Set initialise flag
 	      this.initialised = true;
@@ -340,7 +340,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      // Run callback if it is a function
 	      if (callback) {
-	        if ((0, _utils.isType)('Function', callback)) {
+	        if ((0, _utils.isType)("Function", callback)) {
 	          callback.call(this);
 	        }
 	      }
@@ -353,7 +353,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'destroy',
+	    key: "destroy",
 	    value: function destroy() {
 	      if (this.initialised === false) {
 	        return;
@@ -364,17 +364,17 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      // Reinstate passed element
 	      this.passedElement.classList.remove(this.config.classNames.input, this.config.classNames.hiddenState);
-	      this.passedElement.removeAttribute('tabindex');
+	      this.passedElement.removeAttribute("tabindex");
 	      // Recover original styles if any
-	      var origStyle = this.passedElement.getAttribute('data-choice-orig-style');
+	      const origStyle = this.passedElement.getAttribute("data-choice-orig-style");
 	      if (Boolean(origStyle)) {
-	        this.passedElement.removeAttribute('data-choice-orig-style');
-	        this.passedElement.setAttribute('style', origStyle);
+	        this.passedElement.removeAttribute("data-choice-orig-style");
+	        this.passedElement.setAttribute("style", origStyle);
 	      } else {
-	        this.passedElement.removeAttribute('style');
+	        this.passedElement.removeAttribute("style");
 	      }
-	      this.passedElement.removeAttribute('aria-hidden');
-	      this.passedElement.removeAttribute('data-choice');
+	      this.passedElement.removeAttribute("aria-hidden");
+	      this.passedElement.removeAttribute("data-choice");
 
 	      // Re-assign values - this is weird, I know
 	      this.passedElement.value = this.passedElement.value;
@@ -404,21 +404,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'renderGroups',
+	    key: "renderGroups",
 	    value: function renderGroups(groups, choices, fragment) {
-	      var _this = this;
+	      const _this = this;
 
-	      var groupFragment = fragment || document.createDocumentFragment();
-	      var filter = this.config.sortFilter;
+	      const groupFragment = fragment || document.createDocumentFragment();
+	      const filter = this.config.sortFilter;
 
 	      // If sorting is enabled, filter groups
 	      if (this.config.shouldSort) {
 	        groups.sort(filter);
 	      }
 
-	      groups.forEach(function (group) {
+	      groups.forEach((group) => {
 	        // Grab options that are children of this group
-	        var groupChoices = choices.filter(function (choice) {
+	        const groupChoices = choices.filter((choice) => {
 	          if (_this.isSelectOneElement) {
 	            return choice.groupId === group.id;
 	          }
@@ -426,7 +426,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        });
 
 	        if (groupChoices.length >= 1) {
-	          var dropdownGroup = _this._getTemplate('choiceGroup', group);
+	          const dropdownGroup = _this._getTemplate("choiceGroup", group);
 	          groupFragment.appendChild(dropdownGroup);
 	          _this.renderChoices(groupChoices, groupFragment, true);
 	        }
@@ -444,39 +444,39 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'renderChoices',
+	    key: "renderChoices",
 	    value: function renderChoices(choices, fragment) {
-	      var _this2 = this;
+	      const _this2 = this;
 
-	      var withinGroup = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+	      const withinGroup = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 
 	      // Create a fragment to store our list items (so we don't have to update the DOM for each item)
-	      var choicesFragment = fragment || document.createDocumentFragment();
-	      var _config = this.config,
+	      const choicesFragment = fragment || document.createDocumentFragment();
+	      const _config = this.config,
 	          renderSelectedChoices = _config.renderSelectedChoices,
 	          searchResultLimit = _config.searchResultLimit,
 	          renderChoiceLimit = _config.renderChoiceLimit;
 
-	      var filter = this.isSearching ? _utils.sortByScore : this.config.sortFilter;
-	      var appendChoice = function appendChoice(choice) {
-	        var shouldRender = renderSelectedChoices === 'auto' ? _this2.isSelectOneElement || !choice.selected : true;
+	      const filter = this.isSearching ? _utils.sortByScore : this.config.sortFilter;
+	      const appendChoice = function appendChoice(choice) {
+	        const shouldRender = renderSelectedChoices === "auto" ? _this2.isSelectOneElement || !choice.selected : true;
 	        if (shouldRender) {
-	          var dropdownItem = _this2._getTemplate('choice', choice);
+	          const dropdownItem = _this2._getTemplate("choice", choice);
 	          choicesFragment.appendChild(dropdownItem);
 	        }
 	      };
 
-	      var rendererableChoices = choices;
+	      let rendererableChoices = choices;
 
-	      if (renderSelectedChoices === 'auto' && !this.isSelectOneElement) {
-	        rendererableChoices = choices.filter(function (choice) {
+	      if (renderSelectedChoices === "auto" && !this.isSelectOneElement) {
+	        rendererableChoices = choices.filter((choice) => {
 	          return !choice.selected;
 	        });
 	      }
 
 	      // Split array into placeholders and "normal" choices
 
-	      var _rendererableChoices$ = rendererableChoices.reduce(function (acc, choice) {
+	      const _rendererableChoices$ = rendererableChoices.reduce((acc, choice) => {
 	        if (choice.placeholder) {
 	          acc.placeholderChoices.push(choice);
 	        } else {
@@ -494,10 +494,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        normalChoices.sort(filter);
 	      }
 
-	      var choiceLimit = rendererableChoices.length;
+	      let choiceLimit = rendererableChoices.length;
 
 	      // Prepend placeholeder
-	      var sortedChoices = [].concat(_toConsumableArray(placeholderChoices), _toConsumableArray(normalChoices));
+	      const sortedChoices = [].concat(_toConsumableArray(placeholderChoices), _toConsumableArray(normalChoices));
 
 	      if (this.isSearching) {
 	        choiceLimit = searchResultLimit;
@@ -506,11 +506,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 
 	      // Add each choice to dropdown within range
-	      for (var i = 0; i < choiceLimit; i++) {
+	      for (let i = 0; i < choiceLimit; i++) {
 	        if (sortedChoices[i]) {
 	          appendChoice(sortedChoices[i]);
 	        }
-	      };
+	      }
 
 	      return choicesFragment;
 	    }
@@ -524,14 +524,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'renderItems',
+	    key: "renderItems",
 	    value: function renderItems(items) {
-	      var _this3 = this;
+	      const _this3 = this;
 
-	      var fragment = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+	      const fragment = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 
 	      // Create fragment to add elements to
-	      var itemListFragment = fragment || document.createDocumentFragment();
+	      const itemListFragment = fragment || document.createDocumentFragment();
 
 	      // If sorting is enabled, filter items
 	      if (this.config.shouldSortItems && !this.isSelectOneElement) {
@@ -540,31 +540,31 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      if (this.isTextElement) {
 	        // Simplify store data to just values
-	        var itemsFiltered = this.store.getItemsReducedToValues(items);
-	        var itemsFilteredString = itemsFiltered.join(this.config.delimiter);
+	        const itemsFiltered = this.store.getItemsReducedToValues(items);
+	        const itemsFilteredString = itemsFiltered.join(this.config.delimiter);
 	        // Update the value of the hidden input
-	        this.passedElement.setAttribute('value', itemsFilteredString);
+	        this.passedElement.setAttribute("value", itemsFilteredString);
 	        this.passedElement.value = itemsFilteredString;
 	      } else {
-	        var selectedOptionsFragment = document.createDocumentFragment();
+	        const selectedOptionsFragment = document.createDocumentFragment();
 
 	        // Add each list item to list
-	        items.forEach(function (item) {
+	        items.forEach((item) => {
 	          // Create a standard select option
-	          var option = _this3._getTemplate('option', item);
+	          const option = _this3._getTemplate("option", item);
 	          // Append it to fragment
 	          selectedOptionsFragment.appendChild(option);
 	        });
 
 	        // Update selected choices
-	        this.passedElement.innerHTML = '';
+	        this.passedElement.innerHTML = "";
 	        this.passedElement.appendChild(selectedOptionsFragment);
 	      }
 
 	      // Add each list item to list
-	      items.forEach(function (item) {
+	      items.forEach((item) => {
 	        // Create new list element
-	        var listItem = _this3._getTemplate('item', item);
+	        const listItem = _this3._getTemplate("item", item);
 	        // Append it to list
 	        itemListFragment.appendChild(listItem);
 	      });
@@ -579,7 +579,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
 	      if (this.store.isLoading()) {
 	        return;
@@ -593,13 +593,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	        if (this.currentState.choices !== this.prevState.choices || this.currentState.groups !== this.prevState.groups || this.currentState.items !== this.prevState.items) {
 	          if (this.isSelectElement) {
 	            // Get active groups/choices
-	            var activeGroups = this.store.getGroupsFilteredByActive();
-	            var activeChoices = this.store.getChoicesFilteredByActive();
+	            const activeGroups = this.store.getGroupsFilteredByActive();
+	            const activeChoices = this.store.getChoicesFilteredByActive();
 
-	            var choiceListFragment = document.createDocumentFragment();
+	            let choiceListFragment = document.createDocumentFragment();
 
 	            // Clear choices
-	            this.choiceList.innerHTML = '';
+	            this.choiceList.innerHTML = "";
 
 	            // Scroll back to top of choices list
 	            if (this.config.resetScrollPosition) {
@@ -613,8 +613,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	              choiceListFragment = this.renderChoices(activeChoices, choiceListFragment);
 	            }
 
-	            var activeItems = this.store.getItemsFilteredByActive();
-	            var canAddItem = this._canAddItem(activeItems, this.input.value);
+	            const activeItems = this.store.getItemsFilteredByActive();
+	            const canAddItem = this._canAddItem(activeItems, this.input.value);
 
 	            // If we have choices to show
 	            if (choiceListFragment.childNodes && choiceListFragment.childNodes.length > 0) {
@@ -625,21 +625,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	                this._highlightChoice();
 	              } else {
 	                // ...otherwise show a notice
-	                this.choiceList.appendChild(this._getTemplate('notice', canAddItem.notice));
+	                this.choiceList.appendChild(this._getTemplate("notice", canAddItem.notice));
 	              }
 	            } else {
 	              // Otherwise show a notice
-	              var dropdownItem = void 0;
-	              var notice = void 0;
+	              let dropdownItem = void 0;
+	              let notice = void 0;
 
 	              if (this.isSearching) {
-	                notice = (0, _utils.isType)('Function', this.config.noResultsText) ? this.config.noResultsText() : this.config.noResultsText;
+	                notice = (0, _utils.isType)("Function", this.config.noResultsText) ? this.config.noResultsText() : this.config.noResultsText;
 
-	                dropdownItem = this._getTemplate('notice', notice, 'no-results');
+	                dropdownItem = this._getTemplate("notice", notice, "no-results");
 	              } else {
-	                notice = (0, _utils.isType)('Function', this.config.noChoicesText) ? this.config.noChoicesText() : this.config.noChoicesText;
+	                notice = (0, _utils.isType)("Function", this.config.noChoicesText) ? this.config.noChoicesText() : this.config.noChoicesText;
 
-	                dropdownItem = this._getTemplate('notice', notice, 'no-choices');
+	                dropdownItem = this._getTemplate("notice", notice, "no-choices");
 	              }
 
 	              this.choiceList.appendChild(dropdownItem);
@@ -650,15 +650,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	        // Items
 	        if (this.currentState.items !== this.prevState.items) {
 	          // Get active items (items that can be selected)
-	          var _activeItems = this.store.getItemsFilteredByActive();
+	          const _activeItems = this.store.getItemsFilteredByActive();
 
 	          // Clear list
-	          this.itemList.innerHTML = '';
+	          this.itemList.innerHTML = "";
 
 	          if (_activeItems && _activeItems) {
 	            // Create a fragment to store our list items
 	            // (so we don't have to update the DOM for each item)
-	            var itemListFragment = this.renderItems(_activeItems);
+	            const itemListFragment = this.renderItems(_activeItems);
 
 	            // If we have items to add
 	            if (itemListFragment.childNodes) {
@@ -681,30 +681,30 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'highlightItem',
+	    key: "highlightItem",
 	    value: function highlightItem(item) {
-	      var runEvent = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+	      const runEvent = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
 
 	      if (!item) {
 	        return this;
 	      }
 
-	      var id = item.id;
-	      var groupId = item.groupId;
-	      var group = groupId >= 0 ? this.store.getGroupById(groupId) : null;
+	      const id = item.id;
+	      const groupId = item.groupId;
+	      const group = groupId >= 0 ? this.store.getGroupById(groupId) : null;
 
 	      this.store.dispatch((0, _index3.highlightItem)(id, true));
 
 	      if (runEvent) {
 	        if (group && group.value) {
-	          (0, _utils.triggerEvent)(this.passedElement, 'highlightItem', {
+	          (0, _utils.triggerEvent)(this.passedElement, "highlightItem", {
 	            id: id,
 	            value: item.value,
 	            label: item.label,
 	            groupValue: group.value
 	          });
 	        } else {
-	          (0, _utils.triggerEvent)(this.passedElement, 'highlightItem', {
+	          (0, _utils.triggerEvent)(this.passedElement, "highlightItem", {
 	            id: id,
 	            value: item.value,
 	            label: item.label
@@ -723,27 +723,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'unhighlightItem',
+	    key: "unhighlightItem",
 	    value: function unhighlightItem(item) {
 	      if (!item) {
 	        return this;
 	      }
 
-	      var id = item.id;
-	      var groupId = item.groupId;
-	      var group = groupId >= 0 ? this.store.getGroupById(groupId) : null;
+	      const id = item.id;
+	      const groupId = item.groupId;
+	      const group = groupId >= 0 ? this.store.getGroupById(groupId) : null;
 
 	      this.store.dispatch((0, _index3.highlightItem)(id, false));
 
 	      if (group && group.value) {
-	        (0, _utils.triggerEvent)(this.passedElement, 'unhighlightItem', {
+	        (0, _utils.triggerEvent)(this.passedElement, "unhighlightItem", {
 	          id: id,
 	          value: item.value,
 	          label: item.label,
 	          groupValue: group.value
 	        });
 	      } else {
-	        (0, _utils.triggerEvent)(this.passedElement, 'unhighlightItem', {
+	        (0, _utils.triggerEvent)(this.passedElement, "unhighlightItem", {
 	          id: id,
 	          value: item.value,
 	          label: item.label
@@ -760,12 +760,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'highlightAll',
+	    key: "highlightAll",
 	    value: function highlightAll() {
-	      var _this4 = this;
+	      const _this4 = this;
 
-	      var items = this.store.getItems();
-	      items.forEach(function (item) {
+	      const items = this.store.getItems();
+	      items.forEach((item) => {
 	        _this4.highlightItem(item);
 	      });
 
@@ -779,12 +779,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'unhighlightAll',
+	    key: "unhighlightAll",
 	    value: function unhighlightAll() {
-	      var _this5 = this;
+	      const _this5 = this;
 
-	      var items = this.store.getItems();
-	      items.forEach(function (item) {
+	      const items = this.store.getItems();
+	      items.forEach((item) => {
 	        _this5.unhighlightItem(item);
 	      });
 
@@ -799,17 +799,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'removeItemsByValue',
+	    key: "removeItemsByValue",
 	    value: function removeItemsByValue(value) {
-	      var _this6 = this;
+	      const _this6 = this;
 
-	      if (!value || !(0, _utils.isType)('String', value)) {
+	      if (!value || !(0, _utils.isType)("String", value)) {
 	        return this;
 	      }
 
-	      var items = this.store.getItemsFilteredByActive();
+	      const items = this.store.getItemsFilteredByActive();
 
-	      items.forEach(function (item) {
+	      items.forEach((item) => {
 	        if (item.value === value) {
 	          _this6._removeItem(item);
 	        }
@@ -827,13 +827,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'removeActiveItems',
+	    key: "removeActiveItems",
 	    value: function removeActiveItems(excludedId) {
-	      var _this7 = this;
+	      const _this7 = this;
 
-	      var items = this.store.getItemsFilteredByActive();
+	      const items = this.store.getItemsFilteredByActive();
 
-	      items.forEach(function (item) {
+	      items.forEach((item) => {
 	        if (item.active && excludedId !== item.id) {
 	          _this7._removeItem(item);
 	        }
@@ -850,15 +850,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'removeHighlightedItems',
+	    key: "removeHighlightedItems",
 	    value: function removeHighlightedItems() {
-	      var _this8 = this;
+	      const _this8 = this;
 
-	      var runEvent = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+	      const runEvent = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
 
-	      var items = this.store.getItemsFilteredByActive();
+	      const items = this.store.getItemsFilteredByActive();
 
-	      items.forEach(function (item) {
+	      items.forEach((item) => {
 	        if (item.highlighted && item.active) {
 	          _this8._removeItem(item);
 	          // If this action was performed by the user
@@ -879,27 +879,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'showDropdown',
+	    key: "showDropdown",
 	    value: function showDropdown() {
-	      var focusInput = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+	      const focusInput = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
 
-	      var body = document.body;
-	      var html = document.documentElement;
-	      var winHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+	      const body = document.body;
+	      const html = document.documentElement;
+	      const winHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 
 	      this.containerOuter.classList.add(this.config.classNames.openState);
-	      this.containerOuter.setAttribute('aria-expanded', 'true');
+	      this.containerOuter.setAttribute("aria-expanded", "true");
 	      this.dropdown.classList.add(this.config.classNames.activeState);
-	      this.dropdown.setAttribute('aria-expanded', 'true');
+	      this.dropdown.setAttribute("aria-expanded", "true");
 
-	      var dimensions = this.dropdown.getBoundingClientRect();
-	      var dropdownPos = Math.ceil(dimensions.top + window.scrollY + this.dropdown.offsetHeight);
+	      const dimensions = this.dropdown.getBoundingClientRect();
+	      const dropdownPos = Math.ceil(dimensions.top + window.scrollY + this.dropdown.offsetHeight);
 
 	      // If flip is enabled and the dropdown bottom position is greater than the window height flip the dropdown.
-	      var shouldFlip = false;
-	      if (this.config.position === 'auto') {
+	      let shouldFlip = false;
+	      if (this.config.position === "auto") {
 	        shouldFlip = dropdownPos >= winHeight;
-	      } else if (this.config.position === 'top') {
+	      } else if (this.config.position === "top") {
 	        shouldFlip = true;
 	      }
 
@@ -912,7 +912,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.input.focus();
 	      }
 
-	      (0, _utils.triggerEvent)(this.passedElement, 'showDropdown', {});
+	      (0, _utils.triggerEvent)(this.passedElement, "showDropdown", {});
 
 	      return this;
 	    }
@@ -924,17 +924,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'hideDropdown',
+	    key: "hideDropdown",
 	    value: function hideDropdown() {
-	      var blurInput = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+	      const blurInput = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
 
 	      // A dropdown flips if it does not have space within the page
-	      var isFlipped = this.containerOuter.classList.contains(this.config.classNames.flippedState);
+	      const isFlipped = this.containerOuter.classList.contains(this.config.classNames.flippedState);
 
 	      this.containerOuter.classList.remove(this.config.classNames.openState);
-	      this.containerOuter.setAttribute('aria-expanded', 'false');
+	      this.containerOuter.setAttribute("aria-expanded", "false");
 	      this.dropdown.classList.remove(this.config.classNames.activeState);
-	      this.dropdown.setAttribute('aria-expanded', 'false');
+	      this.dropdown.setAttribute("aria-expanded", "false");
 
 	      if (isFlipped) {
 	        this.containerOuter.classList.remove(this.config.classNames.flippedState);
@@ -945,7 +945,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.input.blur();
 	      }
 
-	      (0, _utils.triggerEvent)(this.passedElement, 'hideDropdown', {});
+	      (0, _utils.triggerEvent)(this.passedElement, "hideDropdown", {});
 
 	      return this;
 	    }
@@ -957,9 +957,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'toggleDropdown',
+	    key: "toggleDropdown",
 	    value: function toggleDropdown() {
-	      var hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
+	      const hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
 	      if (hasActiveDropdown) {
 	        this.hideDropdown();
 	      } else {
@@ -977,16 +977,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'getValue',
+	    key: "getValue",
 	    value: function getValue() {
-	      var _this9 = this;
+	      const _this9 = this;
 
-	      var valueOnly = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+	      const valueOnly = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
 
-	      var items = this.store.getItemsFilteredByActive();
-	      var selectedItems = [];
+	      const items = this.store.getItemsFilteredByActive();
+	      const selectedItems = [];
 
-	      items.forEach(function (item) {
+	      items.forEach((item) => {
 	        if (_this9.isTextElement) {
 	          selectedItems.push(valueOnly ? item.value : item);
 	        } else if (item.active) {
@@ -1010,16 +1010,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'setValue',
+	    key: "setValue",
 	    value: function setValue(args) {
-	      var _this10 = this;
+	      const _this10 = this;
 
 	      if (this.initialised === true) {
 	        // Convert args to an iterable array
-	        var values = [].concat(_toConsumableArray(args)),
+	        const values = [].concat(_toConsumableArray(args)),
 	            handleValue = function handleValue(item) {
-	          var itemType = (0, _utils.getType)(item);
-	          if (itemType === 'Object') {
+	          const itemType = (0, _utils.getType)(item);
+	          if (itemType === "Object") {
 	            if (!item.value) {
 	              return;
 	            }
@@ -1031,7 +1031,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            } else {
 	              _this10._addItem(item.value, item.label, item.id, undefined, item.customProperties, item.placeholder);
 	            }
-	          } else if (itemType === 'String') {
+	          } else if (itemType === "String") {
 	            if (!_this10.isTextElement) {
 	              _this10._addChoice(item, item, true, false, -1, null);
 	            } else {
@@ -1041,7 +1041,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        };
 
 	        if (values.length > 1) {
-	          values.forEach(function (value) {
+	          values.forEach((value) => {
 	            handleValue(value);
 	          });
 	        } else {
@@ -1059,18 +1059,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'setValueByChoice',
+	    key: "setValueByChoice",
 	    value: function setValueByChoice(value) {
-	      var _this11 = this;
+	      const _this11 = this;
 
 	      if (!this.isTextElement) {
-	        var choices = this.store.getChoices();
+	        const choices = this.store.getChoices();
 	        // If only one value has been passed, convert to array
-	        var choiceValue = (0, _utils.isType)('Array', value) ? value : [value];
+	        const choiceValue = (0, _utils.isType)("Array", value) ? value : [value];
 
 	        // Loop through each value and
-	        choiceValue.forEach(function (val) {
-	          var foundChoice = choices.find(function (choice) {
+	        choiceValue.forEach((val) => {
+	          const foundChoice = choices.find((choice) => {
 	            // Check 'value' property exists and the choice isn't already selected
 	            return _this11.config.itemComparer(choice.value, val);
 	          });
@@ -1079,10 +1079,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	            if (!foundChoice.selected) {
 	              _this11._addItem(foundChoice.value, foundChoice.label, foundChoice.id, foundChoice.groupId, foundChoice.customProperties, foundChoice.placeholder, foundChoice.keyCode);
 	            } else if (!_this11.config.silent) {
-	              console.warn('Attempting to select choice already selected');
+	              console.warn("Attempting to select choice already selected");
 	            }
 	          } else if (!_this11.config.silent) {
-	            console.warn('Attempting to select choice that does not exist');
+	            console.warn("Attempting to select choice that does not exist");
 	          }
 	        });
 	      }
@@ -1100,15 +1100,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'setChoices',
+	    key: "setChoices",
 	    value: function setChoices(choices, value, label) {
-	      var _this12 = this;
+	      const _this12 = this;
 
-	      var replaceChoices = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+	      const replaceChoices = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
 
 	      if (this.initialised === true) {
 	        if (this.isSelectElement) {
-	          if (!(0, _utils.isType)('Array', choices) || !value) {
+	          if (!(0, _utils.isType)("Array", choices) || !value) {
 	            return this;
 	          }
 
@@ -1122,7 +1122,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          // Add choices if passed
 	          if (choices && choices.length) {
 	            this.containerOuter.classList.remove(this.config.classNames.loadingState);
-	            choices.forEach(function (result) {
+	            choices.forEach((result) => {
 	              if (result.choices) {
 	                _this12._addGroup(result, result.id || null, value, label);
 	              } else {
@@ -1145,7 +1145,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'clearStore',
+	    key: "clearStore",
 	    value: function clearStore() {
 	      this.store.dispatch((0, _index3.clearAll)());
 	      return this;
@@ -1158,10 +1158,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'clearInput',
+	    key: "clearInput",
 	    value: function clearInput() {
 	      if (this.input.value) {
-	        this.input.value = '';
+	        this.input.value = "";
 	      }
 	      if (!this.isSelectOneElement) {
 	        this._setInputWidth();
@@ -1179,19 +1179,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'enable',
+	    key: "enable",
 	    value: function enable() {
 	      if (this.initialised) {
 	        this.passedElement.disabled = false;
-	        var isDisabled = this.containerOuter.classList.contains(this.config.classNames.disabledState);
+	        const isDisabled = this.containerOuter.classList.contains(this.config.classNames.disabledState);
 	        if (isDisabled) {
 	          this._addEventListeners();
-	          this.passedElement.removeAttribute('disabled');
-	          this.input.removeAttribute('disabled');
+	          this.passedElement.removeAttribute("disabled");
+	          this.input.removeAttribute("disabled");
 	          this.containerOuter.classList.remove(this.config.classNames.disabledState);
-	          this.containerOuter.removeAttribute('aria-disabled');
+	          this.containerOuter.removeAttribute("aria-disabled");
 	          if (this.isSelectOneElement) {
-	            this.containerOuter.setAttribute('tabindex', '0');
+	            this.containerOuter.setAttribute("tabindex", "0");
 	          }
 	        }
 	      }
@@ -1205,19 +1205,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'disable',
+	    key: "disable",
 	    value: function disable() {
 	      if (this.initialised) {
 	        this.passedElement.disabled = true;
-	        var isEnabled = !this.containerOuter.classList.contains(this.config.classNames.disabledState);
+	        const isEnabled = !this.containerOuter.classList.contains(this.config.classNames.disabledState);
 	        if (isEnabled) {
 	          this._removeEventListeners();
-	          this.passedElement.setAttribute('disabled', '');
-	          this.input.setAttribute('disabled', '');
+	          this.passedElement.setAttribute("disabled", "");
+	          this.input.setAttribute("disabled", "");
 	          this.containerOuter.classList.add(this.config.classNames.disabledState);
-	          this.containerOuter.setAttribute('aria-disabled', 'true');
+	          this.containerOuter.setAttribute("aria-disabled", "true");
 	          if (this.isSelectOneElement) {
-	            this.containerOuter.setAttribute('tabindex', '-1');
+	            this.containerOuter.setAttribute("tabindex", "-1");
 	          }
 	        }
 	      }
@@ -1232,14 +1232,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'ajax',
+	    key: "ajax",
 	    value: function ajax(fn) {
-	      var _this13 = this;
+	      const _this13 = this;
 
 	      if (this.initialised === true) {
 	        if (this.isSelectElement) {
 	          // Show loading text
-	          requestAnimationFrame(function () {
+	          requestAnimationFrame(() => {
 	            _this13._handleLoadingState(true);
 	          });
 	          // Run callback
@@ -1263,13 +1263,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_triggerChange',
+	    key: "_triggerChange",
 	    value: function _triggerChange(value) {
 	      if (!value) {
 	        return;
 	      }
 
-	      (0, _utils.triggerEvent)(this.passedElement, 'change', {
+	      (0, _utils.triggerEvent)(this.passedElement, "change", {
 	        value: value
 	      });
 	    }
@@ -1283,7 +1283,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_handleButtonAction',
+	    key: "_handleButtonAction",
 	    value: function _handleButtonAction(activeItems, element) {
 	      if (!activeItems || !element) {
 	        return;
@@ -1291,8 +1291,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      // If we are clicking on a button
 	      if (this.config.removeItems && this.config.removeItemButton) {
-	        var itemId = element.parentNode.getAttribute('data-id');
-	        var itemToRemove = activeItems.find(function (item) {
+	        const itemId = element.parentNode.getAttribute("data-id");
+	        const itemToRemove = activeItems.find((item) => {
 	          return item.id === parseInt(itemId, 10);
 	        });
 
@@ -1311,9 +1311,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_selectPlaceholderChoice',
+	    key: "_selectPlaceholderChoice",
 	    value: function _selectPlaceholderChoice() {
-	      var placeholderChoice = this.store.getPlaceholderChoice();
+	      const placeholderChoice = this.store.getPlaceholderChoice();
 
 	      if (placeholderChoice) {
 	        this._addItem(placeholderChoice.value, placeholderChoice.label, placeholderChoice.id, placeholderChoice.groupId, null, placeholderChoice.placeholder);
@@ -1331,11 +1331,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_handleItemAction',
+	    key: "_handleItemAction",
 	    value: function _handleItemAction(activeItems, element) {
-	      var _this14 = this;
+	      const _this14 = this;
 
-	      var hasShiftKey = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+	      const hasShiftKey = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
 
 	      if (!activeItems || !element) {
 	        return;
@@ -1343,12 +1343,12 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      // If we are clicking on an item
 	      if (this.config.removeItems && !this.isSelectOneElement) {
-	        var passedId = element.getAttribute('data-id');
+	        const passedId = element.getAttribute("data-id");
 
 	        // We only want to select one item with a click
 	        // so we deselect any items that aren't the target
 	        // unless shift is being pressed
-	        activeItems.forEach(function (item) {
+	        activeItems.forEach((item) => {
 	          if (item.id === parseInt(passedId, 10) && !item.highlighted) {
 	            _this14.highlightItem(item);
 	          } else if (!hasShiftKey) {
@@ -1374,27 +1374,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_handleChoiceAction',
+	    key: "_handleChoiceAction",
 	    value: function _handleChoiceAction(activeItems, element) {
 	      if (!activeItems || !element) {
 	        return;
 	      }
 
 	      // If we are clicking on an option
-	      var id = element.getAttribute('data-id');
-	      var choice = this.store.getChoiceById(id);
-	      var passedKeyCode = activeItems[0] && activeItems[0].keyCode ? activeItems[0].keyCode : null;
-	      var hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
+	      const id = element.getAttribute("data-id");
+	      const choice = this.store.getChoiceById(id);
+	      const passedKeyCode = activeItems[0] && activeItems[0].keyCode ? activeItems[0].keyCode : null;
+	      const hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
 
 	      // Update choice keyCode
 	      choice.keyCode = passedKeyCode;
 
-	      (0, _utils.triggerEvent)(this.passedElement, 'choice', {
+	      (0, _utils.triggerEvent)(this.passedElement, "choice", {
 	        choice: choice
 	      });
 
 	      if (choice && !choice.selected && !choice.disabled) {
-	        var canAddItem = this._canAddItem(activeItems, choice.value);
+	        const canAddItem = this._canAddItem(activeItems, choice.value);
 
 	        if (canAddItem.response) {
 	          this._addItem(choice.value, choice.label, choice.id, choice.groupId, choice.customProperties, choice.placeholder, choice.keyCode);
@@ -1419,11 +1419,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_handleBackspace',
+	    key: "_handleBackspace",
 	    value: function _handleBackspace(activeItems) {
 	      if (this.config.removeItems && activeItems) {
-	        var lastItem = activeItems[activeItems.length - 1];
-	        var hasHighlightedItems = activeItems.some(function (item) {
+	        const lastItem = activeItems[activeItems.length - 1];
+	        const hasHighlightedItems = activeItems.some((item) => {
 	          return item.highlighted;
 	        });
 
@@ -1452,17 +1452,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_canAddItem',
+	    key: "_canAddItem",
 	    value: function _canAddItem(activeItems, value) {
-	      var canAddItem = true;
-	      var notice = (0, _utils.isType)('Function', this.config.addItemText) ? this.config.addItemText(value) : this.config.addItemText;
+	      let canAddItem = true;
+	      let notice = (0, _utils.isType)("Function", this.config.addItemText) ? this.config.addItemText(value) : this.config.addItemText;
 
 	      if (this.isSelectMultipleElement || this.isTextElement) {
 	        if (this.config.maxItemCount > 0 && this.config.maxItemCount <= activeItems.length) {
 	          // If there is a max entry limit and we have reached that limit
 	          // don't update
 	          canAddItem = false;
-	          notice = (0, _utils.isType)('Function', this.config.maxItemText) ? this.config.maxItemText(this.config.maxItemCount) : this.config.maxItemText;
+	          notice = (0, _utils.isType)("Function", this.config.maxItemText) ? this.config.maxItemText(this.config.maxItemCount) : this.config.maxItemText;
 	        }
 	      }
 
@@ -1477,8 +1477,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      // If no duplicates are allowed, and the value already exists
 	      // in the array
-	      var isUnique = !activeItems.some(function (item) {
-	        if ((0, _utils.isType)('String', value)) {
+	      const isUnique = !activeItems.some((item) => {
+	        if ((0, _utils.isType)("String", value)) {
 	          return item.value === value.trim();
 	        }
 
@@ -1487,7 +1487,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      if (!isUnique && !this.config.duplicateItems && !this.isSelectOneElement && canAddItem) {
 	        canAddItem = false;
-	        notice = (0, _utils.isType)('Function', this.config.uniqueItemText) ? this.config.uniqueItemText(value) : this.config.uniqueItemText;
+	        notice = (0, _utils.isType)("Function", this.config.uniqueItemText) ? this.config.uniqueItemText(value) : this.config.uniqueItemText;
 	      }
 
 	      return {
@@ -1504,17 +1504,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_handleLoadingState',
+	    key: "_handleLoadingState",
 	    value: function _handleLoadingState() {
-	      var setLoading = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+	      const setLoading = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
 
-	      var placeholderItem = this.itemList.querySelector('.' + this.config.classNames.placeholder);
+	      let placeholderItem = this.itemList.querySelector("." + this.config.classNames.placeholder);
 	      if (setLoading) {
 	        this.containerOuter.classList.add(this.config.classNames.loadingState);
-	        this.containerOuter.setAttribute('aria-busy', 'true');
+	        this.containerOuter.setAttribute("aria-busy", "true");
 	        if (this.isSelectOneElement) {
 	          if (!placeholderItem) {
-	            placeholderItem = this._getTemplate('placeholder', this.config.loadingText);
+	            placeholderItem = this._getTemplate("placeholder", this.config.loadingText);
 	            this.itemList.appendChild(placeholderItem);
 	          } else {
 	            placeholderItem.innerHTML = this.config.loadingText;
@@ -1527,9 +1527,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.containerOuter.classList.remove(this.config.classNames.loadingState);
 
 	        if (this.isSelectOneElement) {
-	          placeholderItem.innerHTML = this.placeholder || '';
+	          placeholderItem.innerHTML = this.placeholder || "";
 	        } else {
-	          this.input.placeholder = this.placeholder || '';
+	          this.input.placeholder = this.placeholder || "";
 	        }
 	      }
 	    }
@@ -1541,27 +1541,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_ajaxCallback',
+	    key: "_ajaxCallback",
 	    value: function _ajaxCallback() {
-	      var _this15 = this;
+	      const _this15 = this;
 
 	      return function (results, value, label) {
 	        if (!results || !value) {
 	          return;
 	        }
 
-	        var parsedResults = (0, _utils.isType)('Object', results) ? [results] : results;
+	        const parsedResults = (0, _utils.isType)("Object", results) ? [results] : results;
 
-	        if (parsedResults && (0, _utils.isType)('Array', parsedResults) && parsedResults.length) {
+	        if (parsedResults && (0, _utils.isType)("Array", parsedResults) && parsedResults.length) {
 	          // Remove loading states/text
 	          _this15._handleLoadingState(false);
 	          // Add each result as a choice
 
 	          _this15._setLoading(true);
 
-	          parsedResults.forEach(function (result) {
+	          parsedResults.forEach((result) => {
 	            if (result.choices) {
-	              var groupId = result.id || null;
+	              const groupId = result.id || null;
 	              _this15._addGroup(result, groupId, value, label);
 	            } else {
 	              _this15._addChoice(result[value], result[label], result.selected, result.disabled, undefined, result.customProperties, result.placeholder);
@@ -1578,7 +1578,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _this15._handleLoadingState(false);
 	        }
 
-	        _this15.containerOuter.removeAttribute('aria-busy');
+	        _this15.containerOuter.removeAttribute("aria-busy");
 	      };
 	    }
 
@@ -1590,19 +1590,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_searchChoices',
+	    key: "_searchChoices",
 	    value: function _searchChoices(value) {
-	      var newValue = (0, _utils.isType)('String', value) ? value.trim() : value;
-	      var currentValue = (0, _utils.isType)('String', this.currentValue) ? this.currentValue.trim() : this.currentValue;
+	      const newValue = (0, _utils.isType)("String", value) ? value.trim() : value;
+	      const currentValue = (0, _utils.isType)("String", this.currentValue) ? this.currentValue.trim() : this.currentValue;
 
 	      // If new value matches the desired length and is not the same as the current value with a space
-	      if (newValue.length >= 1 && newValue !== currentValue + ' ') {
-	        var haystack = this.store.getSearchableChoices();
-	        var needle = newValue;
-	        var keys = (0, _utils.isType)('Array', this.config.searchFields) ? this.config.searchFields : [this.config.searchFields];
-	        var options = Object.assign(this.config.fuseOptions, { keys: keys });
-	        var fuse = new _fuse2.default(haystack, options);
-	        var results = fuse.search(needle);
+	      if (newValue.length >= 1 && newValue !== currentValue + " ") {
+	        const haystack = this.store.getSearchableChoices();
+	        const needle = newValue;
+	        const keys = (0, _utils.isType)("Array", this.config.searchFields) ? this.config.searchFields : [this.config.searchFields];
+	        const options = Object.assign(this.config.fuseOptions, { keys: keys });
+	        const fuse = new _fuse2.default(haystack, options);
+	        const results = fuse.search(needle);
 
 	        this.currentValue = newValue;
 	        this.highlightPosition = 0;
@@ -1623,14 +1623,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_handleSearch',
+	    key: "_handleSearch",
 	    value: function _handleSearch(value) {
 	      if (!value) {
 	        return;
 	      }
 
-	      var choices = this.store.getChoices();
-	      var hasUnactiveChoices = choices.some(function (option) {
+	      const choices = this.store.getChoices();
+	      const hasUnactiveChoices = choices.some((option) => {
 	        return !option.active;
 	      });
 
@@ -1638,14 +1638,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	      if (this.input === document.activeElement) {
 	        // Check that we have a value to search and the input was an alphanumeric character
 	        if (value && value.length >= this.config.searchFloor) {
-	          var resultCount = 0;
+	          let resultCount = 0;
 	          // Check flag to filter search input
 	          if (this.config.searchChoices) {
 	            // Filter available choices
 	            resultCount = this._searchChoices(value);
 	          }
 	          // Trigger search event
-	          (0, _utils.triggerEvent)(this.passedElement, 'search', {
+	          (0, _utils.triggerEvent)(this.passedElement, "search", {
 	            value: value,
 	            resultCount: resultCount
 	          });
@@ -1664,25 +1664,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_addEventListeners',
+	    key: "_addEventListeners",
 	    value: function _addEventListeners() {
-	      document.addEventListener('keyup', this._onKeyUp);
-	      document.addEventListener('keydown', this._onKeyDown);
-	      document.addEventListener('click', this._onClick);
-	      document.addEventListener('touchmove', this._onTouchMove);
-	      document.addEventListener('touchend', this._onTouchEnd);
-	      document.addEventListener('mousedown', this._onMouseDown);
-	      document.addEventListener('mouseover', this._onMouseOver);
+	      document.addEventListener("keyup", this._onKeyUp);
+	      document.addEventListener("keydown", this._onKeyDown);
+	      document.addEventListener("click", this._onClick);
+	      document.addEventListener("touchmove", this._onTouchMove);
+	      document.addEventListener("touchend", this._onTouchEnd);
+	      document.addEventListener("mousedown", this._onMouseDown);
+	      document.addEventListener("mouseover", this._onMouseOver);
 
 	      if (this.isSelectOneElement) {
-	        this.containerOuter.addEventListener('focus', this._onFocus);
-	        this.containerOuter.addEventListener('blur', this._onBlur);
+	        this.containerOuter.addEventListener("focus", this._onFocus);
+	        this.containerOuter.addEventListener("blur", this._onBlur);
 	      }
 
-	      this.input.addEventListener('input', this._onInput);
-	      this.input.addEventListener('paste', this._onPaste);
-	      this.input.addEventListener('focus', this._onFocus);
-	      this.input.addEventListener('blur', this._onBlur);
+	      this.input.addEventListener("input", this._onInput);
+	      this.input.addEventListener("paste", this._onPaste);
+	      this.input.addEventListener("focus", this._onFocus);
+	      this.input.addEventListener("blur", this._onBlur);
 	    }
 
 	    /**
@@ -1692,25 +1692,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_removeEventListeners',
+	    key: "_removeEventListeners",
 	    value: function _removeEventListeners() {
-	      document.removeEventListener('keyup', this._onKeyUp);
-	      document.removeEventListener('keydown', this._onKeyDown);
-	      document.removeEventListener('click', this._onClick);
-	      document.removeEventListener('touchmove', this._onTouchMove);
-	      document.removeEventListener('touchend', this._onTouchEnd);
-	      document.removeEventListener('mousedown', this._onMouseDown);
-	      document.removeEventListener('mouseover', this._onMouseOver);
+	      document.removeEventListener("keyup", this._onKeyUp);
+	      document.removeEventListener("keydown", this._onKeyDown);
+	      document.removeEventListener("click", this._onClick);
+	      document.removeEventListener("touchmove", this._onTouchMove);
+	      document.removeEventListener("touchend", this._onTouchEnd);
+	      document.removeEventListener("mousedown", this._onMouseDown);
+	      document.removeEventListener("mouseover", this._onMouseOver);
 
 	      if (this.isSelectOneElement) {
-	        this.containerOuter.removeEventListener('focus', this._onFocus);
-	        this.containerOuter.removeEventListener('blur', this._onBlur);
+	        this.containerOuter.removeEventListener("focus", this._onFocus);
+	        this.containerOuter.removeEventListener("blur", this._onBlur);
 	      }
 
-	      this.input.removeEventListener('input', this._onInput);
-	      this.input.removeEventListener('paste', this._onPaste);
-	      this.input.removeEventListener('focus', this._onFocus);
-	      this.input.removeEventListener('blur', this._onBlur);
+	      this.input.removeEventListener("input", this._onInput);
+	      this.input.removeEventListener("paste", this._onPaste);
+	      this.input.removeEventListener("focus", this._onFocus);
+	      this.input.removeEventListener("blur", this._onBlur);
 	    }
 
 	    /**
@@ -1720,7 +1720,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_setInputWidth',
+	    key: "_setInputWidth",
 	    value: function _setInputWidth() {
 	      if (this.placeholder) {
 	        // If there is a placeholder, we only want to set the width of the input when it is a greater
@@ -1741,32 +1741,32 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_onKeyDown',
+	    key: "_onKeyDown",
 	    value: function _onKeyDown(e) {
-	      var _this16 = this,
+	      let _this16 = this,
 	          _keyDownActions;
 
 	      if (e.target !== this.input && !this.containerOuter.contains(e.target)) {
 	        return;
 	      }
 
-	      var target = e.target;
-	      var activeItems = this.store.getItemsFilteredByActive();
-	      var hasFocusedInput = this.input === document.activeElement;
-	      var hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
-	      var hasItems = this.itemList && this.itemList.children;
-	      var keyString = String.fromCharCode(e.keyCode);
+	      const target = e.target;
+	      const activeItems = this.store.getItemsFilteredByActive();
+	      const hasFocusedInput = this.input === document.activeElement;
+	      const hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
+	      const hasItems = this.itemList && this.itemList.children;
+	      const keyString = String.fromCharCode(e.keyCode);
 
-	      var backKey = 46;
-	      var deleteKey = 8;
-	      var enterKey = 13;
-	      var aKey = 65;
-	      var escapeKey = 27;
-	      var upKey = 38;
-	      var downKey = 40;
-	      var pageUpKey = 33;
-	      var pageDownKey = 34;
-	      var ctrlDownKey = e.ctrlKey || e.metaKey;
+	      const backKey = 46;
+	      const deleteKey = 8;
+	      const enterKey = 13;
+	      const aKey = 65;
+	      const escapeKey = 27;
+	      const upKey = 38;
+	      const downKey = 40;
+	      const pageUpKey = 33;
+	      const pageDownKey = 34;
+	      const ctrlDownKey = e.ctrlKey || e.metaKey;
 
 	      // If a user is typing and the dropdown is not active
 	      if (!this.isTextElement && /[a-zA-Z0-9-_ ]/.test(keyString) && !hasActiveDropdown) {
@@ -1775,7 +1775,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      this.canSearch = this.config.searchEnabled;
 
-	      var onAKey = function onAKey() {
+	      const onAKey = function onAKey() {
 	        // If CTRL + A or CMD + A have been pressed and there are items to select
 	        if (ctrlDownKey && hasItems) {
 	          _this16.canSearch = false;
@@ -1786,11 +1786,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	      };
 
-	      var onEnterKey = function onEnterKey() {
+	      const onEnterKey = function onEnterKey() {
 	        // If enter key is pressed and the input has a value
 	        if (_this16.isTextElement && target.value) {
-	          var value = _this16.input.value;
-	          var canAddItem = _this16._canAddItem(activeItems, value);
+	          const value = _this16.input.value;
+	          const canAddItem = _this16._canAddItem(activeItems, value);
 
 	          // All is good, add
 	          if (canAddItem.response) {
@@ -1803,14 +1803,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	          }
 	        }
 
-	        if (target.hasAttribute('data-button')) {
+	        if (target.hasAttribute("data-button")) {
 	          _this16._handleButtonAction(activeItems, target);
 	          e.preventDefault();
 	        }
 
 	        if (hasActiveDropdown) {
 	          e.preventDefault();
-	          var highlighted = _this16.dropdown.querySelector('.' + _this16.config.classNames.highlightedState);
+	          const highlighted = _this16.dropdown.querySelector("." + _this16.config.classNames.highlightedState);
 
 	          // If we have a highlighted choice
 	          if (highlighted) {
@@ -1829,14 +1829,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	      };
 
-	      var onEscapeKey = function onEscapeKey() {
+	      const onEscapeKey = function onEscapeKey() {
 	        if (hasActiveDropdown) {
 	          _this16.toggleDropdown();
 	          _this16.containerOuter.focus();
 	        }
 	      };
 
-	      var onDirectionKey = function onDirectionKey() {
+	      const onDirectionKey = function onDirectionKey() {
 	        // If up or down key is pressed, traverse through options
 	        if (hasActiveDropdown || _this16.isSelectOneElement) {
 	          // Show dropdown if focus
@@ -1846,22 +1846,22 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	          _this16.canSearch = false;
 
-	          var directionInt = e.keyCode === downKey || e.keyCode === pageDownKey ? 1 : -1;
-	          var skipKey = e.metaKey || e.keyCode === pageDownKey || e.keyCode === pageUpKey;
+	          const directionInt = e.keyCode === downKey || e.keyCode === pageDownKey ? 1 : -1;
+	          const skipKey = e.metaKey || e.keyCode === pageDownKey || e.keyCode === pageUpKey;
 
-	          var nextEl = void 0;
+	          let nextEl = void 0;
 	          if (skipKey) {
 	            if (directionInt > 0) {
-	              nextEl = Array.from(_this16.dropdown.querySelectorAll('[data-choice-selectable]')).pop();
+	              nextEl = Array.from(_this16.dropdown.querySelectorAll("[data-choice-selectable]")).pop();
 	            } else {
-	              nextEl = _this16.dropdown.querySelector('[data-choice-selectable]');
+	              nextEl = _this16.dropdown.querySelector("[data-choice-selectable]");
 	            }
 	          } else {
-	            var currentEl = _this16.dropdown.querySelector('.' + _this16.config.classNames.highlightedState);
+	            const currentEl = _this16.dropdown.querySelector("." + _this16.config.classNames.highlightedState);
 	            if (currentEl) {
-	              nextEl = (0, _utils.getAdjacentEl)(currentEl, '[data-choice-selectable]', directionInt);
+	              nextEl = (0, _utils.getAdjacentEl)(currentEl, "[data-choice-selectable]", directionInt);
 	            } else {
-	              nextEl = _this16.dropdown.querySelector('[data-choice-selectable]');
+	              nextEl = _this16.dropdown.querySelector("[data-choice-selectable]");
 	            }
 	          }
 
@@ -1880,7 +1880,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	      };
 
-	      var onDeleteKey = function onDeleteKey() {
+	      const onDeleteKey = function onDeleteKey() {
 	        // If backspace or delete key is pressed and the input has no value
 	        if (hasFocusedInput && !e.target.value && !_this16.isSelectOneElement) {
 	          _this16._handleBackspace(activeItems);
@@ -1889,7 +1889,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      };
 
 	      // Map keys to key actions
-	      var keyDownActions = (_keyDownActions = {}, _defineProperty(_keyDownActions, aKey, onAKey), _defineProperty(_keyDownActions, enterKey, onEnterKey), _defineProperty(_keyDownActions, escapeKey, onEscapeKey), _defineProperty(_keyDownActions, upKey, onDirectionKey), _defineProperty(_keyDownActions, pageUpKey, onDirectionKey), _defineProperty(_keyDownActions, downKey, onDirectionKey), _defineProperty(_keyDownActions, pageDownKey, onDirectionKey), _defineProperty(_keyDownActions, deleteKey, onDeleteKey), _defineProperty(_keyDownActions, backKey, onDeleteKey), _keyDownActions);
+	      const keyDownActions = (_keyDownActions = {}, _defineProperty(_keyDownActions, aKey, onAKey), _defineProperty(_keyDownActions, enterKey, onEnterKey), _defineProperty(_keyDownActions, escapeKey, onEscapeKey), _defineProperty(_keyDownActions, upKey, onDirectionKey), _defineProperty(_keyDownActions, pageUpKey, onDirectionKey), _defineProperty(_keyDownActions, downKey, onDirectionKey), _defineProperty(_keyDownActions, pageDownKey, onDirectionKey), _defineProperty(_keyDownActions, deleteKey, onDeleteKey), _defineProperty(_keyDownActions, backKey, onDeleteKey), _keyDownActions);
 
 	      // If keycode has a function, run it
 	      if (keyDownActions[e.keyCode]) {
@@ -1905,24 +1905,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_onKeyUp',
+	    key: "_onKeyUp",
 	    value: function _onKeyUp(e) {
 	      if (e.target !== this.input) {
 	        return;
 	      }
 
-	      var value = this.input.value;
-	      var activeItems = this.store.getItemsFilteredByActive();
-	      var canAddItem = this._canAddItem(activeItems, value);
+	      const value = this.input.value;
+	      const activeItems = this.store.getItemsFilteredByActive();
+	      const canAddItem = this._canAddItem(activeItems, value);
 
 	      // We are typing into a text input and have a value, we want to show a dropdown
 	      // notice. Otherwise hide the dropdown
 	      if (this.isTextElement) {
-	        var hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
+	        const hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
 	        if (value) {
 
 	          if (canAddItem.notice) {
-	            var dropdownItem = this._getTemplate('notice', canAddItem.notice);
+	            const dropdownItem = this._getTemplate("notice", canAddItem.notice);
 	            this.dropdown.innerHTML = dropdownItem.outerHTML;
 	          }
 
@@ -1937,8 +1937,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	          this.hideDropdown();
 	        }
 	      } else {
-	        var backKey = 46;
-	        var deleteKey = 8;
+	        const backKey = 46;
+	        const deleteKey = 8;
 
 	        // If user has removed value...
 	        if ((e.keyCode === backKey || e.keyCode === deleteKey) && !e.target.value) {
@@ -1962,7 +1962,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_onInput',
+	    key: "_onInput",
 	    value: function _onInput() {
 	      if (!this.isSelectOneElement) {
 	        this._setInputWidth();
@@ -1976,7 +1976,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_onTouchMove',
+	    key: "_onTouchMove",
 	    value: function _onTouchMove() {
 	      if (this.wasTap === true) {
 	        this.wasTap = false;
@@ -1991,10 +1991,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_onTouchEnd',
+	    key: "_onTouchEnd",
 	    value: function _onTouchEnd(e) {
-	      var target = e.target || e.touches[0].target;
-	      var hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
+	      const target = e.target || e.touches[0].target;
+	      const hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
 
 	      // If a user tapped within our container...
 	      if (this.wasTap === true && this.containerOuter.contains(target)) {
@@ -2027,9 +2027,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_onMouseDown',
+	    key: "_onMouseDown",
 	    value: function _onMouseDown(e) {
-	      var target = e.target;
+	      const target = e.target;
 
 	      // If we have our mouse down on the scrollbar and are on IE11...
 	      if (target === this.choiceList && this.isIe11) {
@@ -2037,15 +2037,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 
 	      if (this.containerOuter.contains(target) && target !== this.input) {
-	        var foundTarget = void 0;
-	        var activeItems = this.store.getItemsFilteredByActive();
-	        var hasShiftKey = e.shiftKey;
+	        let foundTarget = void 0;
+	        const activeItems = this.store.getItemsFilteredByActive();
+	        const hasShiftKey = e.shiftKey;
 
-	        if (foundTarget = (0, _utils.findAncestorByAttrName)(target, 'data-button')) {
+	        if (foundTarget = (0, _utils.findAncestorByAttrName)(target, "data-button")) {
 	          this._handleButtonAction(activeItems, foundTarget);
-	        } else if (foundTarget = (0, _utils.findAncestorByAttrName)(target, 'data-item')) {
+	        } else if (foundTarget = (0, _utils.findAncestorByAttrName)(target, "data-item")) {
 	          this._handleItemAction(activeItems, foundTarget, hasShiftKey);
-	        } else if (foundTarget = (0, _utils.findAncestorByAttrName)(target, 'data-choice')) {
+	        } else if (foundTarget = (0, _utils.findAncestorByAttrName)(target, "data-choice")) {
 	          this._handleChoiceAction(activeItems, foundTarget);
 	        }
 
@@ -2061,16 +2061,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_onClick',
+	    key: "_onClick",
 	    value: function _onClick(e) {
-	      var target = e.target;
-	      var hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
-	      var activeItems = this.store.getItemsFilteredByActive();
+	      const target = e.target;
+	      const hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
+	      const activeItems = this.store.getItemsFilteredByActive();
 
 	      // If target is something that concerns us
 	      if (this.containerOuter.contains(target)) {
 	        // Handle button delete
-	        if (target.hasAttribute('data-button')) {
+	        if (target.hasAttribute("data-button")) {
 	          this._handleButtonAction(activeItems, target);
 	        }
 
@@ -2091,7 +2091,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          this.hideDropdown(true);
 	        }
 	      } else {
-	        var hasHighlightedItems = activeItems.some(function (item) {
+	        const hasHighlightedItems = activeItems.some((item) => {
 	          return item.highlighted;
 	        });
 
@@ -2118,11 +2118,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_onMouseOver',
+	    key: "_onMouseOver",
 	    value: function _onMouseOver(e) {
 	      // If the dropdown is either the target or one of its children is the target
 	      if (e.target === this.dropdown || this.dropdown.contains(e.target)) {
-	        if (e.target.hasAttribute('data-choice')) this._highlightChoice(e.target);
+	        if (e.target.hasAttribute("data-choice")) {this._highlightChoice(e.target);}
 	      }
 	    }
 
@@ -2134,7 +2134,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_onPaste',
+	    key: "_onPaste",
 	    value: function _onPaste(e) {
 	      // Disable pasting into the input if option has been set
 	      if (e.target === this.input && !this.config.paste) {
@@ -2150,21 +2150,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_onFocus',
+	    key: "_onFocus",
 	    value: function _onFocus(e) {
-	      var _this17 = this;
+	      const _this17 = this;
 
-	      var target = e.target;
+	      const target = e.target;
 	      // If target is something that concerns us
 	      if (this.containerOuter.contains(target)) {
-	        var hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
-	        var focusActions = {
+	        const hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
+	        const focusActions = {
 	          text: function text() {
 	            if (target === _this17.input) {
 	              _this17.containerOuter.classList.add(_this17.config.classNames.focusState);
 	            }
 	          },
-	          'select-one': function selectOne() {
+	          "select-one": function selectOne() {
 	            _this17.containerOuter.classList.add(_this17.config.classNames.focusState);
 	            if (target === _this17.input) {
 	              // Show dropdown if it isn't already showing
@@ -2173,7 +2173,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              }
 	            }
 	          },
-	          'select-multiple': function selectMultiple() {
+	          "select-multiple": function selectMultiple() {
 	            if (target === _this17.input) {
 	              // If element is a select box, the focused element is the container and the dropdown
 	              // isn't already open, focus and show dropdown
@@ -2198,19 +2198,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_onBlur',
+	    key: "_onBlur",
 	    value: function _onBlur(e) {
-	      var _this18 = this;
+	      const _this18 = this;
 
-	      var target = e.target;
+	      const target = e.target;
 	      // If target is something that concerns us
 	      if (this.containerOuter.contains(target) && !this.isScrollingOnIe) {
-	        var activeItems = this.store.getItemsFilteredByActive();
-	        var hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
-	        var hasHighlightedItems = activeItems.some(function (item) {
+	        const activeItems = this.store.getItemsFilteredByActive();
+	        const hasActiveDropdown = this.dropdown.classList.contains(this.config.classNames.activeState);
+	        const hasHighlightedItems = activeItems.some((item) => {
 	          return item.highlighted;
 	        });
-	        var blurActions = {
+	        const blurActions = {
 	          text: function text() {
 	            if (target === _this18.input) {
 	              // Remove the focus state
@@ -2225,7 +2225,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              }
 	            }
 	          },
-	          'select-one': function selectOne() {
+	          "select-one": function selectOne() {
 	            _this18.containerOuter.classList.remove(_this18.config.classNames.focusState);
 	            if (target === _this18.containerOuter) {
 	              // Hide dropdown if it is showing
@@ -2238,7 +2238,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              _this18.hideDropdown();
 	            }
 	          },
-	          'select-multiple': function selectMultiple() {
+	          "select-multiple": function selectMultiple() {
 	            if (target === _this18.input) {
 	              // Remove the focus state
 	              _this18.containerOuter.classList.remove(_this18.config.classNames.focusState);
@@ -2272,14 +2272,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_regexFilter',
+	    key: "_regexFilter",
 	    value: function _regexFilter(value) {
 	      if (!value) {
 	        return false;
 	      }
 
-	      var regex = this.config.regexFilter;
-	      var expression = new RegExp(regex.source, 'i');
+	      const regex = this.config.regexFilter;
+	      const expression = new RegExp(regex.source, "i");
 	      return expression.test(value);
 	    }
 
@@ -2292,29 +2292,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_scrollToChoice',
+	    key: "_scrollToChoice",
 	    value: function _scrollToChoice(choice, direction) {
-	      var _this19 = this;
+	      const _this19 = this;
 
 	      if (!choice) {
 	        return;
 	      }
 
-	      var dropdownHeight = this.choiceList.offsetHeight;
-	      var choiceHeight = choice.offsetHeight;
+	      const dropdownHeight = this.choiceList.offsetHeight;
+	      const choiceHeight = choice.offsetHeight;
 	      // Distance from bottom of element to top of parent
-	      var choicePos = choice.offsetTop + choiceHeight;
+	      const choicePos = choice.offsetTop + choiceHeight;
 	      // Scroll position of dropdown
-	      var containerScrollPos = this.choiceList.scrollTop + dropdownHeight;
+	      const containerScrollPos = this.choiceList.scrollTop + dropdownHeight;
 	      // Difference between the choice and scroll position
-	      var endPoint = direction > 0 ? this.choiceList.scrollTop + choicePos - containerScrollPos : choice.offsetTop;
+	      const endPoint = direction > 0 ? this.choiceList.scrollTop + choicePos - containerScrollPos : choice.offsetTop;
 
-	      var animateScroll = function animateScroll() {
-	        var strength = 4;
-	        var choiceListScrollTop = _this19.choiceList.scrollTop;
-	        var continueAnimation = false;
-	        var easing = void 0;
-	        var distance = void 0;
+	      const animateScroll = function animateScroll() {
+	        const strength = 4;
+	        const choiceListScrollTop = _this19.choiceList.scrollTop;
+	        let continueAnimation = false;
+	        let easing = void 0;
+	        let distance = void 0;
 
 	        if (direction > 0) {
 	          easing = (endPoint - choiceListScrollTop) / strength;
@@ -2335,13 +2335,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 
 	        if (continueAnimation) {
-	          requestAnimationFrame(function (time) {
+	          requestAnimationFrame((time) => {
 	            animateScroll(time, endPoint, direction);
 	          });
 	        }
 	      };
 
-	      requestAnimationFrame(function (time) {
+	      requestAnimationFrame((time) => {
 	        animateScroll(time, endPoint, direction);
 	      });
 	    }
@@ -2354,23 +2354,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_highlightChoice',
+	    key: "_highlightChoice",
 	    value: function _highlightChoice() {
-	      var _this20 = this;
+	      const _this20 = this;
 
-	      var el = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+	      const el = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
 
 	      // Highlight first element in dropdown
-	      var choices = Array.from(this.dropdown.querySelectorAll('[data-choice-selectable]'));
-	      var passedEl = el;
+	      const choices = Array.from(this.dropdown.querySelectorAll("[data-choice-selectable]"));
+	      let passedEl = el;
 
 	      if (choices && choices.length) {
-	        var highlightedChoices = Array.from(this.dropdown.querySelectorAll('.' + this.config.classNames.highlightedState));
+	        const highlightedChoices = Array.from(this.dropdown.querySelectorAll("." + this.config.classNames.highlightedState));
 
 	        // Remove any highlighted choices
-	        highlightedChoices.forEach(function (choice) {
+	        highlightedChoices.forEach((choice) => {
 	          choice.classList.remove(_this20.config.classNames.highlightedState);
-	          choice.setAttribute('aria-selected', 'false');
+	          choice.setAttribute("aria-selected", "false");
 	        });
 
 	        if (passedEl) {
@@ -2392,8 +2392,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        // Highlight given option, and set accessiblity attributes
 	        passedEl.classList.add(this.config.classNames.highlightedState);
-	        passedEl.setAttribute('aria-selected', 'true');
-	        this.containerOuter.setAttribute('aria-activedescendant', passedEl.id);
+	        passedEl.setAttribute("aria-selected", "true");
+	        this.containerOuter.setAttribute("aria-activedescendant", passedEl.id);
 	      }
 	    }
 
@@ -2409,26 +2409,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_addItem',
+	    key: "_addItem",
 	    value: function _addItem(value) {
-	      var label = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-	      var choiceId = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : -1;
-	      var groupId = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : -1;
-	      var customProperties = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : null;
-	      var placeholder = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : false;
-	      var keyCode = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : null;
+	      const label = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+	      const choiceId = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : -1;
+	      const groupId = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : -1;
+	      const customProperties = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : null;
+	      const placeholder = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : false;
+	      const keyCode = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : null;
 
-	      var passedValue = (0, _utils.isType)('String', value) ? value.trim() : value;
-	      var passedKeyCode = keyCode;
-	      var items = this.store.getItems();
-	      var passedLabel = label || passedValue;
-	      var passedOptionId = parseInt(choiceId, 10) || -1;
+	      let passedValue = (0, _utils.isType)("String", value) ? value.trim() : value;
+	      const passedKeyCode = keyCode;
+	      const items = this.store.getItems();
+	      const passedLabel = label || passedValue;
+	      const passedOptionId = parseInt(choiceId, 10) || -1;
 
 	      // Get group if group ID passed
-	      var group = groupId >= 0 ? this.store.getGroupById(groupId) : null;
+	      const group = groupId >= 0 ? this.store.getGroupById(groupId) : null;
 
 	      // Generate unique id
-	      var id = items ? items.length + 1 : 1;
+	      const id = items ? items.length + 1 : 1;
 
 	      // If a prepended value has been passed, prepend it
 	      if (this.config.prependValue) {
@@ -2448,7 +2448,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      // Trigger change event
 	      if (group && group.value) {
-	        (0, _utils.triggerEvent)(this.passedElement, 'addItem', {
+	        (0, _utils.triggerEvent)(this.passedElement, "addItem", {
 	          id: id,
 	          value: passedValue,
 	          label: passedLabel,
@@ -2456,7 +2456,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          keyCode: passedKeyCode
 	        });
 	      } else {
-	        (0, _utils.triggerEvent)(this.passedElement, 'addItem', {
+	        (0, _utils.triggerEvent)(this.passedElement, "addItem", {
 	          id: id,
 	          value: passedValue,
 	          label: passedLabel,
@@ -2475,30 +2475,30 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_removeItem',
+	    key: "_removeItem",
 	    value: function _removeItem(item) {
-	      if (!item || !(0, _utils.isType)('Object', item)) {
+	      if (!item || !(0, _utils.isType)("Object", item)) {
 	        return this;
 	      }
 
-	      var id = item.id;
-	      var value = item.value;
-	      var label = item.label;
-	      var choiceId = item.choiceId;
-	      var groupId = item.groupId;
-	      var group = groupId >= 0 ? this.store.getGroupById(groupId) : null;
+	      const id = item.id;
+	      const value = item.value;
+	      const label = item.label;
+	      const choiceId = item.choiceId;
+	      const groupId = item.groupId;
+	      const group = groupId >= 0 ? this.store.getGroupById(groupId) : null;
 
 	      this.store.dispatch((0, _index3.removeItem)(id, choiceId));
 
 	      if (group && group.value) {
-	        (0, _utils.triggerEvent)(this.passedElement, 'removeItem', {
+	        (0, _utils.triggerEvent)(this.passedElement, "removeItem", {
 	          id: id,
 	          value: value,
 	          label: label,
 	          groupValue: group.value
 	        });
 	      } else {
-	        (0, _utils.triggerEvent)(this.passedElement, 'removeItem', {
+	        (0, _utils.triggerEvent)(this.passedElement, "removeItem", {
 	          id: id,
 	          value: value,
 	          label: label
@@ -2521,25 +2521,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_addChoice',
+	    key: "_addChoice",
 	    value: function _addChoice(value) {
-	      var label = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-	      var isSelected = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-	      var isDisabled = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
-	      var groupId = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : -1;
-	      var customProperties = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : null;
-	      var placeholder = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : false;
-	      var keyCode = arguments.length > 7 && arguments[7] !== undefined ? arguments[7] : null;
+	      const label = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+	      const isSelected = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+	      const isDisabled = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+	      const groupId = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : -1;
+	      const customProperties = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : null;
+	      const placeholder = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : false;
+	      const keyCode = arguments.length > 7 && arguments[7] !== undefined ? arguments[7] : null;
 
-	      if (typeof value === 'undefined' || value === null) {
+	      if (typeof value === "undefined" || value === null) {
 	        return;
 	      }
 
 	      // Generate unique id
-	      var choices = this.store.getChoices();
-	      var choiceLabel = label || value;
-	      var choiceId = choices ? choices.length + 1 : 1;
-	      var choiceElementId = this.baseId + '-' + this.idNames.itemChoice + '-' + choiceId;
+	      const choices = this.store.getChoices();
+	      const choiceLabel = label || value;
+	      const choiceId = choices ? choices.length + 1 : 1;
+	      const choiceElementId = this.baseId + "-" + this.idNames.itemChoice + "-" + choiceId;
 
 	      this.store.dispatch((0, _index3.addChoice)(value, choiceLabel, choiceId, groupId, isDisabled, choiceElementId, customProperties, placeholder, keyCode));
 
@@ -2555,7 +2555,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_clearChoices',
+	    key: "_clearChoices",
 	    value: function _clearChoices() {
 	      this.store.dispatch((0, _index3.clearChoices)());
 	    }
@@ -2571,23 +2571,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_addGroup',
+	    key: "_addGroup",
 	    value: function _addGroup(group, id) {
-	      var _this21 = this;
+	      const _this21 = this;
 
-	      var valueKey = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'value';
-	      var labelKey = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'label';
+	      const valueKey = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "value";
+	      const labelKey = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : "label";
 
-	      var groupChoices = (0, _utils.isType)('Object', group) ? group.choices : Array.from(group.getElementsByTagName('OPTION'));
-	      var groupId = id ? id : Math.floor(new Date().valueOf() * Math.random());
-	      var isDisabled = group.disabled ? group.disabled : false;
+	      const groupChoices = (0, _utils.isType)("Object", group) ? group.choices : Array.from(group.getElementsByTagName("OPTION"));
+	      const groupId = id ? id : Math.floor(new Date().valueOf() * Math.random());
+	      const isDisabled = group.disabled ? group.disabled : false;
 
 	      if (groupChoices) {
 	        this.store.dispatch((0, _index3.addGroup)(group.label, groupId, true, isDisabled));
 
-	        groupChoices.forEach(function (option) {
-	          var isOptDisabled = option.disabled || option.parentNode && option.parentNode.disabled;
-	          _this21._addChoice(option[valueKey], (0, _utils.isType)('Object', option) ? option[labelKey] : option.innerHTML, option.selected, isOptDisabled, groupId, option.customProperties, option.placeholder);
+	        groupChoices.forEach((option) => {
+	          const isOptDisabled = option.disabled || option.parentNode && option.parentNode.disabled;
+	          _this21._addChoice(option[valueKey], (0, _utils.isType)("Object", option) ? option[labelKey] : option.innerHTML, option.selected, isOptDisabled, groupId, option.customProperties, option.placeholder);
 	        });
 	      } else {
 	        this.store.dispatch((0, _index3.addGroup)(group.label, group.id, false, group.disabled));
@@ -2603,12 +2603,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_getTemplate',
+	    key: "_getTemplate",
 	    value: function _getTemplate(template) {
 	      if (!template) {
 	        return null;
 	      }
-	      var templates = this.config.templates;
+	      const templates = this.config.templates;
 
 	      for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
 	        args[_key - 1] = arguments[_key];
@@ -2624,93 +2624,93 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_createTemplates',
+	    key: "_createTemplates",
 	    value: function _createTemplates() {
-	      var _this22 = this;
+	      const _this22 = this;
 
-	      var globalClasses = this.config.classNames;
-	      var templates = {
+	      const globalClasses = this.config.classNames;
+	      const templates = {
 	        containerOuter: function containerOuter(direction) {
-	          return (0, _utils.strToEl)('\n          <div\n            class="' + globalClasses.containerOuter + '"\n            ' + (_this22.isSelectElement ? _this22.config.searchEnabled ? 'role="combobox" aria-autocomplete="list"' : 'role="listbox"' : '') + '\n            data-type="' + _this22.passedElement.type + '"\n            ' + (_this22.isSelectOneElement ? 'tabindex="0"' : '') + '\n            aria-haspopup="true"\n            aria-expanded="false"\n            dir="' + direction + '"\n            >\n          </div>\n        ');
+	          return (0, _utils.strToEl)("\n          <div\n            class=\"" + globalClasses.containerOuter + "\"\n            " + (_this22.isSelectElement ? _this22.config.searchEnabled ? "role=\"combobox\" aria-autocomplete=\"list\"" : "role=\"listbox\"" : "") + "\n            data-type=\"" + _this22.passedElement.type + "\"\n            " + (_this22.isSelectOneElement ? "tabindex=\"0\"" : "") + "\n            aria-haspopup=\"true\"\n            aria-expanded=\"false\"\n            dir=\"" + direction + "\"\n            >\n          </div>\n        ");
 	        },
 	        containerInner: function containerInner() {
-	          return (0, _utils.strToEl)('\n          <div class="' + globalClasses.containerInner + '"></div>\n        ');
+	          return (0, _utils.strToEl)("\n          <div class=\"" + globalClasses.containerInner + "\"></div>\n        ");
 	        },
 	        itemList: function itemList() {
-	          var _classNames;
+	          let _classNames;
 
-	          var localClasses = (0, _classnames2.default)(globalClasses.list, (_classNames = {}, _defineProperty(_classNames, globalClasses.listSingle, _this22.isSelectOneElement), _defineProperty(_classNames, globalClasses.listItems, !_this22.isSelectOneElement), _classNames));
+	          const localClasses = (0, _classnames2.default)(globalClasses.list, (_classNames = {}, _defineProperty(_classNames, globalClasses.listSingle, _this22.isSelectOneElement), _defineProperty(_classNames, globalClasses.listItems, !_this22.isSelectOneElement), _classNames));
 
-	          return (0, _utils.strToEl)('\n          <div class="' + localClasses + '"></div>\n        ');
+	          return (0, _utils.strToEl)("\n          <div class=\"" + localClasses + "\"></div>\n        ");
 	        },
 	        placeholder: function placeholder(value) {
-	          return (0, _utils.strToEl)('\n          <div class="' + globalClasses.placeholder + '">\n            ' + value + '\n          </div>\n        ');
+	          return (0, _utils.strToEl)("\n          <div class=\"" + globalClasses.placeholder + "\">\n            " + value + "\n          </div>\n        ");
 	        },
 	        item: function item(data) {
-	          var _classNames2;
+	          let _classNames2;
 
-	          var localClasses = (0, _classnames2.default)(globalClasses.item, (_classNames2 = {}, _defineProperty(_classNames2, globalClasses.highlightedState, data.highlighted), _defineProperty(_classNames2, globalClasses.itemSelectable, !data.highlighted), _defineProperty(_classNames2, globalClasses.placeholder, data.placeholder), _classNames2));
+	          let localClasses = (0, _classnames2.default)(globalClasses.item, (_classNames2 = {}, _defineProperty(_classNames2, globalClasses.highlightedState, data.highlighted), _defineProperty(_classNames2, globalClasses.itemSelectable, !data.highlighted), _defineProperty(_classNames2, globalClasses.placeholder, data.placeholder), _classNames2));
 
 	          if (_this22.config.removeItemButton) {
-	            var _classNames3;
+	            let _classNames3;
 
 	            localClasses = (0, _classnames2.default)(globalClasses.item, (_classNames3 = {}, _defineProperty(_classNames3, globalClasses.highlightedState, data.highlighted), _defineProperty(_classNames3, globalClasses.itemSelectable, !data.disabled), _defineProperty(_classNames3, globalClasses.placeholder, data.placeholder), _classNames3));
 
-	            return (0, _utils.strToEl)('\n            <div\n              class="' + localClasses + '"\n              data-item\n              data-id="' + data.id + '"\n              data-value="' + data.value + '"\n              data-deletable\n              ' + (data.active ? 'aria-selected="true"' : '') + '\n              ' + (data.disabled ? 'aria-disabled="true"' : '') + '\n              >\n              ' + data.label + '<!--\n           --><button\n                type="button"\n                class="' + globalClasses.button + '"\n                data-button\n                aria-label="Remove item: \'' + data.value + '\'"\n                >\n                Remove item\n              </button>\n            </div>\n          ');
+	            return (0, _utils.strToEl)("\n            <div\n              class=\"" + localClasses + "\"\n              data-item\n              data-id=\"" + data.id + "\"\n              data-value=\"" + data.value + "\"\n              data-deletable\n              " + (data.active ? "aria-selected=\"true\"" : "") + "\n              " + (data.disabled ? "aria-disabled=\"true\"" : "") + "\n              >\n              " + data.label + "<!--\n           --><button\n                type=\"button\"\n                class=\"" + globalClasses.button + "\"\n                data-button\n                aria-label=\"Remove item: '" + data.value + "'\"\n                >\n                Remove item\n              </button>\n            </div>\n          ");
 	          }
 
-	          return (0, _utils.strToEl)('\n          <div\n            class="' + localClasses + '"\n            data-item\n            data-id="' + data.id + '"\n            data-value="' + data.value + '"\n            ' + (data.active ? 'aria-selected="true"' : '') + '\n            ' + (data.disabled ? 'aria-disabled="true"' : '') + '\n            >\n            ' + data.label + '\n          </div>\n        ');
+	          return (0, _utils.strToEl)("\n          <div\n            class=\"" + localClasses + "\"\n            data-item\n            data-id=\"" + data.id + "\"\n            data-value=\"" + data.value + "\"\n            " + (data.active ? "aria-selected=\"true\"" : "") + "\n            " + (data.disabled ? "aria-disabled=\"true\"" : "") + "\n            >\n            " + data.label + "\n          </div>\n        ");
 	        },
 	        choiceList: function choiceList() {
-	          return (0, _utils.strToEl)('\n          <div\n            class="' + globalClasses.list + '"\n            dir="ltr"\n            role="listbox"\n            ' + (!_this22.isSelectOneElement ? 'aria-multiselectable="true"' : '') + '\n            >\n          </div>\n        ');
+	          return (0, _utils.strToEl)("\n          <div\n            class=\"" + globalClasses.list + "\"\n            dir=\"ltr\"\n            role=\"listbox\"\n            " + (!_this22.isSelectOneElement ? "aria-multiselectable=\"true\"" : "") + "\n            >\n          </div>\n        ");
 	        },
 	        choiceGroup: function choiceGroup(data) {
-	          var localClasses = (0, _classnames2.default)(globalClasses.group, _defineProperty({}, globalClasses.itemDisabled, data.disabled));
+	          const localClasses = (0, _classnames2.default)(globalClasses.group, _defineProperty({}, globalClasses.itemDisabled, data.disabled));
 
-	          return (0, _utils.strToEl)('\n          <div\n            class="' + localClasses + '"\n            data-group\n            data-id="' + data.id + '"\n            data-value="' + data.value + '"\n            role="group"\n            ' + (data.disabled ? 'aria-disabled="true"' : '') + '\n            >\n            <div class="' + globalClasses.groupHeading + '">' + data.value + '</div>\n          </div>\n        ');
+	          return (0, _utils.strToEl)("\n          <div\n            class=\"" + localClasses + "\"\n            data-group\n            data-id=\"" + data.id + "\"\n            data-value=\"" + data.value + "\"\n            role=\"group\"\n            " + (data.disabled ? "aria-disabled=\"true\"" : "") + "\n            >\n            <div class=\"" + globalClasses.groupHeading + "\">" + data.value + "</div>\n          </div>\n        ");
 	        },
 	        choice: function choice(data) {
-	          var _classNames5;
+	          let _classNames5;
 
-	          var localClasses = (0, _classnames2.default)(globalClasses.item, globalClasses.itemChoice, (_classNames5 = {}, _defineProperty(_classNames5, globalClasses.itemDisabled, data.disabled), _defineProperty(_classNames5, globalClasses.itemSelectable, !data.disabled), _defineProperty(_classNames5, globalClasses.placeholder, data.placeholder), _classNames5));
+	          const localClasses = (0, _classnames2.default)(globalClasses.item, globalClasses.itemChoice, (_classNames5 = {}, _defineProperty(_classNames5, globalClasses.itemDisabled, data.disabled), _defineProperty(_classNames5, globalClasses.itemSelectable, !data.disabled), _defineProperty(_classNames5, globalClasses.placeholder, data.placeholder), _classNames5));
 
-	          return (0, _utils.strToEl)('\n          <div\n            class="' + localClasses + '"\n            data-select-text="' + _this22.config.itemSelectText + '"\n            data-choice\n            data-id="' + data.id + '"\n            data-value="' + data.value + '"\n            ' + (data.disabled ? 'data-choice-disabled aria-disabled="true"' : 'data-choice-selectable') + '\n            id="' + data.elementId + '"\n            ' + (data.groupId > 0 ? 'role="treeitem"' : 'role="option"') + '\n            >\n            ' + data.label + '\n          </div>\n        ');
+	          return (0, _utils.strToEl)("\n          <div\n            class=\"" + localClasses + "\"\n            data-select-text=\"" + _this22.config.itemSelectText + "\"\n            data-choice\n            data-id=\"" + data.id + "\"\n            data-value=\"" + data.value + "\"\n            " + (data.disabled ? "data-choice-disabled aria-disabled=\"true\"" : "data-choice-selectable") + "\n            id=\"" + data.elementId + "\"\n            " + (data.groupId > 0 ? "role=\"treeitem\"" : "role=\"option\"") + "\n            >\n            " + data.label + "\n          </div>\n        ");
 	        },
 	        input: function input() {
-	          var localClasses = (0, _classnames2.default)(globalClasses.input, globalClasses.inputCloned);
+	          const localClasses = (0, _classnames2.default)(globalClasses.input, globalClasses.inputCloned);
 
-	          return (0, _utils.strToEl)('\n          <input\n            type="text"\n            class="' + localClasses + '"\n            autocomplete="off"\n            autocapitalize="off"\n            spellcheck="false"\n            role="textbox"\n            aria-autocomplete="list"\n            >\n        ');
+	          return (0, _utils.strToEl)("\n          <input\n            type=\"text\"\n            class=\"" + localClasses + "\"\n            autocomplete=\"off\"\n            autocapitalize=\"off\"\n            spellcheck=\"false\"\n            role=\"textbox\"\n            aria-autocomplete=\"list\"\n            >\n        ");
 	        },
 	        dropdown: function dropdown() {
-	          var localClasses = (0, _classnames2.default)(globalClasses.list, globalClasses.listDropdown);
+	          const localClasses = (0, _classnames2.default)(globalClasses.list, globalClasses.listDropdown);
 
-	          return (0, _utils.strToEl)('\n          <div\n            class="' + localClasses + '"\n            aria-expanded="false"\n            >\n          </div>\n        ');
+	          return (0, _utils.strToEl)("\n          <div\n            class=\"" + localClasses + "\"\n            aria-expanded=\"false\"\n            >\n          </div>\n        ");
 	        },
 	        notice: function notice(label) {
-	          var _classNames6;
+	          let _classNames6;
 
-	          var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+	          const type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
 
-	          var localClasses = (0, _classnames2.default)(globalClasses.item, globalClasses.itemChoice, (_classNames6 = {}, _defineProperty(_classNames6, globalClasses.noResults, type === 'no-results'), _defineProperty(_classNames6, globalClasses.noChoices, type === 'no-choices'), _classNames6));
+	          const localClasses = (0, _classnames2.default)(globalClasses.item, globalClasses.itemChoice, (_classNames6 = {}, _defineProperty(_classNames6, globalClasses.noResults, type === "no-results"), _defineProperty(_classNames6, globalClasses.noChoices, type === "no-choices"), _classNames6));
 
-	          return (0, _utils.strToEl)('\n          <div class="' + localClasses + '">\n            ' + label + '\n          </div>\n        ');
+	          return (0, _utils.strToEl)("\n          <div class=\"" + localClasses + "\">\n            " + label + "\n          </div>\n        ");
 	        },
 	        option: function option(data) {
-	          return (0, _utils.strToEl)('\n          <option value="' + data.value + '" selected>' + data.label + '</option>\n        ');
+	          return (0, _utils.strToEl)("\n          <option value=\"" + data.value + "\" selected>" + data.label + "</option>\n        ");
 	        }
 	      };
 
 	      // User's custom templates
-	      var callbackTemplate = this.config.callbackOnCreateTemplates;
-	      var userTemplates = {};
-	      if (callbackTemplate && (0, _utils.isType)('Function', callbackTemplate)) {
+	      const callbackTemplate = this.config.callbackOnCreateTemplates;
+	      let userTemplates = {};
+	      if (callbackTemplate && (0, _utils.isType)("Function", callbackTemplate)) {
 	        userTemplates = callbackTemplate.call(this, _utils.strToEl);
 	      }
 
 	      this.config.templates = (0, _utils.extend)(templates, userTemplates);
 	    }
 	  }, {
-	    key: '_setLoading',
+	    key: "_setLoading",
 	    value: function _setLoading(isLoading) {
 	      this.store.dispatch((0, _index3.setIsLoading)(isLoading));
 	    }
@@ -2722,17 +2722,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: '_createInput',
+	    key: "_createInput",
 	    value: function _createInput() {
-	      var _this23 = this;
+	      const _this23 = this;
 
-	      var direction = this.passedElement.getAttribute('dir') || 'ltr';
-	      var containerOuter = this._getTemplate('containerOuter', direction);
-	      var containerInner = this._getTemplate('containerInner');
-	      var itemList = this._getTemplate('itemList');
-	      var choiceList = this._getTemplate('choiceList');
-	      var input = this._getTemplate('input');
-	      var dropdown = this._getTemplate('dropdown');
+	      const direction = this.passedElement.getAttribute("dir") || "ltr";
+	      const containerOuter = this._getTemplate("containerOuter", direction);
+	      const containerInner = this._getTemplate("containerInner");
+	      const itemList = this._getTemplate("itemList");
+	      const choiceList = this._getTemplate("choiceList");
+	      const input = this._getTemplate("input");
+	      const dropdown = this._getTemplate("dropdown");
 
 	      this.containerOuter = containerOuter;
 	      this.containerInner = containerInner;
@@ -2745,18 +2745,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.passedElement.classList.add(this.config.classNames.input, this.config.classNames.hiddenState);
 
 	      // Remove element from tab index
-	      this.passedElement.tabIndex = '-1';
+	      this.passedElement.tabIndex = "-1";
 
 	      // Backup original styles if any
-	      var origStyle = this.passedElement.getAttribute('style');
+	      const origStyle = this.passedElement.getAttribute("style");
 
 	      if (Boolean(origStyle)) {
-	        this.passedElement.setAttribute('data-choice-orig-style', origStyle);
+	        this.passedElement.setAttribute("data-choice-orig-style", origStyle);
 	      }
 
-	      this.passedElement.setAttribute('style', 'display:none;');
-	      this.passedElement.setAttribute('aria-hidden', 'true');
-	      this.passedElement.setAttribute('data-choice', 'active');
+	      this.passedElement.setAttribute("style", "display:none;");
+	      this.passedElement.setAttribute("aria-hidden", "true");
+	      this.passedElement.setAttribute("data-choice", "active");
 
 	      // Wrap input in container preserving DOM ordering
 	      (0, _utils.wrap)(this.passedElement, containerInner);
@@ -2765,7 +2765,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      (0, _utils.wrap)(containerInner, containerOuter);
 
 	      if (this.isSelectOneElement) {
-	        input.placeholder = this.config.searchPlaceholderValue || '';
+	        input.placeholder = this.config.searchPlaceholderValue || "";
 	      } else if (this.placeholder) {
 	        input.placeholder = this.placeholder;
 	        input.style.width = (0, _utils.getWidthOfInput)(input);
@@ -2790,7 +2790,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 
 	      if (this.isSelectElement) {
-	        var passedGroups = Array.from(this.passedElement.getElementsByTagName('OPTGROUP'));
+	        const passedGroups = Array.from(this.passedElement.getElementsByTagName("OPTGROUP"));
 
 	        this.highlightPosition = 0;
 	        this.isSearching = false;
@@ -2798,22 +2798,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this._setLoading(true);
 
 	        if (passedGroups && passedGroups.length) {
-	          passedGroups.forEach(function (group) {
+	          passedGroups.forEach((group) => {
 	            _this23._addGroup(group, group.id || null);
 	          });
 	        } else {
-	          var passedOptions = Array.from(this.passedElement.options);
-	          var filter = this.config.sortFilter;
-	          var allChoices = this.presetChoices;
+	          const passedOptions = Array.from(this.passedElement.options);
+	          const filter = this.config.sortFilter;
+	          const allChoices = this.presetChoices;
 
 	          // Create array of options from option elements
-	          passedOptions.forEach(function (o) {
+	          passedOptions.forEach((o) => {
 	            allChoices.push({
 	              value: o.value,
 	              label: o.innerHTML,
 	              selected: o.selected,
 	              disabled: o.disabled || o.parentNode.disabled,
-	              placeholder: o.hasAttribute('placeholder')
+	              placeholder: o.hasAttribute("placeholder")
 	            });
 	          });
 
@@ -2823,18 +2823,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	          }
 
 	          // Determine whether there is a selected choice
-	          var hasSelectedChoice = allChoices.some(function (choice) {
+	          const hasSelectedChoice = allChoices.some((choice) => {
 	            return choice.selected;
 	          });
 
 	          // Add each choice
-	          allChoices.forEach(function (choice, index) {
+	          allChoices.forEach((choice, index) => {
 	            // Pre-select first choice if it's a single select
 	            if (_this23.isSelectOneElement) {
 	              // If there is a selected choice already or the choice is not
 	              // the first in the array, add each choice normally
 	              // Otherwise pre-select the first choice in the array
-	              var shouldPreselect = hasSelectedChoice || !hasSelectedChoice && index > 0;
+	              const shouldPreselect = hasSelectedChoice || !hasSelectedChoice && index > 0;
 	              _this23._addChoice(choice.value, choice.label, shouldPreselect ? choice.selected : true, shouldPreselect ? choice.disabled : false, undefined, choice.customProperties, choice.placeholder);
 	            } else {
 	              _this23._addChoice(choice.value, choice.label, choice.selected, choice.disabled, undefined, choice.customProperties, choice.placeholder);
@@ -2845,14 +2845,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this._setLoading(false);
 	      } else if (this.isTextElement) {
 	        // Add any preset values seperated by delimiter
-	        this.presetItems.forEach(function (item) {
-	          var itemType = (0, _utils.getType)(item);
-	          if (itemType === 'Object') {
+	        this.presetItems.forEach((item) => {
+	          const itemType = (0, _utils.getType)(item);
+	          if (itemType === "Object") {
 	            if (!item.value) {
 	              return;
 	            }
 	            _this23._addItem(item.value, item.label, item.id, undefined, item.customProperties, item.placeholder);
-	          } else if (itemType === 'String') {
+	          } else if (itemType === "String") {
 	            _this23._addItem(item);
 	          }
 	        });
@@ -2864,15 +2864,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }]);
 
 	  return Choices;
-	}();
+         }();
 
-		module.exports = Choices;
+         module.exports = Choices;
 
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
+         /***/ }),
+      /* 2 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	/**
+         /**
 	 * @license
 	 * Fuse - Lightweight fuzzy-search
 	 *
@@ -2891,15 +2891,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * See the License for the specific language governing permissions and
 	 * limitations under the License.
 	 */
-	;(function (global) {
-	  'use strict'
+         (function (global) {
+	  "use strict";
 
 	  /** @type {function(...*)} */
 	  function log () {
-	    console.log.apply(console, arguments)
+	    console.log.apply(console, arguments);
 	  }
 
-	  var defaultOptions = {
+	  const defaultOptions = {
 	    // The name of the identifier property. If specified, the returned result will be a list
 	    // of the items' dentifiers, otherwise it will be a list of the items.
 	    id: null,
@@ -2932,7 +2932,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    // Default sort function
 	    sortFn: function (a, b) {
-	      return a.score - b.score
+	      return a.score - b.score;
 	    },
 
 	    // The get function to use when fetching an object's properties.
@@ -2963,7 +2963,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    // When true, the algorithm continues searching to the end of the input even if a perfect
 	    // match is found before the end of the same input.
 	    findAllMatches: false
-	  }
+	  };
 
 	  /**
 	   * @constructor
@@ -2971,26 +2971,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @param {!Object<string, *>} options
 	   */
 	  function Fuse (list, options) {
-	    var key
+	    let key;
 
-	    this.list = list
-	    this.options = options = options || {}
+	    this.list = list;
+	    this.options = options = options || {};
 
 	    for (key in defaultOptions) {
 	      if (!defaultOptions.hasOwnProperty(key)) {
 	        continue;
 	      }
 	      // Add boolean type options
-	      if (typeof defaultOptions[key] === 'boolean') {
+	      if (typeof defaultOptions[key] === "boolean") {
 	        this.options[key] = key in options ? options[key] : defaultOptions[key];
 	      // Add all other options
 	      } else {
-	        this.options[key] = options[key] || defaultOptions[key]
+	        this.options[key] = options[key] || defaultOptions[key];
 	      }
 	    }
 	  }
 
-	  Fuse.VERSION = '2.7.3'
+	  Fuse.VERSION = "2.7.3";
 
 	  /**
 	   * Sets a new list for Fuse to match against.
@@ -2999,189 +2999,189 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @public
 	   */
 	  Fuse.prototype.set = function (list) {
-	    this.list = list
-	    return list
-	  }
+	    this.list = list;
+	    return list;
+	  };
 
 	  Fuse.prototype.search = function (pattern) {
-	    if (this.options.verbose) log('\nSearch term:', pattern, '\n')
+	    if (this.options.verbose) {log("\nSearch term:", pattern, "\n");}
 
-	    this.pattern = pattern
-	    this.results = []
-	    this.resultMap = {}
-	    this._keyMap = null
+	    this.pattern = pattern;
+	    this.results = [];
+	    this.resultMap = {};
+	    this._keyMap = null;
 
-	    this._prepareSearchers()
-	    this._startSearch()
-	    this._computeScore()
-	    this._sort()
+	    this._prepareSearchers();
+	    this._startSearch();
+	    this._computeScore();
+	    this._sort();
 
-	    var output = this._format()
-	    return output
-	  }
+	    const output = this._format();
+	    return output;
+	  };
 
 	  Fuse.prototype._prepareSearchers = function () {
-	    var options = this.options
-	    var pattern = this.pattern
-	    var searchFn = options.searchFn
-	    var tokens = pattern.split(options.tokenSeparator)
-	    var i = 0
-	    var len = tokens.length
+	    const options = this.options;
+	    const pattern = this.pattern;
+	    const searchFn = options.searchFn;
+	    const tokens = pattern.split(options.tokenSeparator);
+	    let i = 0;
+	    const len = tokens.length;
 
 	    if (this.options.tokenize) {
-	      this.tokenSearchers = []
+	      this.tokenSearchers = [];
 	      for (; i < len; i++) {
-	        this.tokenSearchers.push(new searchFn(tokens[i], options))
+	        this.tokenSearchers.push(new searchFn(tokens[i], options));
 	      }
 	    }
-	    this.fullSeacher = new searchFn(pattern, options)
-	  }
+	    this.fullSeacher = new searchFn(pattern, options);
+	  };
 
 	  Fuse.prototype._startSearch = function () {
-	    var options = this.options
-	    var getFn = options.getFn
-	    var list = this.list
-	    var listLen = list.length
-	    var keys = this.options.keys
-	    var keysLen = keys.length
-	    var key
-	    var weight
-	    var item = null
-	    var i
-	    var j
+	    const options = this.options;
+	    const getFn = options.getFn;
+	    const list = this.list;
+	    const listLen = list.length;
+	    const keys = this.options.keys;
+	    const keysLen = keys.length;
+	    let key;
+	    let weight;
+	    let item = null;
+	    let i;
+	    let j;
 
 	    // Check the first item in the list, if it's a string, then we assume
 	    // that every item in the list is also a string, and thus it's a flattened array.
-	    if (typeof list[0] === 'string') {
+	    if (typeof list[0] === "string") {
 	      // Iterate over every item
 	      for (i = 0; i < listLen; i++) {
-	        this._analyze('', list[i], i, i)
+	        this._analyze("", list[i], i, i);
 	      }
 	    } else {
-	      this._keyMap = {}
+	      this._keyMap = {};
 	      // Otherwise, the first item is an Object (hopefully), and thus the searching
 	      // is done on the values of the keys of each item.
 	      // Iterate over every item
 	      for (i = 0; i < listLen; i++) {
-	        item = list[i]
+	        item = list[i];
 	        // Iterate over every key
 	        for (j = 0; j < keysLen; j++) {
-	          key = keys[j]
-	          if (typeof key !== 'string') {
-	            weight = (1 - key.weight) || 1
+	          key = keys[j];
+	          if (typeof key !== "string") {
+	            weight = (1 - key.weight) || 1;
 	            this._keyMap[key.name] = {
 	              weight: weight
-	            }
+	            };
 	            if (key.weight <= 0 || key.weight > 1) {
-	              throw new Error('Key weight has to be > 0 and <= 1')
+	              throw new Error("Key weight has to be > 0 and <= 1");
 	            }
-	            key = key.name
+	            key = key.name;
 	          } else {
 	            this._keyMap[key] = {
 	              weight: 1
-	            }
+	            };
 	          }
-	          this._analyze(key, getFn(item, key, []), item, i)
+	          this._analyze(key, getFn(item, key, []), item, i);
 	        }
 	      }
 	    }
-	  }
+	  };
 
 	  Fuse.prototype._analyze = function (key, text, entity, index) {
-	    var options = this.options
-	    var words
-	    var scores
-	    var exists = false
-	    var existingResult
-	    var averageScore
-	    var finalScore
-	    var scoresLen
-	    var mainSearchResult
-	    var tokenSearcher
-	    var termScores
-	    var word
-	    var tokenSearchResult
-	    var hasMatchInText
-	    var checkTextMatches
-	    var i
-	    var j
+	    const options = this.options;
+	    let words;
+	    let scores;
+	    let exists = false;
+	    let existingResult;
+	    let averageScore;
+	    let finalScore;
+	    let scoresLen;
+	    let mainSearchResult;
+	    let tokenSearcher;
+	    let termScores;
+	    let word;
+	    let tokenSearchResult;
+	    let hasMatchInText;
+	    let checkTextMatches;
+	    let i;
+	    let j;
 
 	    // Check if the text can be searched
 	    if (text === undefined || text === null) {
-	      return
+	      return;
 	    }
 
-	    scores = []
+	    scores = [];
 
-	    var numTextMatches = 0
+	    let numTextMatches = 0;
 
-	    if (typeof text === 'string') {
-	      words = text.split(options.tokenSeparator)
+	    if (typeof text === "string") {
+	      words = text.split(options.tokenSeparator);
 
-	      if (options.verbose) log('---------\nKey:', key)
+	      if (options.verbose) {log("---------\nKey:", key);}
 
 	      if (this.options.tokenize) {
 	        for (i = 0; i < this.tokenSearchers.length; i++) {
-	          tokenSearcher = this.tokenSearchers[i]
+	          tokenSearcher = this.tokenSearchers[i];
 
-	          if (options.verbose) log('Pattern:', tokenSearcher.pattern)
+	          if (options.verbose) {log("Pattern:", tokenSearcher.pattern);}
 
-	          termScores = []
-	          hasMatchInText = false
+	          termScores = [];
+	          hasMatchInText = false;
 
 	          for (j = 0; j < words.length; j++) {
-	            word = words[j]
-	            tokenSearchResult = tokenSearcher.search(word)
-	            var obj = {}
+	            word = words[j];
+	            tokenSearchResult = tokenSearcher.search(word);
+	            const obj = {};
 	            if (tokenSearchResult.isMatch) {
-	              obj[word] = tokenSearchResult.score
-	              exists = true
-	              hasMatchInText = true
-	              scores.push(tokenSearchResult.score)
+	              obj[word] = tokenSearchResult.score;
+	              exists = true;
+	              hasMatchInText = true;
+	              scores.push(tokenSearchResult.score);
 	            } else {
-	              obj[word] = 1
+	              obj[word] = 1;
 	              if (!this.options.matchAllTokens) {
-	                scores.push(1)
+	                scores.push(1);
 	              }
 	            }
-	            termScores.push(obj)
+	            termScores.push(obj);
 	          }
 
 	          if (hasMatchInText) {
-	            numTextMatches++
+	            numTextMatches++;
 	          }
 
-	          if (options.verbose) log('Token scores:', termScores)
+	          if (options.verbose) {log("Token scores:", termScores);}
 	        }
 
-	        averageScore = scores[0]
-	        scoresLen = scores.length
+	        averageScore = scores[0];
+	        scoresLen = scores.length;
 	        for (i = 1; i < scoresLen; i++) {
-	          averageScore += scores[i]
+	          averageScore += scores[i];
 	        }
-	        averageScore = averageScore / scoresLen
+	        averageScore = averageScore / scoresLen;
 
-	        if (options.verbose) log('Token score average:', averageScore)
+	        if (options.verbose) {log("Token score average:", averageScore);}
 	      }
 
-	      mainSearchResult = this.fullSeacher.search(text)
-	      if (options.verbose) log('Full text score:', mainSearchResult.score)
+	      mainSearchResult = this.fullSeacher.search(text);
+	      if (options.verbose) {log("Full text score:", mainSearchResult.score);}
 
-	      finalScore = mainSearchResult.score
+	      finalScore = mainSearchResult.score;
 	      if (averageScore !== undefined) {
-	        finalScore = (finalScore + averageScore) / 2
+	        finalScore = (finalScore + averageScore) / 2;
 	      }
 
-	      if (options.verbose) log('Score average:', finalScore)
+	      if (options.verbose) {log("Score average:", finalScore);}
 
-	      checkTextMatches = (this.options.tokenize && this.options.matchAllTokens) ? numTextMatches >= this.tokenSearchers.length : true
+	      checkTextMatches = (this.options.tokenize && this.options.matchAllTokens) ? numTextMatches >= this.tokenSearchers.length : true;
 
-	      if (options.verbose) log('Check Matches', checkTextMatches)
+	      if (options.verbose) {log("Check Matches", checkTextMatches);}
 
 	      // If a match is found, add the item to <rawResults>, including its score
 	      if ((exists || mainSearchResult.isMatch) && checkTextMatches) {
 	        // Check if the item already exists in our results
-	        existingResult = this.resultMap[index]
+	        existingResult = this.resultMap[index];
 
 	        if (existingResult) {
 	          // Use the lowest score
@@ -3190,7 +3190,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            key: key,
 	            score: finalScore,
 	            matchedIndices: mainSearchResult.matchedIndices
-	          })
+	          });
 	        } else {
 	          // Add it to the raw result list
 	          this.resultMap[index] = {
@@ -3200,185 +3200,185 @@ return /******/ (function(modules) { // webpackBootstrap
 	              score: finalScore,
 	              matchedIndices: mainSearchResult.matchedIndices
 	            }]
-	          }
+	          };
 
-	          this.results.push(this.resultMap[index])
+	          this.results.push(this.resultMap[index]);
 	        }
 	      }
 	    } else if (isArray(text)) {
 	      for (i = 0; i < text.length; i++) {
-	        this._analyze(key, text[i], entity, index)
+	        this._analyze(key, text[i], entity, index);
 	      }
 	    }
-	  }
+	  };
 
 	  Fuse.prototype._computeScore = function () {
-	    var i
-	    var j
-	    var keyMap = this._keyMap
-	    var totalScore
-	    var output
-	    var scoreLen
-	    var score
-	    var weight
-	    var results = this.results
-	    var bestScore
-	    var nScore
+	    let i;
+	    let j;
+	    const keyMap = this._keyMap;
+	    let totalScore;
+	    let output;
+	    let scoreLen;
+	    let score;
+	    let weight;
+	    const results = this.results;
+	    let bestScore;
+	    let nScore;
 
-	    if (this.options.verbose) log('\n\nComputing score:\n')
+	    if (this.options.verbose) {log("\n\nComputing score:\n");}
 
 	    for (i = 0; i < results.length; i++) {
-	      totalScore = 0
-	      output = results[i].output
-	      scoreLen = output.length
+	      totalScore = 0;
+	      output = results[i].output;
+	      scoreLen = output.length;
 
-	      bestScore = 1
+	      bestScore = 1;
 
 	      for (j = 0; j < scoreLen; j++) {
-	        score = output[j].score
-	        weight = keyMap ? keyMap[output[j].key].weight : 1
+	        score = output[j].score;
+	        weight = keyMap ? keyMap[output[j].key].weight : 1;
 
-	        nScore = score * weight
+	        nScore = score * weight;
 
 	        if (weight !== 1) {
-	          bestScore = Math.min(bestScore, nScore)
+	          bestScore = Math.min(bestScore, nScore);
 	        } else {
-	          totalScore += nScore
-	          output[j].nScore = nScore
+	          totalScore += nScore;
+	          output[j].nScore = nScore;
 	        }
 	      }
 
 	      if (bestScore === 1) {
-	        results[i].score = totalScore / scoreLen
+	        results[i].score = totalScore / scoreLen;
 	      } else {
-	        results[i].score = bestScore
+	        results[i].score = bestScore;
 	      }
 
-	      if (this.options.verbose) log(results[i])
+	      if (this.options.verbose) {log(results[i]);}
 	    }
-	  }
+	  };
 
 	  Fuse.prototype._sort = function () {
-	    var options = this.options
+	    const options = this.options;
 	    if (options.shouldSort) {
-	      if (options.verbose) log('\n\nSorting....')
-	      this.results.sort(options.sortFn)
+	      if (options.verbose) {log("\n\nSorting....");}
+	      this.results.sort(options.sortFn);
 	    }
-	  }
+	  };
 
 	  Fuse.prototype._format = function () {
-	    var options = this.options
-	    var getFn = options.getFn
-	    var finalOutput = []
-	    var i
-	    var len
-	    var results = this.results
-	    var replaceValue
-	    var getItemAtIndex
-	    var include = options.include
+	    const options = this.options;
+	    const getFn = options.getFn;
+	    const finalOutput = [];
+	    let i;
+	    let len;
+	    const results = this.results;
+	    let replaceValue;
+	    let getItemAtIndex;
+	    const include = options.include;
 
-	    if (options.verbose) log('\n\nOutput:\n\n', results)
+	    if (options.verbose) {log("\n\nOutput:\n\n", results);}
 
 	    // Helper function, here for speed-up, which replaces the item with its value,
 	    // if the options specifies it,
 	    replaceValue = options.id ? function (index) {
-	      results[index].item = getFn(results[index].item, options.id, [])[0]
-	    } : function () {}
+	      results[index].item = getFn(results[index].item, options.id, [])[0];
+	    } : function () {};
 
 	    getItemAtIndex = function (index) {
-	      var record = results[index]
-	      var data
-	      var j
-	      var output
-	      var _item
-	      var _result
+	      const record = results[index];
+	      let data;
+	      let j;
+	      let output;
+	      let _item;
+	      let _result;
 
 	      // If `include` has values, put the item in the result
 	      if (include.length > 0) {
 	        data = {
 	          item: record.item
-	        }
-	        if (include.indexOf('matches') !== -1) {
-	          output = record.output
-	          data.matches = []
+	        };
+	        if (include.indexOf("matches") !== -1) {
+	          output = record.output;
+	          data.matches = [];
 	          for (j = 0; j < output.length; j++) {
-	            _item = output[j]
+	            _item = output[j];
 	            _result = {
 	              indices: _item.matchedIndices
-	            }
+	            };
 	            if (_item.key) {
-	              _result.key = _item.key
+	              _result.key = _item.key;
 	            }
-	            data.matches.push(_result)
+	            data.matches.push(_result);
 	          }
 	        }
 
-	        if (include.indexOf('score') !== -1) {
-	          data.score = results[index].score
+	        if (include.indexOf("score") !== -1) {
+	          data.score = results[index].score;
 	        }
 
 	      } else {
-	        data = record.item
+	        data = record.item;
 	      }
 
-	      return data
-	    }
+	      return data;
+	    };
 
 	    // From the results, push into a new array only the item identifier (if specified)
 	    // of the entire item.  This is because we don't want to return the <results>,
 	    // since it contains other metadata
 	    for (i = 0, len = results.length; i < len; i++) {
-	      replaceValue(i)
-	      finalOutput.push(getItemAtIndex(i))
+	      replaceValue(i);
+	      finalOutput.push(getItemAtIndex(i));
 	    }
 
-	    return finalOutput
-	  }
+	    return finalOutput;
+	  };
 
 	  // Helpers
 
 	  function deepValue (obj, path, list) {
-	    var firstSegment
-	    var remaining
-	    var dotIndex
-	    var value
-	    var i
-	    var len
+	    let firstSegment;
+	    let remaining;
+	    let dotIndex;
+	    let value;
+	    let i;
+	    let len;
 
 	    if (!path) {
 	      // If there's no path left, we've gotten to the object we care about.
-	      list.push(obj)
+	      list.push(obj);
 	    } else {
-	      dotIndex = path.indexOf('.')
+	      dotIndex = path.indexOf(".");
 
 	      if (dotIndex !== -1) {
-	        firstSegment = path.slice(0, dotIndex)
-	        remaining = path.slice(dotIndex + 1)
+	        firstSegment = path.slice(0, dotIndex);
+	        remaining = path.slice(dotIndex + 1);
 	      } else {
-	        firstSegment = path
+	        firstSegment = path;
 	      }
 
-	      value = obj[firstSegment]
+	      value = obj[firstSegment];
 	      if (value !== null && value !== undefined) {
-	        if (!remaining && (typeof value === 'string' || typeof value === 'number')) {
-	          list.push(value)
+	        if (!remaining && (typeof value === "string" || typeof value === "number")) {
+	          list.push(value);
 	        } else if (isArray(value)) {
 	          // Search each item in the array.
 	          for (i = 0, len = value.length; i < len; i++) {
-	            deepValue(value[i], remaining, list)
+	            deepValue(value[i], remaining, list);
 	          }
 	        } else if (remaining) {
 	          // An object. Recurse further.
-	          deepValue(value, remaining, list)
+	          deepValue(value, remaining, list);
 	        }
 	      }
 	    }
 
-	    return list
+	    return list;
 	  }
 
 	  function isArray (obj) {
-	    return Object.prototype.toString.call(obj) === '[object Array]'
+	    return Object.prototype.toString.call(obj) === "[object Array]";
 	  }
 
 	  /**
@@ -3400,19 +3400,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @constructor
 	   */
 	  function BitapSearcher (pattern, options) {
-	    options = options || {}
-	    this.options = options
-	    this.options.location = options.location || BitapSearcher.defaultOptions.location
-	    this.options.distance = 'distance' in options ? options.distance : BitapSearcher.defaultOptions.distance
-	    this.options.threshold = 'threshold' in options ? options.threshold : BitapSearcher.defaultOptions.threshold
-	    this.options.maxPatternLength = options.maxPatternLength || BitapSearcher.defaultOptions.maxPatternLength
+	    options = options || {};
+	    this.options = options;
+	    this.options.location = options.location || BitapSearcher.defaultOptions.location;
+	    this.options.distance = "distance" in options ? options.distance : BitapSearcher.defaultOptions.distance;
+	    this.options.threshold = "threshold" in options ? options.threshold : BitapSearcher.defaultOptions.threshold;
+	    this.options.maxPatternLength = options.maxPatternLength || BitapSearcher.defaultOptions.maxPatternLength;
 
-	    this.pattern = options.caseSensitive ? pattern : pattern.toLowerCase()
-	    this.patternLen = pattern.length
+	    this.pattern = options.caseSensitive ? pattern : pattern.toLowerCase();
+	    this.patternLen = pattern.length;
 
 	    if (this.patternLen <= this.options.maxPatternLength) {
-	      this.matchmask = 1 << (this.patternLen - 1)
-	      this.patternAlphabet = this._calculatePatternAlphabet()
+	      this.matchmask = 1 << (this.patternLen - 1);
+	      this.patternAlphabet = this._calculatePatternAlphabet();
 	    }
 	  }
 
@@ -3433,7 +3433,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    // Machine word size
 	    maxPatternLength: 32
-	  }
+	  };
 
 	  /**
 	   * Initialize the alphabet for the Bitap algorithm.
@@ -3441,19 +3441,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @private
 	   */
 	  BitapSearcher.prototype._calculatePatternAlphabet = function () {
-	    var mask = {},
-	      i = 0
+	    let mask = {},
+	      i = 0;
 
 	    for (i = 0; i < this.patternLen; i++) {
-	      mask[this.pattern.charAt(i)] = 0
+	      mask[this.pattern.charAt(i)] = 0;
 	    }
 
 	    for (i = 0; i < this.patternLen; i++) {
-	      mask[this.pattern.charAt(i)] |= 1 << (this.pattern.length - i - 1)
+	      mask[this.pattern.charAt(i)] |= 1 << (this.pattern.length - i - 1);
 	    }
 
-	    return mask
-	  }
+	    return mask;
+	  };
 
 	  /**
 	   * Compute and return the score for a match with `e` errors and `x` location.
@@ -3463,15 +3463,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @private
 	   */
 	  BitapSearcher.prototype._bitapScore = function (errors, location) {
-	    var accuracy = errors / this.patternLen,
-	      proximity = Math.abs(this.options.location - location)
+	    const accuracy = errors / this.patternLen,
+	      proximity = Math.abs(this.options.location - location);
 
 	    if (!this.options.distance) {
 	      // Dodge divide by zero error.
-	      return proximity ? 1.0 : accuracy
+	      return proximity ? 1.0 : accuracy;
 	    }
-	    return accuracy + (proximity / this.options.distance)
-	  }
+	    return accuracy + (proximity / this.options.distance);
+	  };
 
 	  /**
 	   * Compute and return the result of the search
@@ -3482,31 +3482,31 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @public
 	   */
 	  BitapSearcher.prototype.search = function (text) {
-	    var options = this.options
-	    var i
-	    var j
-	    var textLen
-	    var findAllMatches
-	    var location
-	    var threshold
-	    var bestLoc
-	    var binMin
-	    var binMid
-	    var binMax
-	    var start, finish
-	    var bitArr
-	    var lastBitArr
-	    var charMatch
-	    var score
-	    var locations
-	    var matches
-	    var isMatched
-	    var matchMask
-	    var matchedIndices
-	    var matchesLen
-	    var match
+	    const options = this.options;
+	    let i;
+	    let j;
+	    let textLen;
+	    let findAllMatches;
+	    let location;
+	    let threshold;
+	    let bestLoc;
+	    let binMin;
+	    let binMid;
+	    let binMax;
+	    let start, finish;
+	    let bitArr;
+	    let lastBitArr;
+	    let charMatch;
+	    let score;
+	    let locations;
+	    let matches;
+	    let isMatched;
+	    let matchMask;
+	    let matchedIndices;
+	    let matchesLen;
+	    let match;
 
-	    text = options.caseSensitive ? text : text.toLowerCase()
+	    text = options.caseSensitive ? text : text.toLowerCase();
 
 	    if (this.pattern === text) {
 	      // Exact match
@@ -3514,19 +3514,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	        isMatch: true,
 	        score: 0,
 	        matchedIndices: [[0, text.length - 1]]
-	      }
+	      };
 	    }
 
 	    // When pattern length is greater than the machine word length, just do a a regex comparison
 	    if (this.patternLen > options.maxPatternLength) {
-	      matches = text.match(new RegExp(this.pattern.replace(options.tokenSeparator, '|')))
-	      isMatched = !!matches
+	      matches = text.match(new RegExp(this.pattern.replace(options.tokenSeparator, "|")));
+	      isMatched = !!matches;
 
 	      if (isMatched) {
-	        matchedIndices = []
+	        matchedIndices = [];
 	        for (i = 0, matchesLen = matches.length; i < matchesLen; i++) {
-	          match = matches[i]
-	          matchedIndices.push([text.indexOf(match), match.length - 1])
+	          match = matches[i];
+	          matchedIndices.push([text.indexOf(match), match.length - 1]);
 	        }
 	      }
 
@@ -3535,246 +3535,246 @@ return /******/ (function(modules) { // webpackBootstrap
 	        // TODO: revisit this score
 	        score: isMatched ? 0.5 : 1,
 	        matchedIndices: matchedIndices
-	      }
+	      };
 	    }
 
-	    findAllMatches = options.findAllMatches
+	    findAllMatches = options.findAllMatches;
 
-	    location = options.location
+	    location = options.location;
 	    // Set starting location at beginning text and initialize the alphabet.
-	    textLen = text.length
+	    textLen = text.length;
 	    // Highest score beyond which we give up.
-	    threshold = options.threshold
+	    threshold = options.threshold;
 	    // Is there a nearby exact match? (speedup)
-	    bestLoc = text.indexOf(this.pattern, location)
+	    bestLoc = text.indexOf(this.pattern, location);
 
 	    // a mask of the matches
-	    matchMask = []
+	    matchMask = [];
 	    for (i = 0; i < textLen; i++) {
-	      matchMask[i] = 0
+	      matchMask[i] = 0;
 	    }
 
 	    if (bestLoc != -1) {
-	      threshold = Math.min(this._bitapScore(0, bestLoc), threshold)
+	      threshold = Math.min(this._bitapScore(0, bestLoc), threshold);
 	      // What about in the other direction? (speed up)
-	      bestLoc = text.lastIndexOf(this.pattern, location + this.patternLen)
+	      bestLoc = text.lastIndexOf(this.pattern, location + this.patternLen);
 
 	      if (bestLoc != -1) {
-	        threshold = Math.min(this._bitapScore(0, bestLoc), threshold)
+	        threshold = Math.min(this._bitapScore(0, bestLoc), threshold);
 	      }
 	    }
 
-	    bestLoc = -1
-	    score = 1
-	    locations = []
-	    binMax = this.patternLen + textLen
+	    bestLoc = -1;
+	    score = 1;
+	    locations = [];
+	    binMax = this.patternLen + textLen;
 
 	    for (i = 0; i < this.patternLen; i++) {
 	      // Scan for the best match; each iteration allows for one more error.
 	      // Run a binary search to determine how far from the match location we can stray
 	      // at this error level.
-	      binMin = 0
-	      binMid = binMax
+	      binMin = 0;
+	      binMid = binMax;
 	      while (binMin < binMid) {
 	        if (this._bitapScore(i, location + binMid) <= threshold) {
-	          binMin = binMid
+	          binMin = binMid;
 	        } else {
-	          binMax = binMid
+	          binMax = binMid;
 	        }
-	        binMid = Math.floor((binMax - binMin) / 2 + binMin)
+	        binMid = Math.floor((binMax - binMin) / 2 + binMin);
 	      }
 
 	      // Use the result from this iteration as the maximum for the next.
-	      binMax = binMid
-	      start = Math.max(1, location - binMid + 1)
+	      binMax = binMid;
+	      start = Math.max(1, location - binMid + 1);
 	      if (findAllMatches) {
 	        finish = textLen;
 	      } else {
-	        finish = Math.min(location + binMid, textLen) + this.patternLen
+	        finish = Math.min(location + binMid, textLen) + this.patternLen;
 	      }
 
 	      // Initialize the bit array
-	      bitArr = Array(finish + 2)
+	      bitArr = Array(finish + 2);
 
-	      bitArr[finish + 1] = (1 << i) - 1
+	      bitArr[finish + 1] = (1 << i) - 1;
 
 	      for (j = finish; j >= start; j--) {
-	        charMatch = this.patternAlphabet[text.charAt(j - 1)]
+	        charMatch = this.patternAlphabet[text.charAt(j - 1)];
 
 	        if (charMatch) {
-	          matchMask[j - 1] = 1
+	          matchMask[j - 1] = 1;
 	        }
 
-	        bitArr[j] = ((bitArr[j + 1] << 1) | 1) & charMatch
+	        bitArr[j] = ((bitArr[j + 1] << 1) | 1) & charMatch;
 
 	        if (i !== 0) {
 	          // Subsequent passes: fuzzy match.
-	          bitArr[j] |= (((lastBitArr[j + 1] | lastBitArr[j]) << 1) | 1) | lastBitArr[j + 1]
+	          bitArr[j] |= (((lastBitArr[j + 1] | lastBitArr[j]) << 1) | 1) | lastBitArr[j + 1];
 	        }
 	        if (bitArr[j] & this.matchmask) {
-	          score = this._bitapScore(i, j - 1)
+	          score = this._bitapScore(i, j - 1);
 
 	          // This match will almost certainly be better than any existing match.
 	          // But check anyway.
 	          if (score <= threshold) {
 	            // Indeed it is
-	            threshold = score
-	            bestLoc = j - 1
-	            locations.push(bestLoc)
+	            threshold = score;
+	            bestLoc = j - 1;
+	            locations.push(bestLoc);
 
 	            // Already passed loc, downhill from here on in.
 	            if (bestLoc <= location) {
-	              break
+	              break;
 	            }
 
 	            // When passing loc, don't exceed our current distance from loc.
-	            start = Math.max(1, 2 * location - bestLoc)
+	            start = Math.max(1, 2 * location - bestLoc);
 	          }
 	        }
 	      }
 
 	      // No hope for a (better) match at greater error levels.
 	      if (this._bitapScore(i + 1, location) > threshold) {
-	        break
+	        break;
 	      }
-	      lastBitArr = bitArr
+	      lastBitArr = bitArr;
 	    }
 
-	    matchedIndices = this._getMatchedIndices(matchMask)
+	    matchedIndices = this._getMatchedIndices(matchMask);
 
 	    // Count exact matches (those with a score of 0) to be "almost" exact
 	    return {
 	      isMatch: bestLoc >= 0,
 	      score: score === 0 ? 0.001 : score,
 	      matchedIndices: matchedIndices
-	    }
-	  }
+	    };
+	  };
 
 	  BitapSearcher.prototype._getMatchedIndices = function (matchMask) {
-	    var matchedIndices = []
-	    var start = -1
-	    var end = -1
-	    var i = 0
-	    var match
-	    var len = matchMask.length
+	    const matchedIndices = [];
+	    let start = -1;
+	    let end = -1;
+	    let i = 0;
+	    let match;
+	    const len = matchMask.length;
 	    for (; i < len; i++) {
-	      match = matchMask[i]
+	      match = matchMask[i];
 	      if (match && start === -1) {
-	        start = i
+	        start = i;
 	      } else if (!match && start !== -1) {
-	        end = i - 1
+	        end = i - 1;
 	        if ((end - start) + 1 >= this.options.minMatchCharLength) {
-	            matchedIndices.push([start, end])
+	            matchedIndices.push([start, end]);
 	        }
-	        start = -1
+	        start = -1;
 	      }
 	    }
 	    if (matchMask[i - 1]) {
 	      if ((i-1 - start) + 1 >= this.options.minMatchCharLength) {
-	        matchedIndices.push([start, i - 1])
+	        matchedIndices.push([start, i - 1]);
 	      }
 	    }
-	    return matchedIndices
-	  }
+	    return matchedIndices;
+	  };
 
 	  // Export to Common JS Loader
 	  if (true) {
 	    // Node. Does not work with strict CommonJS, but
 	    // only CommonJS-like environments that support module.exports,
 	    // like Node.
-	    module.exports = Fuse
-	  } else if (typeof define === 'function' && define.amd) {
+	    module.exports = Fuse;
+	  } else if (typeof define === "function" && define.amd) {
 	    // AMD. Register as an anonymous module.
-	    define(function () {
-	      return Fuse
-	    })
+	    define(() => {
+	      return Fuse;
+	    });
 	  } else {
 	    // Browser globals (root is window)
-	    global.Fuse = Fuse
+	    global.Fuse = Fuse;
 	  }
 
-	})(this);
+         })(this);
 
 
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
+         /***/ }),
+      /* 3 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+         let __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	  Copyright (c) 2016 Jed Watson.
 	  Licensed under the MIT License (MIT), see
 	  http://jedwatson.github.io/classnames
 	*/
-	/* global define */
+         /* global define */
 
-	(function () {
-		'use strict';
+         (function () {
+            "use strict";
 
-		var hasOwn = {}.hasOwnProperty;
+            const hasOwn = {}.hasOwnProperty;
 
-		function classNames () {
-			var classes = [];
+            function classNames () {
+               const classes = [];
 
-			for (var i = 0; i < arguments.length; i++) {
-				var arg = arguments[i];
-				if (!arg) continue;
+               for (let i = 0; i < arguments.length; i++) {
+                  const arg = arguments[i];
+                  if (!arg) {continue;}
 
-				var argType = typeof arg;
+                  const argType = typeof arg;
 
-				if (argType === 'string' || argType === 'number') {
-					classes.push(arg);
-				} else if (Array.isArray(arg)) {
-					classes.push(classNames.apply(null, arg));
-				} else if (argType === 'object') {
-					for (var key in arg) {
-						if (hasOwn.call(arg, key) && arg[key]) {
-							classes.push(key);
-						}
-					}
-				}
-			}
+                  if (argType === "string" || argType === "number") {
+                     classes.push(arg);
+                  } else if (Array.isArray(arg)) {
+                     classes.push(classNames.apply(null, arg));
+                  } else if (argType === "object") {
+                     for (const key in arg) {
+                        if (hasOwn.call(arg, key) && arg[key]) {
+                           classes.push(key);
+                        }
+                     }
+                  }
+               }
 
-			return classes.join(' ');
-		}
+               return classes.join(" ");
+            }
 
-		if (typeof module !== 'undefined' && module.exports) {
-			module.exports = classNames;
-		} else if (true) {
-			// register as 'classnames', consistent with npm package name
-			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
-				return classNames;
-			}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-		} else {
-			window.classNames = classNames;
-		}
-	}());
+            if (typeof module !== "undefined" && module.exports) {
+               module.exports = classNames;
+            } else if (true) {
+               // register as 'classnames', consistent with npm package name
+               !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+                  return classNames;
+               }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+            } else {
+               window.classNames = classNames;
+            }
+         }());
 
 
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
+         /***/ }),
+      /* 4 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+         "use strict";
 
-	Object.defineProperty(exports, "__esModule", {
+         Object.defineProperty(exports, "__esModule", {
 	  value: true
-	});
+         });
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+         const _createClass = function () { function defineProperties(target, props) { for (let i = 0; i < props.length; i++) { const descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) {descriptor.writable = true;} Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) {defineProperties(Constructor.prototype, protoProps);} if (staticProps) {defineProperties(Constructor, staticProps);} return Constructor; }; }();
 
-	var _redux = __webpack_require__(5);
+         const _redux = __webpack_require__(5);
 
-	var _index = __webpack_require__(26);
+         const _index = __webpack_require__(26);
 
-	var _index2 = _interopRequireDefault(_index);
+         const _index2 = _interopRequireDefault(_index);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+         function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+         function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } return Array.from(arr); }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+         function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var Store = function () {
+         const Store = function () {
 	  function Store() {
 	    _classCallCheck(this, Store);
 
@@ -3788,7 +3788,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	  _createClass(Store, [{
-	    key: 'getState',
+	    key: "getState",
 	    value: function getState() {
 	      return this.store.getState();
 	    }
@@ -3800,7 +3800,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'dispatch',
+	    key: "dispatch",
 	    value: function dispatch(action) {
 	      this.store.dispatch(action);
 	    }
@@ -3812,7 +3812,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'subscribe',
+	    key: "subscribe",
 	    value: function subscribe(onChange) {
 	      this.store.subscribe(onChange);
 	    }
@@ -3823,9 +3823,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'isLoading',
+	    key: "isLoading",
 	    value: function isLoading() {
-	      var state = this.store.getState();
+	      const state = this.store.getState();
 	      return state.general.loading;
 	    }
 
@@ -3835,9 +3835,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'getItems',
+	    key: "getItems",
 	    value: function getItems() {
-	      var state = this.store.getState();
+	      const state = this.store.getState();
 	      return state.items;
 	    }
 
@@ -3847,10 +3847,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'getItemsFilteredByActive',
+	    key: "getItemsFilteredByActive",
 	    value: function getItemsFilteredByActive() {
-	      var items = this.getItems();
-	      var values = items.filter(function (item) {
+	      const items = this.getItems();
+	      const values = items.filter((item) => {
 	        return item.active === true;
 	      }, []);
 
@@ -3863,11 +3863,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'getItemsReducedToValues',
+	    key: "getItemsReducedToValues",
 	    value: function getItemsReducedToValues() {
-	      var items = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.getItems();
+	      const items = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.getItems();
 
-	      var values = items.reduce(function (prev, current) {
+	      const values = items.reduce((prev, current) => {
 	        prev.push(current.value);
 	        return prev;
 	      }, []);
@@ -3881,9 +3881,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'getChoices',
+	    key: "getChoices",
 	    value: function getChoices() {
-	      var state = this.store.getState();
+	      const state = this.store.getState();
 	      return state.choices;
 	    }
 
@@ -3893,10 +3893,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'getChoicesFilteredByActive',
+	    key: "getChoicesFilteredByActive",
 	    value: function getChoicesFilteredByActive() {
-	      var choices = this.getChoices();
-	      var values = choices.filter(function (choice) {
+	      const choices = this.getChoices();
+	      const values = choices.filter((choice) => {
 	        return choice.active === true;
 	      });
 
@@ -3909,10 +3909,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'getChoicesFilteredBySelectable',
+	    key: "getChoicesFilteredBySelectable",
 	    value: function getChoicesFilteredBySelectable() {
-	      var choices = this.getChoices();
-	      var values = choices.filter(function (choice) {
+	      const choices = this.getChoices();
+	      const values = choices.filter((choice) => {
 	        return choice.disabled !== true;
 	      });
 
@@ -3925,10 +3925,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'getSearchableChoices',
+	    key: "getSearchableChoices",
 	    value: function getSearchableChoices() {
-	      var filtered = this.getChoicesFilteredBySelectable();
-	      return filtered.filter(function (choice) {
+	      const filtered = this.getChoicesFilteredBySelectable();
+	      return filtered.filter((choice) => {
 	        return choice.placeholder !== true;
 	      });
 	    }
@@ -3939,11 +3939,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'getChoiceById',
+	    key: "getChoiceById",
 	    value: function getChoiceById(id) {
 	      if (id) {
-	        var choices = this.getChoicesFilteredByActive();
-	        var foundChoice = choices.find(function (choice) {
+	        const choices = this.getChoicesFilteredByActive();
+	        const foundChoice = choices.find((choice) => {
 	          return choice.id === parseInt(id, 10);
 	        });
 	        return foundChoice;
@@ -3957,9 +3957,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'getGroups',
+	    key: "getGroups",
 	    value: function getGroups() {
-	      var state = this.store.getState();
+	      const state = this.store.getState();
 	      return state.groups;
 	    }
 
@@ -3969,14 +3969,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'getGroupsFilteredByActive',
+	    key: "getGroupsFilteredByActive",
 	    value: function getGroupsFilteredByActive() {
-	      var groups = this.getGroups();
-	      var choices = this.getChoices();
+	      const groups = this.getGroups();
+	      const choices = this.getChoices();
 
-	      var values = groups.filter(function (group) {
-	        var isActive = group.active === true && group.disabled === false;
-	        var hasActiveOptions = choices.some(function (choice) {
+	      const values = groups.filter((group) => {
+	        const isActive = group.active === true && group.disabled === false;
+	        const hasActiveOptions = choices.some((choice) => {
 	          return choice.active === true && choice.disabled === false;
 	        });
 	        return isActive && hasActiveOptions;
@@ -3992,10 +3992,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'getGroupById',
+	    key: "getGroupById",
 	    value: function getGroupById(id) {
-	      var groups = this.getGroups();
-	      var foundGroup = groups.find(function (group) {
+	      const groups = this.getGroups();
+	      const foundGroup = groups.find((group) => {
 	        return group.id === id;
 	      });
 
@@ -4008,10 +4008,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	     */
 
 	  }, {
-	    key: 'getPlaceholderChoice',
+	    key: "getPlaceholderChoice",
 	    value: function getPlaceholderChoice() {
-	      var choices = this.getChoices();
-	      var placeholderChoice = [].concat(_toConsumableArray(choices)).reverse().find(function (choice) {
+	      const choices = this.getChoices();
+	      const placeholderChoice = [].concat(_toConsumableArray(choices)).reverse().find((choice) => {
 	        return choice.placeholder === true;
 	      });
 
@@ -4020,92 +4020,92 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }]);
 
 	  return Store;
-	}();
+         }();
 
-	exports.default = Store;
+         exports.default = Store;
 
 
-		module.exports = Store;
+         module.exports = Store;
 
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
+         /***/ }),
+      /* 5 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+         "use strict";
 
-	exports.__esModule = true;
-	exports.compose = exports.applyMiddleware = exports.bindActionCreators = exports.combineReducers = exports.createStore = undefined;
+         exports.__esModule = true;
+         exports.compose = exports.applyMiddleware = exports.bindActionCreators = exports.combineReducers = exports.createStore = undefined;
 
-	var _createStore = __webpack_require__(6);
+         const _createStore = __webpack_require__(6);
 
-	var _createStore2 = _interopRequireDefault(_createStore);
+         const _createStore2 = _interopRequireDefault(_createStore);
 
-	var _combineReducers = __webpack_require__(21);
+         const _combineReducers = __webpack_require__(21);
 
-	var _combineReducers2 = _interopRequireDefault(_combineReducers);
+         const _combineReducers2 = _interopRequireDefault(_combineReducers);
 
-	var _bindActionCreators = __webpack_require__(23);
+         const _bindActionCreators = __webpack_require__(23);
 
-	var _bindActionCreators2 = _interopRequireDefault(_bindActionCreators);
+         const _bindActionCreators2 = _interopRequireDefault(_bindActionCreators);
 
-	var _applyMiddleware = __webpack_require__(24);
+         const _applyMiddleware = __webpack_require__(24);
 
-	var _applyMiddleware2 = _interopRequireDefault(_applyMiddleware);
+         const _applyMiddleware2 = _interopRequireDefault(_applyMiddleware);
 
-	var _compose = __webpack_require__(25);
+         const _compose = __webpack_require__(25);
 
-	var _compose2 = _interopRequireDefault(_compose);
+         const _compose2 = _interopRequireDefault(_compose);
 
-	var _warning = __webpack_require__(22);
+         const _warning = __webpack_require__(22);
 
-	var _warning2 = _interopRequireDefault(_warning);
+         const _warning2 = _interopRequireDefault(_warning);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+         function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-	/*
+         /*
 	* This is a dummy function to check if the function name has been altered by minification.
 	* If the function has been minified and NODE_ENV !== 'production', warn the user.
 	*/
-	function isCrushed() {}
+         function isCrushed() {}
 
-	if (false) {
-	  (0, _warning2['default'])('You are currently using minified code outside of NODE_ENV === \'production\'. ' + 'This means that you are running a slower development build of Redux. ' + 'You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify ' + 'or DefinePlugin for webpack (http://stackoverflow.com/questions/30030031) ' + 'to ensure you have the correct code for your production build.');
-	}
+         if (false) {
+	  (0, _warning2.default)("You are currently using minified code outside of NODE_ENV === 'production'. " + "This means that you are running a slower development build of Redux. " + "You can use loose-envify (https://github.com/zertosh/loose-envify) for browserify " + "or DefinePlugin for webpack (http://stackoverflow.com/questions/30030031) " + "to ensure you have the correct code for your production build.");
+         }
 
-	exports.createStore = _createStore2['default'];
-	exports.combineReducers = _combineReducers2['default'];
-	exports.bindActionCreators = _bindActionCreators2['default'];
-	exports.applyMiddleware = _applyMiddleware2['default'];
-	exports.compose = _compose2['default'];
+         exports.createStore = _createStore2.default;
+         exports.combineReducers = _combineReducers2.default;
+         exports.bindActionCreators = _bindActionCreators2.default;
+         exports.applyMiddleware = _applyMiddleware2.default;
+         exports.compose = _compose2.default;
 
-/***/ }),
-/* 6 */
-/***/ (function(module, exports, __webpack_require__) {
+         /***/ }),
+      /* 6 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+         "use strict";
 
-	exports.__esModule = true;
-	exports.ActionTypes = undefined;
-	exports['default'] = createStore;
+         exports.__esModule = true;
+         exports.ActionTypes = undefined;
+         exports.default = createStore;
 
-	var _isPlainObject = __webpack_require__(7);
+         const _isPlainObject = __webpack_require__(7);
 
-	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
+         const _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _symbolObservable = __webpack_require__(17);
+         const _symbolObservable = __webpack_require__(17);
 
-	var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
+         const _symbolObservable2 = _interopRequireDefault(_symbolObservable);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+         function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-	/**
+         /**
 	 * These are private action types reserved by Redux.
 	 * For any unknown actions, you must return the current state.
 	 * If the current state is undefined, you must return the initial state.
 	 * Do not reference these action types directly in your code.
 	 */
-	var ActionTypes = exports.ActionTypes = {
-	  INIT: '@@redux/INIT'
+         const ActionTypes = exports.ActionTypes = {
+	  INIT: "@@redux/INIT"
 
 	  /**
 	   * Creates a Redux store that holds the state tree.
@@ -4132,31 +4132,31 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @returns {Store} A Redux store that lets you read the state, dispatch actions
 	   * and subscribe to changes.
 	   */
-	};function createStore(reducer, preloadedState, enhancer) {
-	  var _ref2;
+         };function createStore(reducer, preloadedState, enhancer) {
+	  let _ref2;
 
-	  if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
+	  if (typeof preloadedState === "function" && typeof enhancer === "undefined") {
 	    enhancer = preloadedState;
 	    preloadedState = undefined;
 	  }
 
-	  if (typeof enhancer !== 'undefined') {
-	    if (typeof enhancer !== 'function') {
-	      throw new Error('Expected the enhancer to be a function.');
+	  if (typeof enhancer !== "undefined") {
+	    if (typeof enhancer !== "function") {
+	      throw new Error("Expected the enhancer to be a function.");
 	    }
 
 	    return enhancer(createStore)(reducer, preloadedState);
 	  }
 
-	  if (typeof reducer !== 'function') {
-	    throw new Error('Expected the reducer to be a function.');
+	  if (typeof reducer !== "function") {
+	    throw new Error("Expected the reducer to be a function.");
 	  }
 
-	  var currentReducer = reducer;
-	  var currentState = preloadedState;
-	  var currentListeners = [];
-	  var nextListeners = currentListeners;
-	  var isDispatching = false;
+	  let currentReducer = reducer;
+	  let currentState = preloadedState;
+	  let currentListeners = [];
+	  let nextListeners = currentListeners;
+	  let isDispatching = false;
 
 	  function ensureCanMutateNextListeners() {
 	    if (nextListeners === currentListeners) {
@@ -4197,11 +4197,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @returns {Function} A function to remove this change listener.
 	   */
 	  function subscribe(listener) {
-	    if (typeof listener !== 'function') {
-	      throw new Error('Expected listener to be a function.');
+	    if (typeof listener !== "function") {
+	      throw new Error("Expected listener to be a function.");
 	    }
 
-	    var isSubscribed = true;
+	    let isSubscribed = true;
 
 	    ensureCanMutateNextListeners();
 	    nextListeners.push(listener);
@@ -4214,7 +4214,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      isSubscribed = false;
 
 	      ensureCanMutateNextListeners();
-	      var index = nextListeners.indexOf(listener);
+	      const index = nextListeners.indexOf(listener);
 	      nextListeners.splice(index, 1);
 	    };
 	  }
@@ -4245,16 +4245,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * return something else (for example, a Promise you can await).
 	   */
 	  function dispatch(action) {
-	    if (!(0, _isPlainObject2['default'])(action)) {
-	      throw new Error('Actions must be plain objects. ' + 'Use custom middleware for async actions.');
+	    if (!(0, _isPlainObject2.default)(action)) {
+	      throw new Error("Actions must be plain objects. " + "Use custom middleware for async actions.");
 	    }
 
-	    if (typeof action.type === 'undefined') {
-	      throw new Error('Actions may not have an undefined "type" property. ' + 'Have you misspelled a constant?');
+	    if (typeof action.type === "undefined") {
+	      throw new Error("Actions may not have an undefined \"type\" property. " + "Have you misspelled a constant?");
 	    }
 
 	    if (isDispatching) {
-	      throw new Error('Reducers may not dispatch actions.');
+	      throw new Error("Reducers may not dispatch actions.");
 	    }
 
 	    try {
@@ -4264,9 +4264,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	      isDispatching = false;
 	    }
 
-	    var listeners = currentListeners = nextListeners;
-	    for (var i = 0; i < listeners.length; i++) {
-	      var listener = listeners[i];
+	    const listeners = currentListeners = nextListeners;
+	    for (let i = 0; i < listeners.length; i++) {
+	      const listener = listeners[i];
 	      listener();
 	    }
 
@@ -4284,8 +4284,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @returns {void}
 	   */
 	  function replaceReducer(nextReducer) {
-	    if (typeof nextReducer !== 'function') {
-	      throw new Error('Expected the nextReducer to be a function.');
+	    if (typeof nextReducer !== "function") {
+	      throw new Error("Expected the nextReducer to be a function.");
 	    }
 
 	    currentReducer = nextReducer;
@@ -4299,9 +4299,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * https://github.com/tc39/proposal-observable
 	   */
 	  function observable() {
-	    var _ref;
+	    let _ref;
 
-	    var outerSubscribe = subscribe;
+	    const outerSubscribe = subscribe;
 	    return _ref = {
 	      /**
 	       * The minimal observable subscription method.
@@ -4312,8 +4312,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	       * emission of values from the observable.
 	       */
 	      subscribe: function subscribe(observer) {
-	        if (typeof observer !== 'object') {
-	          throw new TypeError('Expected the observer to be an object.');
+	        if (typeof observer !== "object") {
+	          throw new TypeError("Expected the observer to be an object.");
 	        }
 
 	        function observeState() {
@@ -4323,10 +4323,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 
 	        observeState();
-	        var unsubscribe = outerSubscribe(observeState);
+	        const unsubscribe = outerSubscribe(observeState);
 	        return { unsubscribe: unsubscribe };
 	      }
-	    }, _ref[_symbolObservable2['default']] = function () {
+	    }, _ref[_symbolObservable2.default] = function () {
 	      return this;
 	    }, _ref;
 	  }
@@ -4341,34 +4341,34 @@ return /******/ (function(modules) { // webpackBootstrap
 	    subscribe: subscribe,
 	    getState: getState,
 	    replaceReducer: replaceReducer
-	  }, _ref2[_symbolObservable2['default']] = observable, _ref2;
-	}
+	  }, _ref2[_symbolObservable2.default] = observable, _ref2;
+         }
 
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
+         /***/ }),
+      /* 7 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	var baseGetTag = __webpack_require__(8),
+         const baseGetTag = __webpack_require__(8),
 	    getPrototype = __webpack_require__(14),
 	    isObjectLike = __webpack_require__(16);
 
-	/** `Object#toString` result references. */
-	var objectTag = '[object Object]';
+         /** `Object#toString` result references. */
+         const objectTag = "[object Object]";
 
-	/** Used for built-in method references. */
-	var funcProto = Function.prototype,
+         /** Used for built-in method references. */
+         const funcProto = Function.prototype,
 	    objectProto = Object.prototype;
 
-	/** Used to resolve the decompiled source of functions. */
-	var funcToString = funcProto.toString;
+         /** Used to resolve the decompiled source of functions. */
+         const funcToString = funcProto.toString;
 
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
+         /** Used to check objects for own properties. */
+         const hasOwnProperty = objectProto.hasOwnProperty;
 
-	/** Used to infer the `Object` constructor. */
-	var objectCtorString = funcToString.call(Object);
+         /** Used to infer the `Object` constructor. */
+         const objectCtorString = funcToString.call(Object);
 
-	/**
+         /**
 	 * Checks if `value` is a plain object, that is, an object created by the
 	 * `Object` constructor or one with a `[[Prototype]]` of `null`.
 	 *
@@ -4396,125 +4396,125 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * _.isPlainObject(Object.create(null));
 	 * // => true
 	 */
-	function isPlainObject(value) {
+         function isPlainObject(value) {
 	  if (!isObjectLike(value) || baseGetTag(value) != objectTag) {
 	    return false;
 	  }
-	  var proto = getPrototype(value);
+	  const proto = getPrototype(value);
 	  if (proto === null) {
 	    return true;
 	  }
-	  var Ctor = hasOwnProperty.call(proto, 'constructor') && proto.constructor;
-	  return typeof Ctor == 'function' && Ctor instanceof Ctor &&
+	  const Ctor = hasOwnProperty.call(proto, "constructor") && proto.constructor;
+	  return typeof Ctor === "function" && Ctor instanceof Ctor &&
 	    funcToString.call(Ctor) == objectCtorString;
-	}
+         }
 
-	module.exports = isPlainObject;
+         module.exports = isPlainObject;
 
 
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
+         /***/ }),
+      /* 8 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	var Symbol = __webpack_require__(9),
+         const Symbol = __webpack_require__(9),
 	    getRawTag = __webpack_require__(12),
 	    objectToString = __webpack_require__(13);
 
-	/** `Object#toString` result references. */
-	var nullTag = '[object Null]',
-	    undefinedTag = '[object Undefined]';
+         /** `Object#toString` result references. */
+         const nullTag = "[object Null]",
+	    undefinedTag = "[object Undefined]";
 
-	/** Built-in value references. */
-	var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
+         /** Built-in value references. */
+         const symToStringTag = Symbol ? Symbol.toStringTag : undefined;
 
-	/**
+         /**
 	 * The base implementation of `getTag` without fallbacks for buggy environments.
 	 *
 	 * @private
 	 * @param {*} value The value to query.
 	 * @returns {string} Returns the `toStringTag`.
 	 */
-	function baseGetTag(value) {
+         function baseGetTag(value) {
 	  if (value == null) {
 	    return value === undefined ? undefinedTag : nullTag;
 	  }
 	  return (symToStringTag && symToStringTag in Object(value))
 	    ? getRawTag(value)
 	    : objectToString(value);
-	}
+         }
 
-	module.exports = baseGetTag;
-
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	var root = __webpack_require__(10);
-
-	/** Built-in value references. */
-	var Symbol = root.Symbol;
-
-	module.exports = Symbol;
+         module.exports = baseGetTag;
 
 
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
+         /***/ }),
+      /* 9 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	var freeGlobal = __webpack_require__(11);
+         const root = __webpack_require__(10);
 
-	/** Detect free variable `self`. */
-	var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+         /** Built-in value references. */
+         const Symbol = root.Symbol;
 
-	/** Used as a reference to the global object. */
-	var root = freeGlobal || freeSelf || Function('return this')();
-
-	module.exports = root;
+         module.exports = Symbol;
 
 
-/***/ }),
-/* 11 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 10 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
-	var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+         const freeGlobal = __webpack_require__(11);
 
-	module.exports = freeGlobal;
+         /** Detect free variable `self`. */
+         const freeSelf = typeof self === "object" && self && self.Object === Object && self;
 
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+         /** Used as a reference to the global object. */
+         const root = freeGlobal || freeSelf || Function("return this")();
 
-/***/ }),
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
+         module.exports = root;
 
-	var Symbol = __webpack_require__(9);
 
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
+         /***/ }),
+      /* 11 */
+      /***/ (function(module, exports) {
 
-	/** Used to check objects for own properties. */
-	var hasOwnProperty = objectProto.hasOwnProperty;
+         /* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
+            const freeGlobal = typeof global === "object" && global && global.Object === Object && global;
 
-	/**
+            module.exports = freeGlobal;
+
+            /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())));
+
+         /***/ }),
+      /* 12 */
+      /***/ (function(module, exports, __webpack_require__) {
+
+         const Symbol = __webpack_require__(9);
+
+         /** Used for built-in method references. */
+         const objectProto = Object.prototype;
+
+         /** Used to check objects for own properties. */
+         const hasOwnProperty = objectProto.hasOwnProperty;
+
+         /**
 	 * Used to resolve the
 	 * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
 	 * of values.
 	 */
-	var nativeObjectToString = objectProto.toString;
+         const nativeObjectToString = objectProto.toString;
 
-	/** Built-in value references. */
-	var symToStringTag = Symbol ? Symbol.toStringTag : undefined;
+         /** Built-in value references. */
+         const symToStringTag = Symbol ? Symbol.toStringTag : undefined;
 
-	/**
+         /**
 	 * A specialized version of `baseGetTag` which ignores `Symbol.toStringTag` values.
 	 *
 	 * @private
 	 * @param {*} value The value to query.
 	 * @returns {string} Returns the raw `toStringTag`.
 	 */
-	function getRawTag(value) {
-	  var isOwn = hasOwnProperty.call(value, symToStringTag),
+         function getRawTag(value) {
+	  const isOwn = hasOwnProperty.call(value, symToStringTag),
 	      tag = value[symToStringTag];
 
 	  try {
@@ -4522,7 +4522,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var unmasked = true;
 	  } catch (e) {}
 
-	  var result = nativeObjectToString.call(value);
+	  const result = nativeObjectToString.call(value);
 	  if (unmasked) {
 	    if (isOwn) {
 	      value[symToStringTag] = tag;
@@ -4531,56 +4531,56 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }
 	  return result;
-	}
+         }
 
-	module.exports = getRawTag;
+         module.exports = getRawTag;
 
 
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 13 */
+      /***/ (function(module, exports) {
 
-	/** Used for built-in method references. */
-	var objectProto = Object.prototype;
+         /** Used for built-in method references. */
+         const objectProto = Object.prototype;
 
-	/**
+         /**
 	 * Used to resolve the
 	 * [`toStringTag`](http://ecma-international.org/ecma-262/7.0/#sec-object.prototype.tostring)
 	 * of values.
 	 */
-	var nativeObjectToString = objectProto.toString;
+         const nativeObjectToString = objectProto.toString;
 
-	/**
+         /**
 	 * Converts `value` to a string using `Object.prototype.toString`.
 	 *
 	 * @private
 	 * @param {*} value The value to convert.
 	 * @returns {string} Returns the converted string.
 	 */
-	function objectToString(value) {
+         function objectToString(value) {
 	  return nativeObjectToString.call(value);
-	}
+         }
 
-	module.exports = objectToString;
-
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	var overArg = __webpack_require__(15);
-
-	/** Built-in value references. */
-	var getPrototype = overArg(Object.getPrototypeOf, Object);
-
-	module.exports = getPrototype;
+         module.exports = objectToString;
 
 
-/***/ }),
-/* 15 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 14 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	/**
+         const overArg = __webpack_require__(15);
+
+         /** Built-in value references. */
+         const getPrototype = overArg(Object.getPrototypeOf, Object);
+
+         module.exports = getPrototype;
+
+
+         /***/ }),
+      /* 15 */
+      /***/ (function(module, exports) {
+
+         /**
 	 * Creates a unary function that invokes `func` with its argument transformed.
 	 *
 	 * @private
@@ -4588,20 +4588,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param {Function} transform The argument transform.
 	 * @returns {Function} Returns the new function.
 	 */
-	function overArg(func, transform) {
+         function overArg(func, transform) {
 	  return function(arg) {
 	    return func(transform(arg));
 	  };
-	}
+         }
 
-	module.exports = overArg;
+         module.exports = overArg;
 
 
-/***/ }),
-/* 16 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 16 */
+      /***/ (function(module, exports) {
 
-	/**
+         /**
 	 * Checks if `value` is object-like. A value is object-like if it's not `null`
 	 * and has a `typeof` result of "object".
 	 *
@@ -4625,169 +4625,169 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * _.isObjectLike(null);
 	 * // => false
 	 */
-	function isObjectLike(value) {
-	  return value != null && typeof value == 'object';
-	}
+         function isObjectLike(value) {
+	  return value != null && typeof value === "object";
+         }
 
-	module.exports = isObjectLike;
-
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(18);
+         module.exports = isObjectLike;
 
 
-/***/ }),
-/* 18 */
-/***/ (function(module, exports, __webpack_require__) {
+         /***/ }),
+      /* 17 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(global, module) {'use strict';
+         module.exports = __webpack_require__(18);
 
-	Object.defineProperty(exports, "__esModule", {
+
+         /***/ }),
+      /* 18 */
+      /***/ (function(module, exports, __webpack_require__) {
+
+         /* WEBPACK VAR INJECTION */(function(global, module) {"use strict";
+
+            Object.defineProperty(exports, "__esModule", {
 	  value: true
-	});
+            });
 
-	var _ponyfill = __webpack_require__(20);
+            const _ponyfill = __webpack_require__(20);
 
-	var _ponyfill2 = _interopRequireDefault(_ponyfill);
+            const _ponyfill2 = _interopRequireDefault(_ponyfill);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+            function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-	var root; /* global window */
+            let root; /* global window */
 
 
-	if (typeof self !== 'undefined') {
+            if (typeof self !== "undefined") {
 	  root = self;
-	} else if (typeof window !== 'undefined') {
+            } else if (typeof window !== "undefined") {
 	  root = window;
-	} else if (typeof global !== 'undefined') {
+            } else if (typeof global !== "undefined") {
 	  root = global;
-	} else if (true) {
+            } else if (true) {
 	  root = module;
-	} else {
-	  root = Function('return this')();
-	}
+            } else {
+	  root = Function("return this")();
+            }
 
-	var result = (0, _ponyfill2['default'])(root);
-	exports['default'] = result;
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(19)(module)))
+            const result = (0, _ponyfill2.default)(root);
+            exports.default = result;
+            /* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(19)(module)));
 
-/***/ }),
-/* 19 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 19 */
+      /***/ (function(module, exports) {
 
-	module.exports = function(module) {
-		if(!module.webpackPolyfill) {
-			module.deprecate = function() {};
-			module.paths = [];
-			// module.parent = undefined by default
-			module.children = [];
-			module.webpackPolyfill = 1;
-		}
-		return module;
-	}
+         module.exports = function(module) {
+            if(!module.webpackPolyfill) {
+               module.deprecate = function() {};
+               module.paths = [];
+               // module.parent = undefined by default
+               module.children = [];
+               module.webpackPolyfill = 1;
+            }
+            return module;
+         };
 
 
-/***/ }),
-/* 20 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 20 */
+      /***/ (function(module, exports) {
 
-	'use strict';
+         "use strict";
 
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	exports['default'] = symbolObservablePonyfill;
-	function symbolObservablePonyfill(root) {
-		var result;
-		var _Symbol = root.Symbol;
+         Object.defineProperty(exports, "__esModule", {
+            value: true
+         });
+         exports.default = symbolObservablePonyfill;
+         function symbolObservablePonyfill(root) {
+            let result;
+            const _Symbol = root.Symbol;
 
-		if (typeof _Symbol === 'function') {
-			if (_Symbol.observable) {
-				result = _Symbol.observable;
-			} else {
-				result = _Symbol('observable');
-				_Symbol.observable = result;
-			}
-		} else {
-			result = '@@observable';
-		}
+            if (typeof _Symbol === "function") {
+               if (_Symbol.observable) {
+                  result = _Symbol.observable;
+               } else {
+                  result = _Symbol("observable");
+                  _Symbol.observable = result;
+               }
+            } else {
+               result = "@@observable";
+            }
 
-		return result;
-	};
+            return result;
+         }
 
-/***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
+         /***/ }),
+      /* 21 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+         "use strict";
 
-	exports.__esModule = true;
-	exports['default'] = combineReducers;
+         exports.__esModule = true;
+         exports.default = combineReducers;
 
-	var _createStore = __webpack_require__(6);
+         const _createStore = __webpack_require__(6);
 
-	var _isPlainObject = __webpack_require__(7);
+         const _isPlainObject = __webpack_require__(7);
 
-	var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
+         const _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-	var _warning = __webpack_require__(22);
+         const _warning = __webpack_require__(22);
 
-	var _warning2 = _interopRequireDefault(_warning);
+         const _warning2 = _interopRequireDefault(_warning);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+         function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-	function getUndefinedStateErrorMessage(key, action) {
-	  var actionType = action && action.type;
-	  var actionName = actionType && '"' + actionType.toString() + '"' || 'an action';
+         function getUndefinedStateErrorMessage(key, action) {
+	  const actionType = action && action.type;
+	  const actionName = actionType && "\"" + actionType.toString() + "\"" || "an action";
 
-	  return 'Given action ' + actionName + ', reducer "' + key + '" returned undefined. ' + 'To ignore an action, you must explicitly return the previous state. ' + 'If you want this reducer to hold no value, you can return null instead of undefined.';
-	}
+	  return "Given action " + actionName + ", reducer \"" + key + "\" returned undefined. " + "To ignore an action, you must explicitly return the previous state. " + "If you want this reducer to hold no value, you can return null instead of undefined.";
+         }
 
-	function getUnexpectedStateShapeWarningMessage(inputState, reducers, action, unexpectedKeyCache) {
-	  var reducerKeys = Object.keys(reducers);
-	  var argumentName = action && action.type === _createStore.ActionTypes.INIT ? 'preloadedState argument passed to createStore' : 'previous state received by the reducer';
+         function getUnexpectedStateShapeWarningMessage(inputState, reducers, action, unexpectedKeyCache) {
+	  const reducerKeys = Object.keys(reducers);
+	  const argumentName = action && action.type === _createStore.ActionTypes.INIT ? "preloadedState argument passed to createStore" : "previous state received by the reducer";
 
 	  if (reducerKeys.length === 0) {
-	    return 'Store does not have a valid reducer. Make sure the argument passed ' + 'to combineReducers is an object whose values are reducers.';
+	    return "Store does not have a valid reducer. Make sure the argument passed " + "to combineReducers is an object whose values are reducers.";
 	  }
 
-	  if (!(0, _isPlainObject2['default'])(inputState)) {
-	    return 'The ' + argumentName + ' has unexpected type of "' + {}.toString.call(inputState).match(/\s([a-z|A-Z]+)/)[1] + '". Expected argument to be an object with the following ' + ('keys: "' + reducerKeys.join('", "') + '"');
+	  if (!(0, _isPlainObject2.default)(inputState)) {
+	    return "The " + argumentName + " has unexpected type of \"" + {}.toString.call(inputState).match(/\s([a-z|A-Z]+)/)[1] + "\". Expected argument to be an object with the following " + ("keys: \"" + reducerKeys.join("\", \"") + "\"");
 	  }
 
-	  var unexpectedKeys = Object.keys(inputState).filter(function (key) {
+	  const unexpectedKeys = Object.keys(inputState).filter((key) => {
 	    return !reducers.hasOwnProperty(key) && !unexpectedKeyCache[key];
 	  });
 
-	  unexpectedKeys.forEach(function (key) {
+	  unexpectedKeys.forEach((key) => {
 	    unexpectedKeyCache[key] = true;
 	  });
 
 	  if (unexpectedKeys.length > 0) {
-	    return 'Unexpected ' + (unexpectedKeys.length > 1 ? 'keys' : 'key') + ' ' + ('"' + unexpectedKeys.join('", "') + '" found in ' + argumentName + '. ') + 'Expected to find one of the known reducer keys instead: ' + ('"' + reducerKeys.join('", "') + '". Unexpected keys will be ignored.');
+	    return "Unexpected " + (unexpectedKeys.length > 1 ? "keys" : "key") + " " + ("\"" + unexpectedKeys.join("\", \"") + "\" found in " + argumentName + ". ") + "Expected to find one of the known reducer keys instead: " + ("\"" + reducerKeys.join("\", \"") + "\". Unexpected keys will be ignored.");
 	  }
-	}
+         }
 
-	function assertReducerShape(reducers) {
-	  Object.keys(reducers).forEach(function (key) {
-	    var reducer = reducers[key];
-	    var initialState = reducer(undefined, { type: _createStore.ActionTypes.INIT });
+         function assertReducerShape(reducers) {
+	  Object.keys(reducers).forEach((key) => {
+	    const reducer = reducers[key];
+	    const initialState = reducer(undefined, { type: _createStore.ActionTypes.INIT });
 
-	    if (typeof initialState === 'undefined') {
-	      throw new Error('Reducer "' + key + '" returned undefined during initialization. ' + 'If the state passed to the reducer is undefined, you must ' + 'explicitly return the initial state. The initial state may ' + 'not be undefined. If you don\'t want to set a value for this reducer, ' + 'you can use null instead of undefined.');
+	    if (typeof initialState === "undefined") {
+	      throw new Error("Reducer \"" + key + "\" returned undefined during initialization. " + "If the state passed to the reducer is undefined, you must " + "explicitly return the initial state. The initial state may " + "not be undefined. If you don't want to set a value for this reducer, " + "you can use null instead of undefined.");
 	    }
 
-	    var type = '@@redux/PROBE_UNKNOWN_ACTION_' + Math.random().toString(36).substring(7).split('').join('.');
-	    if (typeof reducer(undefined, { type: type }) === 'undefined') {
-	      throw new Error('Reducer "' + key + '" returned undefined when probed with a random type. ' + ('Don\'t try to handle ' + _createStore.ActionTypes.INIT + ' or other actions in "redux/*" ') + 'namespace. They are considered private. Instead, you must return the ' + 'current state for any unknown actions, unless it is undefined, ' + 'in which case you must return the initial state, regardless of the ' + 'action type. The initial state may not be undefined, but can be null.');
+	    const type = "@@redux/PROBE_UNKNOWN_ACTION_" + Math.random().toString(36).substring(7).split("").join(".");
+	    if (typeof reducer(undefined, { type: type }) === "undefined") {
+	      throw new Error("Reducer \"" + key + "\" returned undefined when probed with a random type. " + ("Don't try to handle " + _createStore.ActionTypes.INIT + " or other actions in \"redux/*\" ") + "namespace. They are considered private. Instead, you must return the " + "current state for any unknown actions, unless it is undefined, " + "in which case you must return the initial state, regardless of the " + "action type. The initial state may not be undefined, but can be null.");
 	    }
 	  });
-	}
+         }
 
-	/**
+         /**
 	 * Turns an object whose values are different reducer functions, into a single
 	 * reducer function. It will call every child reducer, and gather their results
 	 * into a single state object, whose keys correspond to the keys of the passed
@@ -4803,30 +4803,30 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @returns {Function} A reducer function that invokes every reducer inside the
 	 * passed object, and builds a state object with the same shape.
 	 */
-	function combineReducers(reducers) {
-	  var reducerKeys = Object.keys(reducers);
-	  var finalReducers = {};
-	  for (var i = 0; i < reducerKeys.length; i++) {
-	    var key = reducerKeys[i];
+         function combineReducers(reducers) {
+	  const reducerKeys = Object.keys(reducers);
+	  const finalReducers = {};
+	  for (let i = 0; i < reducerKeys.length; i++) {
+	    const key = reducerKeys[i];
 
 	    if (false) {
-	      if (typeof reducers[key] === 'undefined') {
-	        (0, _warning2['default'])('No reducer provided for key "' + key + '"');
+	      if (typeof reducers[key] === "undefined") {
+	        (0, _warning2.default)("No reducer provided for key \"" + key + "\"");
 	      }
 	    }
 
-	    if (typeof reducers[key] === 'function') {
+	    if (typeof reducers[key] === "function") {
 	      finalReducers[key] = reducers[key];
 	    }
 	  }
-	  var finalReducerKeys = Object.keys(finalReducers);
+	  const finalReducerKeys = Object.keys(finalReducers);
 
-	  var unexpectedKeyCache = void 0;
+	  let unexpectedKeyCache = void 0;
 	  if (false) {
 	    unexpectedKeyCache = {};
 	  }
 
-	  var shapeAssertionError = void 0;
+	  let shapeAssertionError = void 0;
 	  try {
 	    assertReducerShape(finalReducers);
 	  } catch (e) {
@@ -4834,29 +4834,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 
 	  return function combination() {
-	    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-	    var action = arguments[1];
+	    const state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+	    const action = arguments[1];
 
 	    if (shapeAssertionError) {
 	      throw shapeAssertionError;
 	    }
 
 	    if (false) {
-	      var warningMessage = getUnexpectedStateShapeWarningMessage(state, finalReducers, action, unexpectedKeyCache);
+	      const warningMessage = getUnexpectedStateShapeWarningMessage(state, finalReducers, action, unexpectedKeyCache);
 	      if (warningMessage) {
-	        (0, _warning2['default'])(warningMessage);
+	        (0, _warning2.default)(warningMessage);
 	      }
 	    }
 
-	    var hasChanged = false;
-	    var nextState = {};
-	    for (var _i = 0; _i < finalReducerKeys.length; _i++) {
-	      var _key = finalReducerKeys[_i];
-	      var reducer = finalReducers[_key];
-	      var previousStateForKey = state[_key];
-	      var nextStateForKey = reducer(previousStateForKey, action);
-	      if (typeof nextStateForKey === 'undefined') {
-	        var errorMessage = getUndefinedStateErrorMessage(_key, action);
+	    let hasChanged = false;
+	    const nextState = {};
+	    for (let _i = 0; _i < finalReducerKeys.length; _i++) {
+	      const _key = finalReducerKeys[_i];
+	      const reducer = finalReducers[_key];
+	      const previousStateForKey = state[_key];
+	      const nextStateForKey = reducer(previousStateForKey, action);
+	      if (typeof nextStateForKey === "undefined") {
+	        const errorMessage = getUndefinedStateErrorMessage(_key, action);
 	        throw new Error(errorMessage);
 	      }
 	      nextState[_key] = nextStateForKey;
@@ -4864,25 +4864,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	    return hasChanged ? nextState : state;
 	  };
-	}
+         }
 
-/***/ }),
-/* 22 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 22 */
+      /***/ (function(module, exports) {
 
-	'use strict';
+         "use strict";
 
-	exports.__esModule = true;
-	exports['default'] = warning;
-	/**
+         exports.__esModule = true;
+         exports.default = warning;
+         /**
 	 * Prints a warning in the console if it exists.
 	 *
 	 * @param {String} message The warning message.
 	 * @returns {void}
 	 */
-	function warning(message) {
+         function warning(message) {
 	  /* eslint-disable no-console */
-	  if (typeof console !== 'undefined' && typeof console.error === 'function') {
+	  if (typeof console !== "undefined" && typeof console.error === "function") {
 	    console.error(message);
 	  }
 	  /* eslint-enable no-console */
@@ -4894,23 +4894,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	    /* eslint-disable no-empty */
 	  } catch (e) {}
 	  /* eslint-enable no-empty */
-	}
+         }
 
-/***/ }),
-/* 23 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 23 */
+      /***/ (function(module, exports) {
 
-	'use strict';
+         "use strict";
 
-	exports.__esModule = true;
-	exports['default'] = bindActionCreators;
-	function bindActionCreator(actionCreator, dispatch) {
+         exports.__esModule = true;
+         exports.default = bindActionCreators;
+         function bindActionCreator(actionCreator, dispatch) {
 	  return function () {
 	    return dispatch(actionCreator.apply(undefined, arguments));
 	  };
-	}
+         }
 
-	/**
+         /**
 	 * Turns an object whose values are action creators, into an object with the
 	 * same keys, but with every function wrapped into a `dispatch` call so they
 	 * may be invoked directly. This is just a convenience method, as you can call
@@ -4931,46 +4931,46 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * function as `actionCreators`, the return value will also be a single
 	 * function.
 	 */
-	function bindActionCreators(actionCreators, dispatch) {
-	  if (typeof actionCreators === 'function') {
+         function bindActionCreators(actionCreators, dispatch) {
+	  if (typeof actionCreators === "function") {
 	    return bindActionCreator(actionCreators, dispatch);
 	  }
 
-	  if (typeof actionCreators !== 'object' || actionCreators === null) {
-	    throw new Error('bindActionCreators expected an object or a function, instead received ' + (actionCreators === null ? 'null' : typeof actionCreators) + '. ' + 'Did you write "import ActionCreators from" instead of "import * as ActionCreators from"?');
+	  if (typeof actionCreators !== "object" || actionCreators === null) {
+	    throw new Error("bindActionCreators expected an object or a function, instead received " + (actionCreators === null ? "null" : typeof actionCreators) + ". " + "Did you write \"import ActionCreators from\" instead of \"import * as ActionCreators from\"?");
 	  }
 
-	  var keys = Object.keys(actionCreators);
-	  var boundActionCreators = {};
-	  for (var i = 0; i < keys.length; i++) {
-	    var key = keys[i];
-	    var actionCreator = actionCreators[key];
-	    if (typeof actionCreator === 'function') {
+	  const keys = Object.keys(actionCreators);
+	  const boundActionCreators = {};
+	  for (let i = 0; i < keys.length; i++) {
+	    const key = keys[i];
+	    const actionCreator = actionCreators[key];
+	    if (typeof actionCreator === "function") {
 	      boundActionCreators[key] = bindActionCreator(actionCreator, dispatch);
 	    }
 	  }
 	  return boundActionCreators;
-	}
+         }
 
-/***/ }),
-/* 24 */
-/***/ (function(module, exports, __webpack_require__) {
+         /***/ }),
+      /* 24 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+         "use strict";
 
-	exports.__esModule = true;
+         exports.__esModule = true;
 
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+         const _extends = Object.assign || function (target) { for (let i = 1; i < arguments.length; i++) { const source = arguments[i]; for (const key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	exports['default'] = applyMiddleware;
+         exports.default = applyMiddleware;
 
-	var _compose = __webpack_require__(25);
+         const _compose = __webpack_require__(25);
 
-	var _compose2 = _interopRequireDefault(_compose);
+         const _compose2 = _interopRequireDefault(_compose);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+         function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-	/**
+         /**
 	 * Creates a store enhancer that applies middleware to the dispatch method
 	 * of the Redux store. This is handy for a variety of tasks, such as expressing
 	 * asynchronous actions in a concise manner, or logging every action payload.
@@ -4986,44 +4986,44 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param {...Function} middlewares The middleware chain to be applied.
 	 * @returns {Function} A store enhancer applying the middleware.
 	 */
-	function applyMiddleware() {
+         function applyMiddleware() {
 	  for (var _len = arguments.length, middlewares = Array(_len), _key = 0; _key < _len; _key++) {
 	    middlewares[_key] = arguments[_key];
 	  }
 
 	  return function (createStore) {
 	    return function (reducer, preloadedState, enhancer) {
-	      var store = createStore(reducer, preloadedState, enhancer);
-	      var _dispatch = store.dispatch;
-	      var chain = [];
+	      const store = createStore(reducer, preloadedState, enhancer);
+	      let _dispatch = store.dispatch;
+	      let chain = [];
 
-	      var middlewareAPI = {
+	      const middlewareAPI = {
 	        getState: store.getState,
 	        dispatch: function dispatch(action) {
 	          return _dispatch(action);
 	        }
 	      };
-	      chain = middlewares.map(function (middleware) {
+	      chain = middlewares.map((middleware) => {
 	        return middleware(middlewareAPI);
 	      });
-	      _dispatch = _compose2['default'].apply(undefined, chain)(store.dispatch);
+	      _dispatch = _compose2.default.apply(undefined, chain)(store.dispatch);
 
 	      return _extends({}, store, {
 	        dispatch: _dispatch
 	      });
 	    };
 	  };
-	}
+         }
 
-/***/ }),
-/* 25 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 25 */
+      /***/ (function(module, exports) {
 
-	"use strict";
+         "use strict";
 
-	exports.__esModule = true;
-	exports["default"] = compose;
-	/**
+         exports.__esModule = true;
+         exports.default = compose;
+         /**
 	 * Composes single-argument functions from right to left. The rightmost
 	 * function can take multiple arguments as it provides the signature for
 	 * the resulting composite function.
@@ -5034,7 +5034,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * (...args) => f(g(h(...args))).
 	 */
 
-	function compose() {
+         function compose() {
 	  for (var _len = arguments.length, funcs = Array(_len), _key = 0; _key < _len; _key++) {
 	    funcs[_key] = arguments[_key];
 	  }
@@ -5049,86 +5049,86 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return funcs[0];
 	  }
 
-	  return funcs.reduce(function (a, b) {
+	  return funcs.reduce((a, b) => {
 	    return function () {
 	      return a(b.apply(undefined, arguments));
 	    };
 	  });
-	}
+         }
 
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
+         /***/ }),
+      /* 26 */
+      /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+         "use strict";
 
-	Object.defineProperty(exports, "__esModule", {
+         Object.defineProperty(exports, "__esModule", {
 	  value: true
-	});
+         });
 
-	var _redux = __webpack_require__(5);
+         const _redux = __webpack_require__(5);
 
-	var _items = __webpack_require__(27);
+         const _items = __webpack_require__(27);
 
-	var _items2 = _interopRequireDefault(_items);
+         const _items2 = _interopRequireDefault(_items);
 
-	var _groups = __webpack_require__(28);
+         const _groups = __webpack_require__(28);
 
-	var _groups2 = _interopRequireDefault(_groups);
+         const _groups2 = _interopRequireDefault(_groups);
 
-	var _choices = __webpack_require__(29);
+         const _choices = __webpack_require__(29);
 
-	var _choices2 = _interopRequireDefault(_choices);
+         const _choices2 = _interopRequireDefault(_choices);
 
-	var _general = __webpack_require__(30);
+         const _general = __webpack_require__(30);
 
-	var _general2 = _interopRequireDefault(_general);
+         const _general2 = _interopRequireDefault(_general);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+         function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var appReducer = (0, _redux.combineReducers)({
+         const appReducer = (0, _redux.combineReducers)({
 	  items: _items2.default,
 	  groups: _groups2.default,
 	  choices: _choices2.default,
 	  general: _general2.default
-	});
+         });
 
-	var rootReducer = function rootReducer(passedState, action) {
-	  var state = passedState;
+         const rootReducer = function rootReducer(passedState, action) {
+	  let state = passedState;
 	  // If we are clearing all items, groups and options we reassign
 	  // state and then pass that state to our proper reducer. This isn't
 	  // mutating our actual state
 	  // See: http://stackoverflow.com/a/35641992
-	  if (action.type === 'CLEAR_ALL') {
+	  if (action.type === "CLEAR_ALL") {
 	    state = undefined;
 	  }
 
 	  return appReducer(state, action);
-	};
+         };
 
-	exports.default = rootReducer;
+         exports.default = rootReducer;
 
-/***/ }),
-/* 27 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 27 */
+      /***/ (function(module, exports) {
 
-	'use strict';
+         "use strict";
 
-	Object.defineProperty(exports, "__esModule", {
+         Object.defineProperty(exports, "__esModule", {
 	  value: true
-	});
+         });
 
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+         function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } return Array.from(arr); }
 
-	var items = function items() {
-	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-	  var action = arguments[1];
+         const items = function items() {
+	  const state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+	  const action = arguments[1];
 
 	  switch (action.type) {
-	    case 'ADD_ITEM':
+	    case "ADD_ITEM":
 	      {
 	        // Add object to items array
-	        var newState = [].concat(_toConsumableArray(state), [{
+	        const newState = [].concat(_toConsumableArray(state), [{
 	          id: action.id,
 	          choiceId: action.choiceId,
 	          groupId: action.groupId,
@@ -5141,7 +5141,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          keyCode: null
 	        }]);
 
-	        return newState.map(function (item) {
+	        return newState.map((item) => {
 	          if (item.highlighted) {
 	            item.highlighted = false;
 	          }
@@ -5149,10 +5149,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        });
 	      }
 
-	    case 'REMOVE_ITEM':
+	    case "REMOVE_ITEM":
 	      {
 	        // Set item to inactive
-	        return state.map(function (item) {
+	        return state.map((item) => {
 	          if (item.id === action.id) {
 	            item.active = false;
 	          }
@@ -5160,9 +5160,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        });
 	      }
 
-	    case 'HIGHLIGHT_ITEM':
+	    case "HIGHLIGHT_ITEM":
 	      {
-	        return state.map(function (item) {
+	        return state.map((item) => {
 	          if (item.id === action.id) {
 	            item.highlighted = action.highlighted;
 	          }
@@ -5175,28 +5175,28 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return state;
 	      }
 	  }
-	};
+         };
 
-	exports.default = items;
+         exports.default = items;
 
-/***/ }),
-/* 28 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 28 */
+      /***/ (function(module, exports) {
 
-	'use strict';
+         "use strict";
 
-	Object.defineProperty(exports, "__esModule", {
+         Object.defineProperty(exports, "__esModule", {
 	  value: true
-	});
+         });
 
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+         function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } return Array.from(arr); }
 
-	var groups = function groups() {
-	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-	  var action = arguments[1];
+         const groups = function groups() {
+	  const state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+	  const action = arguments[1];
 
 	  switch (action.type) {
-	    case 'ADD_GROUP':
+	    case "ADD_GROUP":
 	      {
 	        return [].concat(_toConsumableArray(state), [{
 	          id: action.id,
@@ -5206,7 +5206,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }]);
 	      }
 
-	    case 'CLEAR_CHOICES':
+	    case "CLEAR_CHOICES":
 	      {
 	        return state.groups = [];
 	      }
@@ -5216,28 +5216,28 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return state;
 	      }
 	  }
-	};
+         };
 
-	exports.default = groups;
+         exports.default = groups;
 
-/***/ }),
-/* 29 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 29 */
+      /***/ (function(module, exports) {
 
-	'use strict';
+         "use strict";
 
-	Object.defineProperty(exports, "__esModule", {
+         Object.defineProperty(exports, "__esModule", {
 	  value: true
-	});
+         });
 
-	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+         function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } return Array.from(arr); }
 
-	var choices = function choices() {
-	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
-	  var action = arguments[1];
+         const choices = function choices() {
+	  const state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+	  const action = arguments[1];
 
 	  switch (action.type) {
-	    case 'ADD_CHOICE':
+	    case "ADD_CHOICE":
 	      {
 	        /*
 	            A disabled choice appears in the choice dropdown but cannot be selected
@@ -5260,13 +5260,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }]);
 	      }
 
-	    case 'ADD_ITEM':
+	    case "ADD_ITEM":
 	      {
-	        var newState = state;
+	        let newState = state;
 
 	        // If all choices need to be activated
 	        if (action.activateOptions) {
-	          newState = state.map(function (choice) {
+	          newState = state.map((choice) => {
 	            choice.active = action.active;
 	            return choice;
 	          });
@@ -5274,7 +5274,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        // When an item is added and it has an associated choice,
 	        // we want to disable it so it can't be chosen again
 	        if (action.choiceId > -1) {
-	          newState = state.map(function (choice) {
+	          newState = state.map((choice) => {
 	            if (choice.id === parseInt(action.choiceId, 10)) {
 	              choice.selected = true;
 	            }
@@ -5285,12 +5285,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return newState;
 	      }
 
-	    case 'REMOVE_ITEM':
+	    case "REMOVE_ITEM":
 	      {
 	        // When an item is removed and it has an associated choice,
 	        // we want to re-enable it so it can be chosen again
 	        if (action.choiceId > -1) {
-	          return state.map(function (choice) {
+	          return state.map((choice) => {
 	            if (choice.id === parseInt(action.choiceId, 10)) {
 	              choice.selected = false;
 	            }
@@ -5301,14 +5301,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return state;
 	      }
 
-	    case 'FILTER_CHOICES':
+	    case "FILTER_CHOICES":
 	      {
-	        var filteredResults = action.results;
-	        var filteredState = state.map(function (choice) {
+	        const filteredResults = action.results;
+	        const filteredState = state.map((choice) => {
 	          // Set active state based on whether choice is
 	          // within filtered results
 
-	          choice.active = filteredResults.some(function (result) {
+	          choice.active = filteredResults.some((result) => {
 	            if (result.item.id === choice.id) {
 	              choice.score = result.score;
 	              return true;
@@ -5322,15 +5322,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return filteredState;
 	      }
 
-	    case 'ACTIVATE_CHOICES':
+	    case "ACTIVATE_CHOICES":
 	      {
-	        return state.map(function (choice) {
+	        return state.map((choice) => {
 	          choice.active = action.active;
 	          return choice;
 	        });
 	      }
 
-	    case 'CLEAR_CHOICES':
+	    case "CLEAR_CHOICES":
 	      {
 	        return state.choices = [];
 	      }
@@ -5340,25 +5340,25 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return state;
 	      }
 	  }
-	};
+         };
 
-	exports.default = choices;
+         exports.default = choices;
 
-/***/ }),
-/* 30 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 30 */
+      /***/ (function(module, exports) {
 
-	'use strict';
+         "use strict";
 
-	Object.defineProperty(exports, "__esModule", {
+         Object.defineProperty(exports, "__esModule", {
 	  value: true
-	});
-	var general = function general() {
-	  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { loading: false };
-	  var action = arguments[1];
+         });
+         const general = function general() {
+	  const state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { loading: false };
+	  const action = arguments[1];
 
 	  switch (action.type) {
-	    case 'LOADING':
+	    case "LOADING":
 	      {
 	        return {
 	          loading: action.isLoading
@@ -5370,22 +5370,22 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return state;
 	      }
 	  }
-	};
+         };
 
-	exports.default = general;
+         exports.default = general;
 
-/***/ }),
-/* 31 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 31 */
+      /***/ (function(module, exports) {
 
-	'use strict';
+         "use strict";
 
-	Object.defineProperty(exports, "__esModule", {
+         Object.defineProperty(exports, "__esModule", {
 	  value: true
-	});
-	var addItem = exports.addItem = function addItem(value, label, id, choiceId, groupId, customProperties, placeholder, keyCode) {
+         });
+         const addItem = exports.addItem = function addItem(value, label, id, choiceId, groupId, customProperties, placeholder, keyCode) {
 	  return {
-	    type: 'ADD_ITEM',
+	    type: "ADD_ITEM",
 	    value: value,
 	    label: label,
 	    id: id,
@@ -5395,27 +5395,27 @@ return /******/ (function(modules) { // webpackBootstrap
 	    placeholder: placeholder,
 	    keyCode: keyCode
 	  };
-	};
+         };
 
-	var removeItem = exports.removeItem = function removeItem(id, choiceId) {
+         const removeItem = exports.removeItem = function removeItem(id, choiceId) {
 	  return {
-	    type: 'REMOVE_ITEM',
+	    type: "REMOVE_ITEM",
 	    id: id,
 	    choiceId: choiceId
 	  };
-	};
+         };
 
-	var highlightItem = exports.highlightItem = function highlightItem(id, highlighted) {
+         const highlightItem = exports.highlightItem = function highlightItem(id, highlighted) {
 	  return {
-	    type: 'HIGHLIGHT_ITEM',
+	    type: "HIGHLIGHT_ITEM",
 	    id: id,
 	    highlighted: highlighted
 	  };
-	};
+         };
 
-	var addChoice = exports.addChoice = function addChoice(value, label, id, groupId, disabled, elementId, customProperties, placeholder, keyCode) {
+         const addChoice = exports.addChoice = function addChoice(value, label, id, groupId, disabled, elementId, customProperties, placeholder, keyCode) {
 	  return {
-	    type: 'ADD_CHOICE',
+	    type: "ADD_CHOICE",
 	    value: value,
 	    label: label,
 	    id: id,
@@ -5426,66 +5426,66 @@ return /******/ (function(modules) { // webpackBootstrap
 	    placeholder: placeholder,
 	    keyCode: keyCode
 	  };
-	};
+         };
 
-	var filterChoices = exports.filterChoices = function filterChoices(results) {
+         const filterChoices = exports.filterChoices = function filterChoices(results) {
 	  return {
-	    type: 'FILTER_CHOICES',
+	    type: "FILTER_CHOICES",
 	    results: results
 	  };
-	};
+         };
 
-	var activateChoices = exports.activateChoices = function activateChoices() {
-	  var active = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
+         const activateChoices = exports.activateChoices = function activateChoices() {
+	  const active = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
 
 	  return {
-	    type: 'ACTIVATE_CHOICES',
+	    type: "ACTIVATE_CHOICES",
 	    active: active
 	  };
-	};
+         };
 
-	var clearChoices = exports.clearChoices = function clearChoices() {
+         const clearChoices = exports.clearChoices = function clearChoices() {
 	  return {
-	    type: 'CLEAR_CHOICES'
+	    type: "CLEAR_CHOICES"
 	  };
-	};
+         };
 
-	var addGroup = exports.addGroup = function addGroup(value, id, active, disabled) {
+         const addGroup = exports.addGroup = function addGroup(value, id, active, disabled) {
 	  return {
-	    type: 'ADD_GROUP',
+	    type: "ADD_GROUP",
 	    value: value,
 	    id: id,
 	    active: active,
 	    disabled: disabled
 	  };
-	};
+         };
 
-	var clearAll = exports.clearAll = function clearAll() {
+         const clearAll = exports.clearAll = function clearAll() {
 	  return {
-	    type: 'CLEAR_ALL'
+	    type: "CLEAR_ALL"
 	  };
-	};
+         };
 
-	var setIsLoading = exports.setIsLoading = function setIsLoading(isLoading) {
+         const setIsLoading = exports.setIsLoading = function setIsLoading(isLoading) {
 	  return {
-	    type: 'LOADING',
+	    type: "LOADING",
 	    isLoading: isLoading
 	  };
-		};
+         };
 
-/***/ }),
-/* 32 */
-/***/ (function(module, exports) {
+         /***/ }),
+      /* 32 */
+      /***/ (function(module, exports) {
 
-	'use strict';
+         "use strict";
 
-	Object.defineProperty(exports, "__esModule", {
+         Object.defineProperty(exports, "__esModule", {
 	  value: true
-	});
+         });
 
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+         const _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-	/* eslint-disable */
+         /* eslint-disable */
 	/**
 	 * Capitalises the first letter of each word in a string
 	 * @param  {String} str String to capitalise
