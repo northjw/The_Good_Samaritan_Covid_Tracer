@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
-var isAuthenticated = require("../../config/middleware/isAuthenticated");
+const isAuthenticated = require("../../config/middleware/isAuthenticated");
 
 // get route -> index
 router.get("/", (req, res) => {
-   console.log(req.user)
+   console.log(req.user);
    if (req.user) {
       res.redirect("/location");
    } 
@@ -18,15 +18,15 @@ router.get("/register", (req, res) => {
    res.render("register");
 });
 
-router.get("/location", isAuthenticated, function(req, res) {
+router.get("/location", isAuthenticated, (req, res) => {
    res.render("location");
 });
 
-router.get("/contactUs", isAuthenticated, function(req, res) {
+router.get("/contactUs", isAuthenticated, (req, res) => {
    res.render("contactUs");
 });
 
-router.get("/aboutus", isAuthenticated, function(req, res) {
+router.get("/aboutus", isAuthenticated, (req, res) => {
    res.render("aboutus");
 });
 

@@ -1,10 +1,12 @@
+/*eslint-disable*/
+
 const express = require("express");
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 const apiRoutes = require("./routes/api-routes");
 const htmlRoutes = require("./routes/html-routes");
 const db = require("./models");
-var passport = require("./config/passport");
-var session = require("express-session");
+const passport = require("./config/passport");
+const session = require("express-session");
 const errorHandler = require("./utils/errorHandler");
 
 const PORT = process.env.PORT || 3000;
